@@ -48,13 +48,13 @@ export default function Hero({ onOpenResume }) {
           </button>
         </div>
 
-        {/* Real System Architecture Preview (Klock Aviation Flow) */}
+        {/* Real System Architecture Preview (Enterprise Flow) */}
         <div className="lit-card rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto text-left mb-14 shadow-sm border border-slate-200/90 bg-white">
           <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100 text-xs font-mono text-slate-500">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span className="text-slate-900 font-semibold">Real-World Implementation:</span>
-              <span className="text-slate-600 hidden sm:inline">Klock Aviation Complete Operating Engine</span>
+              <span className="text-slate-600 hidden sm:inline">Enterprise Operations & Client Portal Architecture</span>
             </div>
             <div className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded text-[11px] font-semibold border border-emerald-100">
               Zoho One + Catalyst + Sign
