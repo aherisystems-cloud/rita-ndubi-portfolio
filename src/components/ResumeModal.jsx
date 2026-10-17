@@ -153,7 +153,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               Key Platforms & Software
             </h2>
             <div className="flex flex-wrap gap-1.5 text-xs font-mono">
-              {["Zoho One & CRM", "Make.com (Integromat)", "Zapier", "HubSpot", "GoHighLevel", "Airtable", "Notion", "ClickUp", "OpenAI & Claude Tools", "REST Webhooks", "Google Workspace"].map(tool => (
+              {["Claude & Model Context Protocol (MCP)", "Zoho One, Catalyst & Creator", "Supabase", "Cloudflare", "Make.com", "Zapier", "HubSpot", "GoHighLevel", "Hugo & GitHub", "Airtable", "Notion", "REST APIs & Webhooks", "ClickUp"].map(tool => (
                 <span key={tool} className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
                   {tool}
                 </span>
