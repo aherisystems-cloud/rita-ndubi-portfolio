@@ -16,22 +16,32 @@ export const personalInfo = {
 
 export const corePillars = [
   {
-    id: "ai-revops",
-    title: "AI-Powered RevOps & Journey Automation",
-    description: "Embedding AI across the customer lifecycle to predict and stop revenue leakages. From AI-assisted quotation engines and interactive client portals to automated billing triggers and multi-property investor retention nurture.",
-    skills: ["AI-Assisted Quoting", "Revenue Leakage Prevention", "Customer Journey Mapping", "Client Approval Portals", "Zoho Sign / Stripe"]
+    id: "agentic-systems",
+    title: "Agentic AI & Multi-Agent Systems",
+    subtitle: "Autonomous Action Execution · Tool-Calling · System-of-Agents Architecture",
+    description: "Designing and deploying production AI agents that take autonomous action across real business software. Moving beyond basic chatbots to multi-agent architectures where specialized agents collaborate—handling customer intent discovery, live inventory checks, out-of-stock alternative recommendations, and CRM task execution without human bottlenecks.",
+    skills: ["Agentic AI Workflows", "System of Agents", "Model Context Protocol (MCP)", "Claude & OpenAI Tool Calling", "Autonomous Action Execution"]
   },
   {
-    id: "ai-agents-mcp",
-    title: "Autonomous AI Workflows & MCP Integration",
-    description: "Deploying production AI agents using Claude and Model Context Protocol (MCP) directly connected to live operational databases. Automating complex message triage, contract data extraction, and multi-system synchronization without human intervention.",
-    skills: ["Model Context Protocol (MCP)", "Claude AI Developer Workflows", "OpenAI Tool Calling", "Make.com & Zapier", "REST APIs & Webhooks"]
+    id: "journey-mapping",
+    title: "End-to-End Customer Journey Mapping",
+    subtitle: "Full-Funnel Audits · Lead Routing · Revenue Leakage Elimination",
+    description: "Analyzing the complete end-to-end customer lifecycle from initial ad discovery (Click-to-WhatsApp, paid search, social funnels) to deal close and repeat retention. Designing strict stage-gate definitions, lead temperature scoring, diplomatic/VIP routing, and automated 72-hour re-engagement sequences to protect conversion velocity.",
+    skills: ["Customer Journey Audits", "Click-to-WhatsApp Funnels", "72-Hour Re-Engagement", "VIP & Diplomatic Routing", "Stale-Lead Escalation"]
   },
   {
-    id: "portals-cloud",
-    title: "Intelligent Portals & Cloud Databases",
-    description: "Developing relational operational databases and client-facing portals using Zoho Creator, Supabase, and Cloudflare. Giving teams a centralized, single source of truth enhanced with automated backend processing.",
-    skills: ["Zoho Creator & Catalyst", "Supabase Relational DBs", "Cloudflare Pages & Workers", "Airtable Hubs", "Living SOP Systems"]
+    id: "revenue-ops",
+    title: "AI-Powered Revenue Operations (RevOps)",
+    subtitle: "Quote-to-Cash · Dynamic Pricing · Automated Milestone Invoicing",
+    description: "Unifying sales pipelines, finance, and client agreements into an automated revenue engine. Eliminating manual copy-pasting through dynamic quoting portals, 1-click client agreement signing (Zoho Sign), automated deposit invoices (Zoho Books), and automated partner referral commissions.",
+    skills: ["Quote-to-Cash Automation", "Interactive Approval Portals", "Zoho Sign & Books", "Partner Commissions Engine", "Stripe & Payment Webhooks"]
+  },
+  {
+    id: "ops-infrastructure",
+    title: "Operations, Governance & Executive Command Centers",
+    subtitle: "Zoho Catalyst & Creator · Vendor Compliance · Executive 360 Dashboards",
+    description: "Building the internal back-office infrastructure required to scale. Engineering custom executive command centers on Zoho Catalyst, dedicated prospect qualification databases in Zoho Creator, vendor license/insurance expiration alerts, and paperless Zoho People staff onboarding with 20+ documented process SOPs.",
+    skills: ["Zoho Catalyst Command Center", "Zoho Creator Prospect Engine", "Vendor Compliance Alerts", "Zoho People HR Onboarding", "20+ Module Field Guides & SOPs"]
   }
 ];
 
@@ -41,7 +51,7 @@ export const caseStudies = [
     title: "Conversational Retail AI Sales Agent & Order Recovery Engine",
     client: "Retail & E-Commerce Brands (Click-to-WhatsApp & Paid Media)",
     tagline: "Plugging ad-spend revenue leakage with live inventory-synced conversational AI, intelligent out-of-stock cross-selling, and automated 72-hour WhatsApp re-engagement.",
-    badge: "AI Sales & RevOps Agent",
+    badge: "Agentic AI & RevOps",
     problem: "Retail and e-commerce brands investing heavily in paid ads (Click-to-WhatsApp, social ads, website funnels) suffered severe revenue leakages: delayed human response times caused high drop-offs, out-of-stock items turned into lost sales without alternatives, and leads who stalled mid-order were abandoned forever without follow-up.",
     solution: "Engineered an autonomous conversational AI sales agent integrated directly into backend inventory (Airtable / Supabase / e-commerce catalogs). The agent naturally converses with inbound ad leads, identifies customer requirements, verifies real-time stock levels, and intelligently suggests matching cross-sell and upsell alternatives if an item is unavailable. Built an automated 72-hour WhatsApp re-engagement engine that re-contacts undecided shoppers with personalized incentives to recover unfinished orders.",
     metrics: [
@@ -59,24 +69,24 @@ export const caseStudies = [
   },
   {
     id: "klock-aviation",
-    title: "AI-Augmented Aviation Operating Engine & Quotation Portal",
-    client: "Klock Aviation (Private Charter & Aviation Services)",
-    tagline: "Unifying AI-assisted charter quoting, client approval portals, vendor compliance, HR onboarding, and multi-channel acquisition funnels.",
-    badge: "Enterprise AI System",
-    problem: "Private charter inquiries required manual calculation across complex flight legs, while approvals, manifests, and invoices were scattered across email threads. In parallel, lead generation, landing pages, and vendor compliance tracking lacked a connected operational foundation.",
-    solution: "Delivered a complete operational and revenue engine. Built an automated charter quoting system with an interactive client approval portal that auto-generates flight agreements and invoices. Created an automated vendor compliance hub with license expiration alerts, paperless staff onboarding, a custom Zoho Catalyst command center for executives, and coordinated marketing funnels, landing pages, Google Ads, and newsletters.",
+    title: "Enterprise Zoho One Ecosystem & Executive Command Center",
+    client: "Klock Aviation (Corporate Travel, Safari & Lifestyle, Executive Charter, Aircraft Mgmt)",
+    tagline: "End-to-end delivery of 4 unified business lines, custom Zoho Catalyst Command Center, Zoho Creator prospect qualification engine, vendor governance, and Google Ads funnels (Awarded performance bonus).",
+    badge: "Phase I & II Handover Delivery",
+    problem: "Klock Aviation operated across four distinct business units (Corporate Travel, Safari & Lifestyle, Executive & Diplomatic Charter, Aircraft Management) without a connected operating system. Flight quoting, lead scoring, partner agreements, vendor licenses, client reporting, and employee onboarding were fractured across manual emails and spreadsheets.",
+    solution: "Architected and delivered the complete Phase I and Phase II Zoho One ecosystem (CRM, Books, Campaigns, SalesIQ, Bookings, Analytics, Cliq, Sign, Catalyst, Creator, People). Built dedicated pipelines per business line with diplomatic routing and stale-lead escalations; built custom Zoho Catalyst Executive Command Center with finance views and 360° client visibility; engineered a custom Zoho Creator prospect database with qualification workflows; automated vendor/partner license expiry alerts; automated Zoho Sign contracts for charters and employee onboarding; and orchestrated multi-channel Google Ads and monthly newsletter campaigns.",
     metrics: [
-      { label: "Quote-to-Invoice Turnaround", before: "48 Hours", after: "< 5 Minutes" },
-      { label: "Vendor Compliance Visibility", before: "Fragmented", after: "100% Automated" },
-      { label: "Executive Reporting Time", before: "Days", after: "Instant (1-Click)" }
+      { label: "Business Divisions Unified", before: "Disconnected", after: "4 Lines Synchronized" },
+      { label: "Operational Documentation", before: "None", after: "20 Module Field Guides" },
+      { label: "Client Recognition", before: "Standard Scope", after: "Performance Bonus Awarded" }
     ],
     workflowSteps: [
-      { title: "Inbound Charter Funnel", desc: "Captures flight inquiries via high-converting landing pages, Google Ads, and email campaigns." },
-      { title: "Dynamic Quoting & Portal", desc: "Calculates route pricing and sends interactive quote to client portal for 1-click approval." },
-      { title: "Automated Documentation", desc: "Auto-generates flight manifests, passenger agreements via Zoho Sign, and deposit invoices." },
-      { title: "Compliance & Command Center", desc: "Tracks partner licenses and staff onboarding, unified into a custom Zoho Catalyst dashboard." }
+      { title: "4-Line Pipeline Architecture", desc: "Configured dedicated pipelines with lead scoring, diplomatic VIP routing, and stale-lead escalations across Corporate Travel, Safari, Charter, and Aircraft Management." },
+      { title: "Zoho Creator Prospect Engine", desc: "Built a custom qualification database to source, filter, and inject verified corporate targets into CRM for sales execution." },
+      { title: "Catalyst Executive Command Center", desc: "Engineered custom executive dashboard displaying live KPIs across team performance, Zoho Books finance metrics, client 360 view, and carbon reporting." },
+      { title: "Vendor & HR Governance Engine", desc: "Automated partner/vendor license expiry alerts, traveller WhatsApp updates, and paperless Zoho People employee onboarding with Zoho Sign agreements." }
     ],
-    tools: ["Zoho One", "Zoho Catalyst", "Zoho Sign", "Make.com", "Google Ads", "Zoho Analytics"]
+    tools: ["Zoho One (CRM, Books, Catalyst, Creator, Sign, People, Analytics)", "Google Ads", "WhatsApp API", "Zoho Writer"]
   },
   {
     id: "wowglamdecor",
@@ -197,7 +207,7 @@ export const experienceTimeline = [
       "Build AI-powered business systems, quotation engines, client portals, and automation workflows across Zoho One, Zoho Catalyst, Zoho Creator, Supabase, and Cloudflare.",
       "Deploy practical AI pipelines and agents using Claude, Model Context Protocol (MCP), and OpenAI for inquiry classification, quoting, and operational triage.",
       "Retail AI Sales Agent: Developed conversational AI order processing agents for retail and e-commerce brands running Click-to-WhatsApp and paid ads; integrated live backend inventory, intelligent out-of-stock cross-selling, and automated 72-hour re-engagement sequences to stop ad-spend revenue leakage.",
-      "Klock Aviation: Delivered complete private charter quoting portal, vendor compliance hub, paperless HR onboarding, Zoho Catalyst executive command center, funnels, Google Ads, and newsletters.",
+      "Klock Aviation: Delivered Phase I & II Zoho One enterprise infrastructure across 4 business lines (Corporate Travel, Safari & Lifestyle, Executive Charter, Aircraft Management); engineered custom Zoho Catalyst Executive Command Center, Zoho Creator prospect qualification engine, vendor license alerts, Zoho Sign onboarding, and 20 module SOP playbooks (Awarded discretionary performance bonus).",
       "Sydia Realty: Conducted comprehensive Zoho CRM audit and customer journey optimization to eliminate pipeline leakages from off-plan inquiry to repeat investor retention.",
       "Mapenzi Connect: Built complete CRM architecture, automated newsletter delivery, and webinar registration-to-attendee workflows."
     ]
