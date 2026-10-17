@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "AI-Powered Business Systems & RevOps Specialist",
   subtitle: "Autonomous Workflows · Model Context Protocol (MCP) · Claude & OpenAI · Cloudflare & Supabase",
   location: "Nairobi (UTC+3) · Working with teams globally",
-  bio: "I treat AI not as a novelty, but as the foundational engine powering modern business systems. Combining a background in Finance & Banking with 9+ years of operational technology experience, I design AI-augmented workflows, custom portals (Zoho Creator, Supabase, Cloudflare), and automated revenue engines that eliminate manual human drag, prevent revenue leakages, and allow teams to scale with speed and precision.",
+  bio: "I operate at the intersection of deep business operations, end-to-end customer journey mapping, and Revenue Operations (RevOps). Combining a strong commercial foundation in Finance & Banking with 9+ years in operational technology, I analyze the full revenue cycle—from initial ad acquisition (Click-to-WhatsApp, paid media, inbound forms) to automated quoting, live inventory checks, payment, and post-sale retention. By deploying autonomous conversational AI sales agents, custom portals (Zoho Creator, Supabase, Cloudflare), and automated middleware, I systematically eliminate revenue leakages and help teams scale with speed and precision.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
   calendlyUrl: "https://calendly.com",
   email: "ritakawira@gmail.com",
@@ -36,6 +36,27 @@ export const corePillars = [
 ];
 
 export const caseStudies = [
+  {
+    id: "retail-ai-sales-agent",
+    title: "Conversational Retail AI Sales Agent & Order Recovery Engine",
+    client: "Retail & E-Commerce Brands (Click-to-WhatsApp & Paid Media)",
+    tagline: "Plugging ad-spend revenue leakage with live inventory-synced conversational AI, intelligent out-of-stock cross-selling, and automated 72-hour WhatsApp re-engagement.",
+    badge: "AI Sales & RevOps Agent",
+    problem: "Retail and e-commerce brands investing heavily in paid ads (Click-to-WhatsApp, social ads, website funnels) suffered severe revenue leakages: delayed human response times caused high drop-offs, out-of-stock items turned into lost sales without alternatives, and leads who stalled mid-order were abandoned forever without follow-up.",
+    solution: "Engineered an autonomous conversational AI sales agent integrated directly into backend inventory (Airtable / Supabase / e-commerce catalogs). The agent naturally converses with inbound ad leads, identifies customer requirements, verifies real-time stock levels, and intelligently suggests matching cross-sell and upsell alternatives if an item is unavailable. Built an automated 72-hour WhatsApp re-engagement engine that re-contacts undecided shoppers with personalized incentives to recover unfinished orders.",
+    metrics: [
+      { label: "Inbound Lead Response Time", before: "2 to 6 Hours", after: "Instant (< 5s)" },
+      { label: "Out-of-Stock Recovery", before: "0% (Lost Sale)", after: "32% Cross-Sell Conversion" },
+      { label: "72-Hour Abandoned Recovery", before: "Zero Follow-up", after: "26% Orders Rescued" }
+    ],
+    workflowSteps: [
+      { title: "Inbound Ad Routing", desc: "Captures shopper traffic from Click-to-WhatsApp ads, website widgets, and campaign forms into a live AI chat session." },
+      { title: "Inventory-Linked Consultation", desc: "AI queries live backend database to confirm availability, pricing, sizes, and specs in natural conversational language." },
+      { title: "Intelligent Cross-Sell / Upsell", desc: "If an item is out of stock, the agent recommends relevant matching alternatives and complementary accessories to protect the sale." },
+      { title: "72-Hour Re-Engagement Trigger", desc: "Automated sequence follows up with undecided shoppers via WhatsApp within 72 hours to answer objections and close the order." }
+    ],
+    tools: ["WhatsApp Business API", "Claude & OpenAI", "Make.com & Webhooks", "Airtable / Supabase", "Inventory APIs"]
+  },
   {
     id: "klock-aviation",
     title: "AI-Augmented Aviation Operating Engine & Quotation Portal",
@@ -175,6 +196,7 @@ export const experienceTimeline = [
     highlights: [
       "Build AI-powered business systems, quotation engines, client portals, and automation workflows across Zoho One, Zoho Catalyst, Zoho Creator, Supabase, and Cloudflare.",
       "Deploy practical AI pipelines and agents using Claude, Model Context Protocol (MCP), and OpenAI for inquiry classification, quoting, and operational triage.",
+      "Retail AI Sales Agent: Developed conversational AI order processing agents for retail and e-commerce brands running Click-to-WhatsApp and paid ads; integrated live backend inventory, intelligent out-of-stock cross-selling, and automated 72-hour re-engagement sequences to stop ad-spend revenue leakage.",
       "Klock Aviation: Delivered complete private charter quoting portal, vendor compliance hub, paperless HR onboarding, Zoho Catalyst executive command center, funnels, Google Ads, and newsletters.",
       "Sydia Realty: Conducted comprehensive Zoho CRM audit and customer journey optimization to eliminate pipeline leakages from off-plan inquiry to repeat investor retention.",
       "Mapenzi Connect: Built complete CRM architecture, automated newsletter delivery, and webinar registration-to-attendee workflows."
