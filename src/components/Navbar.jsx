@@ -24,33 +24,33 @@ export default function Navbar({ onOpenResume }) {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-[#070a12]/85 backdrop-blur-xl border-b border-white/[0.06] py-3.5' : 'bg-transparent py-6'
+      scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-sm py-3.5' : 'bg-transparent py-5'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Logo & Name */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-white/[0.06] border border-white/[0.1] flex items-center justify-center font-semibold text-white text-sm tracking-tight group-hover:border-emerald-500/40 group-hover:bg-emerald-500/10 transition-all">
+            <div className="w-9 h-9 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center font-bold text-slate-900 text-sm tracking-tight group-hover:border-emerald-500/50 group-hover:bg-emerald-50 transition-all">
               RN
             </div>
             <div>
-              <div className="font-semibold text-white tracking-tight text-base flex items-center gap-2">
+              <div className="font-bold text-slate-900 tracking-tight text-base flex items-center gap-2">
                 Rita Ndubi
               </div>
-              <div className="text-[11px] text-slate-400 font-mono">
+              <div className="text-[11px] text-slate-500 font-mono">
                 Business Systems & Automation
               </div>
             </div>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 bg-white/[0.03] border border-white/[0.06] rounded-full px-4 py-1.5 backdrop-blur-md">
+          <nav className="hidden md:flex items-center gap-1 bg-slate-100/80 border border-slate-200/80 rounded-full px-4 py-1.5 backdrop-blur-md">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-3.5 py-1 text-xs font-medium text-slate-300 hover:text-white transition-colors"
+                className="px-3.5 py-1 text-xs font-medium text-slate-600 hover:text-slate-950 transition-colors"
               >
                 {link.name}
               </a>
@@ -61,15 +61,15 @@ export default function Navbar({ onOpenResume }) {
           <div className="hidden sm:flex items-center gap-3">
             <button
               onClick={onOpenResume}
-              className="px-3.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] border border-white/[0.08] rounded-xl transition-all flex items-center gap-1.5 cursor-pointer"
+              className="px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-100 border border-slate-200 rounded-xl transition-all flex items-center gap-1.5 cursor-pointer"
             >
-              <FileText className="w-3.5 h-3.5 text-emerald-400" />
+              <FileText className="w-3.5 h-3.5 text-emerald-600" />
               <span>Resume / CV</span>
             </button>
 
             <a
               href="#contact"
-              className="px-4 py-1.5 text-xs font-semibold text-slate-950 bg-white hover:bg-slate-100 rounded-xl transition-all shadow-sm cursor-pointer"
+              className="px-4 py-1.5 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-xl transition-all shadow-sm cursor-pointer"
             >
               Get in Touch
             </a>
@@ -79,7 +79,7 @@ export default function Navbar({ onOpenResume }) {
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/[0.08]"
+              className="p-2 rounded-xl bg-slate-100 text-slate-700 border border-slate-200"
               aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -91,31 +91,31 @@ export default function Navbar({ onOpenResume }) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0a0f1d] border-b border-white/[0.08] px-6 py-6 mt-3 space-y-3">
+        <div className="md:hidden bg-white border-b border-slate-200 shadow-xl px-6 py-6 mt-3 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-slate-300 hover:text-white"
+              className="block text-sm font-medium text-slate-700 hover:text-slate-950"
             >
               {link.name}
             </a>
           ))}
-          <div className="pt-4 border-t border-white/[0.08] flex flex-col gap-2.5">
+          <div className="pt-4 border-t border-slate-200 flex flex-col gap-2.5">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenResume();
               }}
-              className="w-full py-2.5 text-center text-xs font-medium text-slate-200 bg-white/[0.05] rounded-xl border border-white/[0.08]"
+              className="w-full py-2.5 text-center text-xs font-medium text-slate-800 bg-slate-100 rounded-xl border border-slate-200"
             >
               View Full CV
             </button>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full py-2.5 text-center text-xs font-semibold text-slate-950 bg-white rounded-xl"
+              className="w-full py-2.5 text-center text-xs font-semibold text-white bg-slate-900 rounded-xl"
             >
               Get in Touch
             </a>

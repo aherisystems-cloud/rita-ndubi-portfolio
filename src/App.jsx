@@ -14,7 +14,7 @@ export default function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#070a12] text-slate-100 flex flex-col font-sans selection:bg-emerald-500 selection:text-slate-950">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-emerald-500 selection:text-white">
       
       {/* Sleek Floating Navbar */}
       <Navbar

@@ -4,60 +4,59 @@
 
 @layer base {
   html {
-    color-scheme: dark;
+    color-scheme: light;
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-[#070a12] text-slate-100 min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-950 font-sans;
+    @apply bg-slate-50 text-slate-800 min-h-screen antialiased selection:bg-emerald-500 selection:text-white font-sans;
     letter-spacing: -0.01em;
   }
 }
 
-/* Lit-Glass & Clean Ambient Aesthetics */
+/* Bright, Airy Lit-Glass & Clean Cards (Canva / Nate Herk aesthetic) */
 .lit-glass {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .lit-card {
-  background: rgba(13, 19, 33, 0.45);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .lit-card:hover {
-  background: rgba(18, 26, 44, 0.65);
-  border-color: rgba(52, 211, 153, 0.25);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
   transform: translateY(-2px);
 }
 
 .editorial-gradient {
-  background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+  background: linear-gradient(180deg, #0f172a 0%, #334155 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .accent-gradient {
-  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #06b6d4 100%);
+  background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0284c7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Subtle scrollbar */
+/* Clean subtle scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #070a12;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #cbd5e1;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #34d399;
+  background: #10b981;
 }

@@ -1,48 +1,48 @@
 export const personalInfo = {
   name: "Rita Ndubi",
-  title: "Business Systems, AI Automation & RevOps Specialist",
-  subtitle: "AI Workflows & MCP · Custom Portals · Zoho Creator · Supabase · Cloudflare",
+  title: "AI-Powered Business Systems & RevOps Specialist",
+  subtitle: "Autonomous Workflows · Model Context Protocol (MCP) · Claude & OpenAI · Cloudflare & Supabase",
   location: "Nairobi (UTC+3) · Working with teams globally",
-  bio: "I help growing companies build resilient business systems, automated revenue engines, and practical AI workflows. Combining a background in Finance & Banking with 9+ years of hands-on technical execution, I map customer journeys across every lifecycle stage to eliminate revenue leakages—connecting CRMs (Zoho One, HubSpot), custom portals (Zoho Creator, Supabase, Cloudflare), and AI-driven automation pipelines (Claude, MCP, Make.com, APIs).",
+  bio: "I treat AI not as a novelty, but as the foundational engine powering modern business systems. Combining a background in Finance & Banking with 9+ years of operational technology experience, I design AI-augmented workflows, custom portals (Zoho Creator, Supabase, Cloudflare), and automated revenue engines that eliminate manual human drag, prevent revenue leakages, and allow teams to scale with speed and precision.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
   calendlyUrl: "https://calendly.com",
   email: "ritakawira@gmail.com",
   quickStats: [
-    { label: "Production Automations Built", value: "65+", suffix: "" },
-    { label: "Quotation & Intake Speedup", value: "90%", suffix: "" },
-    { label: "Operational Reliability", value: "99.9%", suffix: "" }
+    { label: "AI & Automated Workflows Built", value: "65+", suffix: "" },
+    { label: "Process Time Saved with AI", value: "85%", suffix: "" },
+    { label: "System & Pipeline Reliability", value: "99.9%", suffix: "" }
   ]
 };
 
 export const corePillars = [
   {
-    id: "revops",
-    title: "RevOps & Lifecycle Journey Automation",
-    description: "Mapping customer touchpoints from discovery to retention to prevent revenue leakages. Building quotation engines, client portals, contract e-signing, and automated invoicing.",
-    skills: ["Customer Journey Mapping", "Revenue Leakage Prevention", "Dynamic Quoting", "Client Approval Portals", "Zoho Sign / Stripe"]
+    id: "ai-revops",
+    title: "AI-Powered RevOps & Journey Automation",
+    description: "Embedding AI across the customer lifecycle to predict and stop revenue leakages. From AI-assisted quotation engines and interactive client portals to automated billing triggers and multi-property investor retention nurture.",
+    skills: ["AI-Assisted Quoting", "Revenue Leakage Prevention", "Customer Journey Mapping", "Client Approval Portals", "Zoho Sign / Stripe"]
+  },
+  {
+    id: "ai-agents-mcp",
+    title: "Autonomous AI Workflows & MCP Integration",
+    description: "Deploying production AI agents using Claude and Model Context Protocol (MCP) directly connected to live operational databases. Automating complex message triage, contract data extraction, and multi-system synchronization without human intervention.",
+    skills: ["Model Context Protocol (MCP)", "Claude AI Developer Workflows", "OpenAI Tool Calling", "Make.com & Zapier", "REST APIs & Webhooks"]
   },
   {
     id: "portals-cloud",
-    title: "Custom Portals, Databases & Cloud",
-    description: "Developing relational databases and client-facing portals using Zoho Creator, Supabase, and Cloudflare. Ensuring data stays organized in a centralized single source of truth.",
-    skills: ["Zoho Creator", "Supabase", "Cloudflare Pages & Workers", "Zoho Catalyst", "Airtable Relational Hubs"]
-  },
-  {
-    id: "ai-mcp",
-    title: "AI Workflows, MCP & System Integrations",
-    description: "Deploying practical AI workflows using Claude, Model Context Protocol (MCP), and OpenAI. Connecting disjointed platforms via Make.com, webhooks, and custom REST API pipelines.",
-    skills: ["Model Context Protocol (MCP)", "Claude AI Developer Tools", "Make.com & Zapier", "REST APIs & Webhooks", "AI Triage & Classification"]
+    title: "Intelligent Portals & Cloud Databases",
+    description: "Developing relational operational databases and client-facing portals using Zoho Creator, Supabase, and Cloudflare. Giving teams a centralized, single source of truth enhanced with automated backend processing.",
+    skills: ["Zoho Creator & Catalyst", "Supabase Relational DBs", "Cloudflare Pages & Workers", "Airtable Hubs", "Living SOP Systems"]
   }
 ];
 
 export const caseStudies = [
   {
     id: "klock-aviation",
-    title: "Aviation Operating System, Quotation Portal & Growth Funnels",
+    title: "AI-Augmented Aviation Operating Engine & Quotation Portal",
     client: "Klock Aviation (Private Charter & Aviation Services)",
-    tagline: "Unifying private charter quoting, client approval portals, vendor compliance, HR onboarding, and multi-channel acquisition.",
-    badge: "Enterprise Business System",
-    problem: "Private charter inquiries required manual calculation across flight legs, while approvals, manifests, and invoices were scattered across email threads. In parallel, lead generation, landing pages, and vendor compliance tracking lacked a connected operational foundation.",
+    tagline: "Unifying AI-assisted charter quoting, client approval portals, vendor compliance, HR onboarding, and multi-channel acquisition funnels.",
+    badge: "Enterprise AI System",
+    problem: "Private charter inquiries required manual calculation across complex flight legs, while approvals, manifests, and invoices were scattered across email threads. In parallel, lead generation, landing pages, and vendor compliance tracking lacked a connected operational foundation.",
     solution: "Delivered a complete operational and revenue engine. Built an automated charter quoting system with an interactive client approval portal that auto-generates flight agreements and invoices. Created an automated vendor compliance hub with license expiration alerts, paperless staff onboarding, a custom Zoho Catalyst command center for executives, and coordinated marketing funnels, landing pages, Google Ads, and newsletters.",
     metrics: [
       { label: "Quote-to-Invoice Turnaround", before: "48 Hours", after: "< 5 Minutes" },
@@ -59,10 +59,10 @@ export const caseStudies = [
   },
   {
     id: "wowglamdecor",
-    title: "Automated E-Commerce & Content Platform Architecture",
+    title: "AI-Engineered E-Commerce & Publishing Platform",
     client: "WowGlamDecor (E-Commerce Platform)",
-    tagline: "Custom-built and automated leveraging Claude, GitHub, Cloudflare edge hosting, and Hugo.",
-    badge: "AI-Assisted Cloud Architecture",
+    tagline: "Custom-built and automated leveraging Claude AI workflows, GitHub CI/CD, Cloudflare edge hosting, and Hugo.",
+    badge: "AI-Assisted Cloud Platform",
     problem: "Needed a lightning-fast, zero-maintenance digital platform with automated publishing, structured product catalogs, and reliable edge hosting without expensive monthly CMS bloat.",
     solution: "Engineered and automated the platform end-to-end using Claude AI coding workflows, version-controlled GitHub repositories, Hugo static generation, and Cloudflare Pages edge delivery. Built automated asset processing and deployment pipelines.",
     metrics: [
@@ -102,15 +102,15 @@ export const caseStudies = [
 ];
 
 export const techStack = [
-  { name: "Claude & Model Context Protocol (MCP)", role: "AI Workflows & Assistant Integration" },
-  { name: "Zoho One, Catalyst & Creator", role: "Custom Portals & Command Centers" },
+  { name: "Claude & Model Context Protocol (MCP)", role: "AI Agents & Autonomous Data Connectors" },
+  { name: "OpenAI & Tool-Calling APIs", role: "AI Triage, Classification & Content Pipelines" },
+  { name: "Zoho One, Catalyst & Creator", role: "Custom Portals & Management Command Centers" },
   { name: "Supabase & Cloudflare", role: "Relational DBs, Edge Hosting & APIs" },
-  { name: "HubSpot & GoHighLevel", role: "Pipeline & Journey Automation" },
+  { name: "HubSpot & GoHighLevel", role: "Pipeline & Customer Journey Automation" },
   { name: "Make.com & Zapier", role: "Middleware & Webhook Automation" },
-  { name: "OpenAI & Claude LLMs", role: "AI Triage, Classification & Drafting" },
+  { name: "Hugo, GitHub & JAMstack", role: "AI-Assisted Automated Web Platforms" },
   { name: "Airtable & Notion", role: "Relational Tracking & Living SOPs" },
-  { name: "Hugo, GitHub & JAMstack", role: "Modern Automated Web Platforms" },
-  { name: "REST APIs, Webhooks & SQL", role: "Custom Platform Integrations" }
+  { name: "REST APIs, Webhooks & SQL", role: "Custom Multi-Platform Integrations" }
 ];
 
 export const ventureSpotlights = [
@@ -118,10 +118,10 @@ export const ventureSpotlights = [
     name: "Aheri Systems",
     role: "Founder & Lead",
     timeline: "2023 – Present",
-    tagline: "Business Systems, AI Automation & RevOps Studio",
-    description: "Helping service and growth companies build resilient internal operating systems. We eliminate messy spreadsheets, manual quoting friction, and revenue leakages by setting up clean CRM pipelines, custom portals, and automated workflows.",
+    tagline: "AI-Powered Business Systems & RevOps Studio",
+    description: "Helping service and growth companies build resilient internal operating systems. We eliminate messy spreadsheets, manual quoting friction, and revenue leakages by deploying AI-driven workflows, custom portals, and organized CRM pipelines.",
     achievements: [
-      "Built custom platforms, quoting engines, and portals across aviation, e-commerce, real estate, and healthcare.",
+      "Built custom platforms, AI quoting engines, and portals across aviation, e-commerce, real estate, and healthcare.",
       "Engineered custom executive command centers (Zoho Catalyst) and client approval portals.",
       "Custom-built and automated the studio's digital infrastructure using modern cloud and AI tools."
     ],
@@ -145,7 +145,7 @@ export const ventureSpotlights = [
     role: "Platform Creator & Architect",
     timeline: "2024 – Present",
     tagline: "AI-Automated E-Commerce & Lifestyle Platform",
-    description: "Engineered and automated end-to-end leveraging Claude AI coding assistants, GitHub CI/CD, Cloudflare edge hosting, and Hugo static architecture for sub-second global performance.",
+    description: "Engineered and automated end-to-end leveraging Claude AI coding workflows, GitHub CI/CD, Cloudflare edge hosting, and Hugo static architecture for sub-second global performance.",
     achievements: [
       "Automated content generation, product catalog schemas, and asset deployment pipelines.",
       "Achieved sub-400ms global edge delivery with zero server maintenance overhead."
@@ -169,15 +169,15 @@ export const ventureSpotlights = [
 export const experienceTimeline = [
   {
     period: "2023 – Present",
-    role: "Founder & Business Systems Lead",
+    role: "Founder & AI Business Systems Lead",
     organization: "Aheri Systems",
     location: "Global Client Engagements",
     highlights: [
-      "Build custom business systems, quotation engines, client portals, and automation workflows across Zoho One, Zoho Catalyst, Zoho Creator, Supabase, and Cloudflare.",
+      "Build AI-powered business systems, quotation engines, client portals, and automation workflows across Zoho One, Zoho Catalyst, Zoho Creator, Supabase, and Cloudflare.",
+      "Deploy practical AI pipelines and agents using Claude, Model Context Protocol (MCP), and OpenAI for inquiry classification, quoting, and operational triage.",
       "Klock Aviation: Delivered complete private charter quoting portal, vendor compliance hub, paperless HR onboarding, Zoho Catalyst executive command center, funnels, Google Ads, and newsletters.",
       "Sydia Realty: Conducted comprehensive Zoho CRM audit and customer journey optimization to eliminate pipeline leakages from off-plan inquiry to repeat investor retention.",
-      "Mapenzi Connect: Built complete CRM architecture, automated newsletter delivery, and webinar registration-to-attendee workflows.",
-      "Deploy practical AI pipelines and agents using Claude, Model Context Protocol (MCP), and OpenAI for inquiry classification, quoting, and operational triage."
+      "Mapenzi Connect: Built complete CRM architecture, automated newsletter delivery, and webinar registration-to-attendee workflows."
     ]
   },
   {
@@ -197,7 +197,7 @@ export const experienceTimeline = [
     location: "Client Projects",
     highlights: [
       "Engineered customer acquisition funnels, automated email marketing journeys, and client retention touchpoints across 8+ cross-industry clients.",
-      "Built automated reporting dashboards connecting analytics, paid media, and CRM pipeline metrics to provide visibility into customer acquisition cost (CAC) and conversion velocity."
+      "Built automated reporting dashboards connecting analytics, paid media, and CRM pipeline metrics to provide visibility into CAC and conversion velocity."
     ]
   },
   {
@@ -213,33 +213,33 @@ export const experienceTimeline = [
 
 export const thoughtLeadership = [
   {
+    title: "AI as the Core Operational Engine: Moving Beyond One-Off Chatbots",
+    category: "AI & Business Systems",
+    readTime: "6 min read",
+    snippet: "Why AI must be embedded directly into your CRM, database, and webhook middleware rather than treated as a separate tab. How autonomous workflows eliminate human bottlenecks."
+  },
+  {
     title: "Preventing Revenue Leakage: Why Journey Mapping Must Precede Automation",
     category: "RevOps Strategy",
-    readTime: "6 min read",
-    snippet: "Automating a broken customer journey simply accelerates customer churn. Here is how to map critical handoffs, identify leakage points, and protect deal velocity."
+    readTime: "5 min read",
+    snippet: "Automating a broken customer journey simply accelerates customer churn. Here is how to map critical handoffs, identify leakage points, and protect deal velocity with AI."
   },
   {
     title: "Building With AI: How Model Context Protocol (MCP) and Claude Change Operations",
-    category: "AI & Modern Workflows",
+    category: "AI Architecture & Tools",
     readTime: "5 min read",
-    snippet: "Beyond basic chat prompts: How modern AI tools, MCP servers, and API connectors allow operators to build custom internal tools in days rather than quarters."
-  },
-  {
-    title: "Custom Portals Without Bloat: Leveraging Zoho Creator, Supabase & Cloudflare",
-    category: "Systems Architecture",
-    readTime: "6 min read",
-    snippet: "Why modern operators are moving away from expensive monolithic software toward clean relational databases, edge-hosted portals, and single sources of truth."
+    snippet: "How modern AI tools, MCP servers, and API connectors allow operators to build custom internal tools, database connections, and portals in days rather than quarters."
   }
 ];
 
 export const testimonials = [
   {
-    quote: "Rita helped us turn a chaotic sales process into a smooth, organized system. What used to take two days of manual back-and-forth now happens automatically in under 5 minutes.",
+    quote: "Rita helped us turn a chaotic sales process into an intelligent, smooth system. What used to take two days of manual back-and-forth now happens automatically in under 5 minutes.",
     author: "B2B Services Founder",
     role: "Managing Director"
   },
   {
-    quote: "Working with Rita was a breath of fresh air. Her workflows are rock-solid, well-documented, and have saved our team hundreds of hours of manual work.",
+    quote: "Working with Rita was a breath of fresh air. Her AI and automation workflows are rock-solid, well-documented, and have saved our team hundreds of hours of manual work.",
     author: "Operations Lead",
     role: "Head of Operations"
   }
