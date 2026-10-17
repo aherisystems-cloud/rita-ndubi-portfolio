@@ -36,7 +36,7 @@ export default function ContactSection() {
             Let's Work Together
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
-            Whether you are hiring for a business systems & automation role, looking to streamline client intake, or cleaning up your daily workflows, I'd be glad to connect.
+            Whether you are hiring for a business systems & AI automation role, looking to streamline client intake, or cleaning up your daily workflows, I'd be glad to connect.
           </p>
         </div>
 

@@ -18,7 +18,7 @@ export default function Footer() {
               RN
             </div>
             <div className="text-slate-900 font-bold text-sm">
-              Rita Ndubi <span className="text-slate-400 font-normal">· Business Systems & Automation</span>
+              Rita Ndubi <span className="text-slate-400 font-normal">· Business Systems & AI Automation</span>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Rita Ndubi. All rights reserved.
           </div>
           <div>
-            Built with React & Vite · Hosted on Cloudflare Pages
+            Nairobi, Kenya · Working with teams globally
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function InteractiveResume({ onOpenModal }) {
 
   const handleCopyTextResume = () => {
     const resumeText = `RITA NDUBI
-Business Systems & Automation Specialist
+Business Systems & AI Automation Specialist
 Location: ${personalInfo.location}
 LinkedIn: ${personalInfo.linkedinUrl}
 Email: ${personalInfo.email}
