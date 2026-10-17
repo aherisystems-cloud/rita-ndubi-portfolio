@@ -1,5 +1,5 @@
 import React from 'react';
-import { personalInfo, experienceTimeline, corePillars, techStackCategories } from '../data/portfolioData';
+import { personalInfo, experienceTimeline, corePillars, techStack } from '../data/portfolioData';
 import { X, Printer, Download, Mail, MapPin, CheckCircle2, ArrowUpRight } from 'lucide-react';
 import LinkedInIcon from './icons/LinkedInIcon';
 

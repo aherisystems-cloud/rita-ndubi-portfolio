@@ -1,202 +1,116 @@
 export const personalInfo = {
   name: "Rita Ndubi",
-  title: "Business Systems & RevOps Lead",
-  subtitle: "AI & Workflow Automation Specialist | Founder, Aheri Systems",
-  location: "Nairobi, Kenya (UTC+3) · Open to Global Remote Roles",
-  bio: "I design and scale the invisible engines that power high-growth companies. From complex CRM architectures to multi-tool automation pipelines and AI-enabled workflows, I eliminate operational bottlenecks, accelerate revenue velocity, and give remote teams a clean, single source of truth.",
-  status: "Available for Full-time Remote Roles & Strategic Advisory",
+  title: "Business Systems & AI Automation Architect",
+  subtitle: "Revenue Operations · Workflow Engineering · AI Systems Integration",
+  location: "Nairobi (UTC+3) · Collaborating with high-growth teams globally",
+  bio: "I design and scale the operational engines behind high-growth businesses. By uniting CRM architecture, fault-tolerant workflow automations, and practical AI agents, I replace manual drag with predictable revenue pipelines and single sources of truth.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
-  calendlyUrl: "https://calendly.com", // Customizable booking link
+  calendlyUrl: "https://calendly.com",
   email: "rita@aherisystems.com",
   quickStats: [
-    { label: "Workflows Automated", value: "65+", suffix: "" },
-    { label: "Cycle Time Reduction", value: "78%", suffix: "avg" },
-    { label: "Data Integrity Rate", value: "99.9%", suffix: "" },
-    { label: "Remote Ready", value: "100%", suffix: "Async" },
+    { label: "Production Automations Deployed", value: "65+", suffix: "" },
+    { label: "Average Process Latency Drop", value: "78%", suffix: "" },
+    { label: "Data Integrity & Uptime", value: "99.9%", suffix: "" }
   ]
 };
 
 export const corePillars = [
   {
     id: "revops",
-    icon: "Target",
-    title: "Revenue & CRM Architecture",
-    description: "Designing end-to-end sales pipelines, lifecycle stages, deal routing, and automated quoting that turn leaky funnels into predictable revenue engines.",
-    skills: ["Zoho CRM / Bigin", "HubSpot RevOps", "Sales Pipeline Design", "Lead Scoring & Routing", "Deal Automation"]
+    title: "Revenue Operations & CRM Architecture",
+    description: "Designing end-to-end sales pipelines, lifecycle stages, deal routing, and automated quoting engines that convert inbound volume into predictable revenue.",
+    skills: ["Zoho CRM / Bigin", "HubSpot RevOps", "Pipeline Modeling", "Deal Routing", "Dynamic Quoting"]
   },
   {
     id: "automation",
-    icon: "Cpu",
-    title: "Workflow & AI Automation",
-    description: "Connecting disparate SaaS stacks with fault-tolerant middleware, automated error-handling, webhooks, and intelligent LLM-powered data enrichment.",
-    skills: ["Make.com (Integromat)", "Zapier Advanced", "Webhooks & REST APIs", "AI Prompt Pipelines", "n8n"]
+    title: "Workflow Engineering & AI Integration",
+    description: "Connecting disconnected SaaS applications with error-handled middleware, webhooks, and LLM-powered agents that automate triage and document synthesis.",
+    skills: ["Make.com (Integromat)", "Zapier Advanced", "REST APIs & Webhooks", "OpenAI & Claude LLMs", "n8n"]
   },
   {
-    id: "data-governance",
-    icon: "Database",
-    title: "Systems & Data Governance",
-    description: "Constructing relational operational hubs that eliminate spreadsheet chaos, prevent duplicate records, and ensure cross-functional data integrity.",
-    skills: ["Airtable Relational Hubs", "Notion Ops Wikis", "Data Normalization", "Tool Consolidation", "SSOT Architecture"]
-  },
-  {
-    id: "remote-ops",
-    icon: "Globe",
-    title: "Async Remote Operations",
-    description: "Instituting documentation-first cultures, asynchronous communication protocols, and self-serve operational playbooks for distributed teams.",
-    skills: ["Loom / Async Protocol", "Living SOP Documentation", "ClickUp / Asana Ops", "Handoff Governance", "Cross-Timezone Agility"]
+    id: "governance",
+    title: "Systems Governance & Data Integrity",
+    description: "Constructing centralized operational hubs that eliminate spreadsheet chaos, prevent duplicate records, and ensure cross-functional visibility.",
+    skills: ["Airtable Hubs", "Notion Ops Wikis", "Single Source of Truth", "Data Normalization", "Living SOPs"]
   }
 ];
 
 export const caseStudies = [
   {
     id: "revops-engine",
-    title: "Multi-Channel Inbound RevOps & Automated Quoting Engine",
-    client: "Scaling Professional Services & B2B Firm",
+    title: "Multi-Channel RevOps & Instant Quoting Engine",
+    client: "Scaling B2B Professional Services Firm",
+    tagline: "Reducing quotation latency from 48 hours to under 3 minutes with zero manual touches.",
     badge: "Revenue Operations",
-    problem: "Leads arriving from web forms, WhatsApp, and email were manually entered into spreadsheets. Quotes took up to 48 hours to generate, resulting in high drop-off and lost deals.",
-    solution: "Architected an automated ingestion pipeline using Make.com and Zoho CRM. Integrated instant WhatsApp/email lead confirmation, auto-calculated service tier pricing, generated dynamic PDF proposals, and routed hot deals directly to senior reps.",
+    problem: "Inbound requests arrived across web forms, WhatsApp, and email into fragmented spreadsheets. Preparing quotations required manual pricing lookups, taking 48 hours and leading to high prospect drop-off.",
+    solution: "Engineered an automated ingestion pipeline using Make.com and Zoho CRM. Integrated instant WhatsApp/email confirmation, dynamic service tier calculation, on-the-fly PDF proposal generation, and instant round-robin rep dispatch.",
     metrics: [
-      { label: "Quote Generation Time", before: "48 Hours", after: "3 Minutes" },
+      { label: "Quote Turnaround", before: "48 Hours", after: "< 3 Minutes" },
       { label: "Lead Response Rate", before: "32%", after: "94%" },
-      { label: "Monthly Manual Hours Saved", before: "0 hrs", after: "120+ hrs" }
+      { label: "Monthly Capacity Saved", before: "0 hrs", after: "120+ Hours" }
     ],
     architecture: [
-      { step: "1", title: "Capture & Enrich", desc: "Multi-channel webhook capture (Web, WhatsApp Business, Typeform) with instant company domain enrichment." },
-      { step: "2", title: "Deduplication & Scoring", desc: "Automated lookup against existing CRM contacts; dynamic scoring based on deal size and budget fit." },
-      { step: "3", title: "Instant Dynamic Quoting", desc: "Template rendering engine computes customized pricing tiers and creates a trackable PDF quote in real-time." },
-      { step: "4", title: "Smart Team Dispatch", desc: "Round-robin assignment with Slack/Email alerts and 1-click booking link sent to prospect." }
+      { title: "Multi-Channel Ingestion", desc: "Webhook listener captures form and WhatsApp leads, enriching company details via domain API." },
+      { title: "Deduplication & Tier Scoring", desc: "Verifies against existing CRM entities and assigns dynamic deal scoring based on budget parameters." },
+      { title: "Dynamic Proposal Generation", desc: "Custom template engine compiles line items and generates a branded PDF proposal in seconds." },
+      { title: "Automated Rep Dispatch", desc: "Assigns account owner, logs opportunity in CRM, and pings internal Slack channel with 1-click booking link." }
     ],
     tools: ["Zoho CRM", "Make.com", "WhatsApp Business API", "Google Workspace", "Slack Webhooks"]
   },
   {
     id: "client-onboarding",
-    title: "Zero-Touch Client Onboarding & Project Provisioning Hub",
-    client: "Creative & Digital Operations Agency",
-    badge: "Process Automation",
-    problem: "When a deal closed, onboarding required 14 manual steps across contracts, invoice creation, folder provisioning, and task assignation, causing 4-day kickoff delays.",
-    solution: "Engineered a closed-won trigger workflow that automatically generates DocuSign/Zoho Sign agreements, creates Stripe/payment milestones, spins up standardized Google Drive & ClickUp project spaces, and sends welcome kits.",
+    title: "Zero-Touch Client Onboarding & Project Provisioning",
+    client: "Digital Growth & Creative Agency",
+    tagline: "Automating 14 disjointed post-sale steps into a unified 10-minute automated kickoff.",
+    badge: "Workflow Engineering",
+    problem: "When a deal closed, onboarding required 14 manual steps across contracts, invoices, folder provisioning, and task boards, causing 4-day kickoff delays and inconsistent client experiences.",
+    solution: "Engineered a closed-won trigger pipeline that automatically generates agreements, invoices the initial milestone, provisions standardized ClickUp project structures and Google Drive folders, and issues client welcome kits.",
     metrics: [
-      { label: "Kickoff Latency", before: "4 Days", after: "Instant (10m)" },
-      { label: "Onboarding Error Rate", before: "22%", after: "< 0.5%" },
+      { label: "Kickoff Latency", before: "4 Days", after: "10 Minutes" },
+      { label: "Provisioning Error Rate", before: "22%", after: "< 0.5%" },
       { label: "Client Satisfaction (CSAT)", before: "3.8 / 5.0", after: "4.9 / 5.0" }
     ],
     architecture: [
-      { step: "1", title: "Deal Closed-Won", desc: "Trigger fired from CRM stage transition with deal metadata and line items." },
-      { step: "2", title: "Agreement & Payment", desc: "Auto-populates master services agreement (MSA) and initial deposit invoice." },
-      { step: "3", title: "Workspace Provisioning", desc: "Clones ClickUp project template, creates structured Drive folders with permissions, and adds client to portal." },
-      { step: "4", title: "Team & Client Briefing", desc: "Generates AI executive summary of client goals and posts to internal Slack channel with kickoff schedule." }
+      { title: "Closed-Won Event Trigger", desc: "Fired from CRM stage progression with deal metadata, line items, and stakeholder contacts." },
+      { title: "Agreement & Payment Sync", desc: "Auto-populates master services agreement (MSA) via Zoho Sign and generates initial deposit invoice." },
+      { title: "Workspace & File Hierarchy", desc: "Clones pre-configured ClickUp project board, builds permissioned Drive folders, and invites client." },
+      { title: "AI Executive Briefing", desc: "Summarizes client objectives and posts operational overview directly into team collaboration channels." }
     ],
     tools: ["Make.com", "ClickUp", "Google Drive API", "Zoho Sign", "Stripe"]
   },
   {
     id: "ai-triage",
-    title: "AI-Powered Customer Operations & Smart Triage Dispatch",
+    title: "AI-Powered Operations & Inquiry Triage Agent",
     client: "High-Volume E-Commerce & Service Provider",
-    badge: "AI Implementation",
-    problem: "Support inbox received 500+ inquiries weekly. Reps spent 60% of their day sorting routine FAQs from critical operational emergencies.",
-    solution: "Implemented an intelligent triage pipeline using OpenAI LLM embeddings connected to the ticketing desk. Auto-classifies sentiment, extracts order IDs, drafts context-aware responses for review, and routes high-priority escalations immediately.",
+    tagline: "Eliminating 65% of repetitive agent workload through intelligent context-aware classification.",
+    badge: "AI Systems",
+    problem: "Support and operations inboxes received 500+ inquiries weekly. Team members spent over half their day sorting routine order checks from urgent operational issues.",
+    solution: "Implemented an intelligent triage pipeline using OpenAI API connected directly to ticketing and order management. Auto-classifies sentiment, extracts order IDs, drafts context-aware responses against company SOPs, and routes high-priority escalations immediately.",
     metrics: [
       { label: "First Response Time", before: "6.5 Hours", after: "12 Minutes" },
-      { label: "Rep Manual Effort", before: "100%", after: "-65%" },
-      { label: "Escalation Accuracy", before: "74%", after: "98.2%" }
+      { label: "Routine Ticket Reduction", before: "0%", after: "-65%" },
+      { label: "Classification Accuracy", before: "74%", after: "98.2%" }
     ],
     architecture: [
-      { step: "1", title: "Ingestion & Sanitization", desc: "Pulls incoming email/ticket text, sanitizes PII, and runs intent classification." },
-      { step: "2", title: "Knowledge Retrieval", desc: "Queries company knowledge base vector embeddings for verified standard operating procedures." },
-      { step: "3", title: "Draft Response Generation", desc: "Generates high-accuracy draft answer for rep approval with 1-click send." },
-      { step: "4", title: "SLA Monitor & Alert", desc: "Tracks time-to-reply against service level agreements and pings on-call lead if breached." }
+      { title: "Payload Ingestion & Sanitation", desc: "Pulls incoming message payloads, sanitizes sensitive customer data, and parses core intent." },
+      { title: "Knowledge Base Retrieval", desc: "Queries structured company SOPs and policies to gather exact resolution steps." },
+      { title: "Contextual Draft Generation", desc: "Generates high-accuracy response draft for human review and 1-click dispatch." },
+      { title: "Escalation & SLA Monitoring", desc: "Flags mission-critical requests directly to on-call operational leads with full context." }
     ],
-    tools: ["OpenAI API", "Zapier", "Help Scout / Zendesk", "Airtable", "Slack"]
-  },
-  {
-    id: "biasharapros",
-    title: "BiasharaPros Platform Infrastructure & Systems Engine",
-    client: "Internal Venture / Aheri Systems",
-    badge: "Product & Systems Build",
-    problem: "MSMEs across Kenya struggled to navigate fragmented compliance regulations, tax requirements, and reliable vendor directories, with no single, clean digital tool.",
-    solution: "Designed and rolled out BiasharaPros—a structured knowledge and interactive utility platform featuring automated calculators, localized compliance roadmaps, and a verified business directory.",
-    metrics: [
-      { label: "Active Directory Entries", before: "0", after: "350+ Verified" },
-      { label: "Monthly MSME Users", before: "0", after: "10,000+" },
-      { label: "Resource Search Time", before: "Hours", after: "< 30 Seconds" }
-    ],
-    architecture: [
-      { step: "1", title: "Directory Verification Engine", desc: "Automated onboarding pipeline for vetting and approving local suppliers and service firms." },
-      { step: "2", title: "Interactive Calculators", desc: "Client-side tax, payroll, and margin computational tools built for instant clarity." },
-      { step: "3", title: "Modular Knowledge Base", desc: "Structured regulatory workflows mapped to county and national requirements." }
-    ],
-    tools: ["Web Platforms", "Airtable Backend", "Automation Webhooks", "Analytics", "SEO Strategy"]
+    tools: ["OpenAI API", "Zapier / Make", "Zendesk / Help Scout", "Airtable", "Slack"]
   }
 ];
 
-export const techStackCategories = [
-  {
-    category: "CRM & Revenue Platforms",
-    description: "Central nervous systems for pipeline velocity, contact governance, and deal management.",
-    tools: [
-      { name: "Zoho CRM & Bigin", level: "Expert / Architect", highlight: "Full workflow rules, Blueprint, custom layouts" },
-      { name: "HubSpot", level: "Advanced", highlight: "Pipeline setup, lifecycle automation, deal stages" },
-      { name: "Salesforce Essentials", level: "Proficient", highlight: "Object models, lead routing, reporting" }
-    ]
-  },
-  {
-    category: "Automation & Middleware",
-    description: "The connective tissue tying all tools, webhooks, and data structures together.",
-    tools: [
-      { name: "Make.com (Integromat)", level: "Expert / Power User", highlight: "Complex routers, error handlers, data stores" },
-      { name: "Zapier", level: "Expert", highlight: "Multi-step zaps, webhooks, code steps (JS/Python)" },
-      { name: "Webhooks & REST APIs", level: "Advanced", highlight: "Payload formatting, token auth, rate-limit safety" },
-      { name: "n8n", level: "Proficient", highlight: "Self-hosted workflow orchestration" }
-    ]
-  },
-  {
-    category: "Databases & Operational Hubs",
-    description: "Relational data stores and structured internal wikis creating single sources of truth.",
-    tools: [
-      { name: "Airtable", level: "Expert", highlight: "Relational modeling, interface designer, automations" },
-      { name: "Notion", level: "Advanced", highlight: "Operating systems, SOP databases, sprint tracking" },
-      { name: "Google Workspace & Sheets", level: "Advanced", highlight: "AppSheet, structured formulas, workflow exports" }
-    ]
-  },
-  {
-    category: "AI & Productivity Enablers",
-    description: "Leveraging LLMs and modern AI tools to augment team output and triage operations.",
-    tools: [
-      { name: "OpenAI / Claude APIs", level: "Advanced", highlight: "Prompt engineering, automated classification, JSON mode" },
-      { name: "AI Agent Workflows", level: "Advanced", highlight: "Summarization, document parsing, sentiment routing" }
-    ]
-  },
-  {
-    category: "Project & Remote Collaboration",
-    description: "Asynchronous management stacks that maintain momentum without meeting bloat.",
-    tools: [
-      { name: "ClickUp & Asana", level: "Expert", highlight: "Custom statuses, automation rules, workload views" },
-      { name: "Slack & Loom", level: "Expert", highlight: "Async standups, workflow bot alerts, video SOPs" }
-    ]
-  }
-];
-
-export const remotePhilosophy = [
-  {
-    title: "Async-First By Default",
-    desc: "Real productivity happens in flow state, not marathon status meetings. I communicate through thorough written briefs, Loom walk-throughs, and structured tickets—freeing hours for deep execution across any timezone.",
-    icon: "Clock"
-  },
-  {
-    title: "Living Documentation & SOPs",
-    desc: "A process doesn't truly exist until it is documented and repeatable by anyone. I build centralized, searchable SOP libraries that make new hire onboarding seamless and reduce dependency on key individuals.",
-    icon: "BookOpen"
-  },
-  {
-    title: "Tool Governance & De-bloating",
-    desc: "More software rarely solves messy processes. I audit stack redundancies, eliminate unused licenses, unify data into a single source of truth, and ensure every tool earns its place in the budget.",
-    icon: "ShieldCheck"
-  },
-  {
-    title: "Fail-Safe Automation Architecture",
-    desc: "Automations should reduce stress, not create hidden failures. I design all pipelines with built-in error traps, automatic retries, fallback routing, and alert notifications so breakages never go unnoticed.",
-    icon: "Zap"
-  }
+export const techStack = [
+  { name: "Zoho One & CRM", role: "Core Enterprise RevOps" },
+  { name: "HubSpot", role: "Pipeline & Lifecycle Ops" },
+  { name: "Make.com", role: "Middleware & API Pipelines" },
+  { name: "Zapier", role: "Workflow Automation" },
+  { name: "OpenAI & Claude", role: "AI Agents & Triage" },
+  { name: "Airtable", role: "Relational Operational Hubs" },
+  { name: "ClickUp & Asana", role: "Project & Process Management" },
+  { name: "Notion", role: "Living SOP Systems" },
+  { name: "REST APIs & Webhooks", role: "Custom Integration Layer" }
 ];
 
 export const ventureSpotlights = [
@@ -205,11 +119,11 @@ export const ventureSpotlights = [
     role: "Founder & Lead Systems Strategist",
     timeline: "2022 – Present",
     tagline: "Business Systems & Automation Studio for Growing Teams",
-    description: "Founded to bridge the operational gap for businesses scaling from 2 to 50 employees. We replace manual friction, spreadsheet bottlenecks, and slow response times with robust CRM pipelines and automated operational infrastructure.",
+    description: "Bridging the operational divide for companies scaling from 2 to 50 employees. We eliminate spreadsheet sprawl, manual friction, and slow turnaround times by architecting bespoke CRM pipelines and automated operational infrastructure.",
     achievements: [
-      "Consulted and built custom workflow engines for 30+ service and B2B clients.",
-      "Delivered an average 70% decrease in manual client onboarding latency.",
-      "Created standardized implementation playbooks for Zoho One, Make.com, and Airtable."
+      "Consulted and engineered workflow solutions for 30+ B2B and service companies globally.",
+      "Delivered an average 70% decrease in client onboarding latency across client engagements.",
+      "Developed standardized, repeatable implementation blueprints for Zoho One, Make.com, and Airtable."
     ],
     link: "https://aherisystems.com"
   },
@@ -218,11 +132,11 @@ export const ventureSpotlights = [
     role: "Platform Creator & Operations Lead",
     timeline: "2023 – Present",
     tagline: "Compliance, Calculators & Directory Infrastructure for East African MSMEs",
-    description: "An informational and technological resource hub under Aheri Systems providing localized compliance roadmaps, interactive financial calculators, and a verified supplier directory to empower regional businesses.",
+    description: "A digital utility and informational ecosystem under Aheri Systems providing localized compliance roadmaps, interactive financial calculators, and a verified supplier directory to empower regional businesses.",
     achievements: [
-      "Engineered automated compliance navigator reducing regulatory research from days to minutes.",
-      "Built interactive tax and financial calculators used by over 10,000 monthly business operators.",
-      "Architected clean directory ingestion and verification system."
+      "Built automated compliance navigator reducing regulatory discovery from days to minutes.",
+      "Engineered interactive tax and payroll calculators utilized by over 10,000 monthly active users.",
+      "Created structured directory onboarding and data verification pipelines."
     ],
     link: "https://biasharapros.com"
   }
@@ -233,31 +147,31 @@ export const experienceTimeline = [
     period: "2022 – Present",
     role: "Founder & Lead Business Systems Strategist",
     organization: "Aheri Systems",
-    location: "Nairobi / Remote",
+    location: "Global Client Engagements",
     highlights: [
-      "Architect bespoke RevOps pipelines, CRM implementations (Zoho, Bigin, HubSpot), and custom automation flows for distributed clients.",
-      "Audit existing operational tool stacks, reducing software expenditure by up to 35% through consolidation and native integrations.",
-      "Deploy AI-driven automation pipelines for customer inquiry triage, content workflows, and document processing."
+      "Architect bespoke RevOps pipelines, CRM implementations (Zoho, Bigin, HubSpot), and custom automation flows for high-growth businesses.",
+      "Audit operational tool stacks, cutting software redundancies by up to 35% through consolidated data architectures and native integrations.",
+      "Deploy AI-driven automation pipelines for inquiry triage, proposal generation, and operational data synchronization."
     ]
   },
   {
     period: "2023 – Present",
     role: "Product & Operations Architect",
     organization: "BiasharaPros",
-    location: "Remote",
+    location: "Platform Operations",
     highlights: [
-      "Designed and launched end-to-end directory architecture and interactive calculators for 10k+ monthly active users.",
-      "Structured content operations, contributor guidelines, and automated SEO publishing workflows."
+      "Designed and launched end-to-end directory architecture and interactive computational tools serving 10,000+ monthly active business operators.",
+      "Standardized content operations, contributor guidelines, and automated SEO publishing workflows."
     ]
   },
   {
     period: "2020 – 2022",
-    role: "Operations & Digital Marketing Strategist",
-    organization: "Growth Consultancy & Agency Engagements",
-    location: "Remote",
+    role: "Operations & Digital Systems Strategist",
+    organization: "Consultancy & Agency Engagements",
+    location: "Cross-Functional Projects",
     highlights: [
-      "Managed multi-channel lead acquisition systems, email marketing automation, and conversion rate optimization campaigns.",
-      "Standardized client reporting dashboards using automated data syncs from Google Analytics, Meta Ads, and CRM data."
+      "Managed multi-channel lead acquisition systems, automated email marketing pipelines, and reporting workflows.",
+      "Standardized client analytics dashboards connecting Google Analytics, ad networks, and CRM pipeline metrics."
     ]
   }
 ];
@@ -265,66 +179,33 @@ export const experienceTimeline = [
 export const thoughtLeadership = [
   {
     title: "Why Most CRM Implementations Fail (And How Architecture Saves Them)",
-    category: "CRM Strategy",
+    category: "CRM Architecture",
     readTime: "6 min read",
-    snippet: "Buying expensive CRM software without first mapping your sales stages and data model is like pouring concrete before laying the foundation. Here is the architectural blueprint to get it right."
+    snippet: "Investing in CRM software before mapping your lifecycle stages and data relationships is like pouring concrete without a blueprint. Here is how to architect for scale."
   },
   {
-    title: "The 5 Invisible Bottlenecks Killing Your Inbound Lead Velocity",
-    category: "RevOps",
-    readTime: "8 min read",
-    snippet: "If your team takes more than 15 minutes to follow up with an inbound lead, your conversion probability drops by 391%. How to build instant, automated quotation and routing engines."
-  },
-  {
-    title: "The Remote Operations Manifesto: Moving from Slack Chaos to Asynchronous Calm",
-    category: "Remote Operations",
-    readTime: "5 min read",
-    snippet: "A distributed team cannot function like an in-person office transplanted to Slack. How documentation-first culture, Loom SOPs, and structured handoffs unlock true leverage."
-  },
-  {
-    title: "Beyond the Hype: Practical AI Automation in Everyday Business Workflows",
-    category: "AI & Automation",
+    title: "The Inbound Velocity Rule: How Instant Quotation Closes 3x More Deals",
+    category: "RevOps Engineering",
     readTime: "7 min read",
-    snippet: "Instead of generic chatbots, explore how prompt pipelines, automated categorization, and vector embeddings solve real operational bottlenecks in support and lead enrichment."
+    snippet: "Why taking more than 15 minutes to quote high-intent buyers kills deal velocity, and how to build zero-touch quotation engines using Make.com and CRM webhooks."
+  },
+  {
+    title: "Practical AI for Operations: Moving Beyond Chatbots to Real Business Pipelines",
+    category: "AI Automation",
+    readTime: "5 min read",
+    snippet: "A pragmatic guide to deploying LLMs where they actually deliver measurable ROI—inquiry categorization, document synthesis, and automated exception routing."
   }
 ];
 
 export const testimonials = [
   {
-    quote: "Rita transformed our chaotic sales process into a finely tuned machine. What used to take our sales team 2 days of manual back-and-forth now happens automatically in under 5 minutes. Her systems thinking is exceptional.",
+    quote: "Rita transformed our sales operations into a predictable engine. What used to take our team two days of manual back-and-forth now happens automatically in under 5 minutes. Her systems architecture is unmatched.",
     author: "B2B Agency Founder",
-    role: "Managing Director",
-    company: "Digital Growth Partner"
+    role: "Managing Director"
   },
   {
-    quote: "Working with Rita in a remote environment was an absolute breeze. Her written briefs are clearer than 90% of meetings I attend, and her automation workflows haven't failed once in over 18 months of continuous operation.",
+    quote: "Her operational clarity is extraordinary. The automation workflows she architected haven't missed a beat in over 18 months, giving our team back hundreds of hours every quarter.",
     author: "Head of Operations",
-    role: "Operations Lead",
-    company: "SaaS Scale-up"
-  },
-  {
-    quote: "Rita does not just install software; she re-architects how your business actually functions. The ROI on our Zoho CRM and Make.com implementation paid for itself within the first 60 days.",
-    author: "Managing Partner",
-    role: "Executive Partner",
-    company: "Consulting Services Firm"
-  }
-];
-
-export const faqs = [
-  {
-    q: "What roles are you actively looking for?",
-    a: "I am targeting full-time remote roles as Business Systems Lead, RevOps Manager, Operations Architect, or Automation Specialist with forward-thinking remote and distributed companies. I also accept high-impact strategic advisory and systems overhaul contracts."
-  },
-  {
-    q: "What is your work authorization and remote availability?",
-    a: "I am based in Nairobi, Kenya (UTC+3 / EAT). I have extensive experience operating asynchronously across European (CET/GMT) and North American (EST/PST) working hours with dedicated daily overlap windows."
-  },
-  {
-    q: "How do you approach a messy or broken operational stack?",
-    a: "Every engagement begins with a Systems Audit: mapping the current journey, identifying data leaks, interviewing key stakeholders, and drafting an architectural blueprint. We fix the process first, standardize data second, and automate third."
-  },
-  {
-    q: "Do you build custom code or stick to no-code/low-code?",
-    a: "I specialize in low-code architectures (Make, Zapier, Webhooks, API connectors, custom JSON payloads, and JavaScript code steps) because they offer the optimal balance of rapid deployment, maintainability by non-engineers, and rock-solid reliability."
+    role: "Operations Director"
   }
 ];

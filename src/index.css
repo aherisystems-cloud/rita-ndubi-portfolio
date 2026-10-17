@@ -5,53 +5,59 @@
 @layer base {
   html {
     color-scheme: dark;
+    scroll-behavior: smooth;
   }
   body {
-    @apply bg-[#050811] text-slate-100 min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-950;
+    @apply bg-[#070a12] text-slate-100 min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-950 font-sans;
+    letter-spacing: -0.01em;
   }
 }
 
-/* Custom glow and backdrop effects */
-.glow-emerald {
-  box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.15);
+/* Lit-Glass & Clean Ambient Aesthetics */
+.lit-glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.glow-card {
-  transition: all 0.3s ease;
+.lit-card {
+  background: rgba(13, 19, 33, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.glow-card:hover {
-  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.2);
-  border-color: rgba(16, 185, 129, 0.4);
+.lit-card:hover {
+  background: rgba(18, 26, 44, 0.65);
+  border-color: rgba(52, 211, 153, 0.25);
+  transform: translateY(-2px);
 }
 
-.glass-panel {
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.editorial-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400;
+.accent-gradient {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.gradient-badge {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 78, 59, 0.3) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
-/* Custom subtle scrollbar */
+/* Subtle scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #050811;
+  background: #070a12;
 }
 ::-webkit-scrollbar-thumb {
   background: #1e293b;
-  border-radius: 4px;
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #34d399;
 }

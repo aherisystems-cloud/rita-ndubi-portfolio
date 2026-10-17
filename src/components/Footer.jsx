@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { Cloud, Heart, ArrowUp, Mail } from 'lucide-react';
+import { ArrowUp, Mail } from 'lucide-react';
 import LinkedInIcon from './icons/LinkedInIcon';
 
 export default function Footer() {
@@ -9,65 +9,61 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-slate-900 bg-[#03060c] py-12 text-slate-400 text-xs font-mono">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-900">
+    <footer className="border-t border-white/[0.06] py-12 text-slate-500 text-xs font-mono">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-white/[0.06]">
           
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-bold text-emerald-400 text-sm">
+            <div className="w-7 h-7 rounded-lg bg-white/[0.05] border border-white/[0.08] flex items-center justify-center font-semibold text-white text-xs">
               RN
             </div>
-            <div>
-              <div className="text-white font-bold text-sm">Rita Ndubi</div>
-              <div className="text-slate-500 text-[11px]">Business Systems & RevOps Lead</div>
+            <div className="text-white font-medium text-sm">
+              Rita Ndubi <span className="text-slate-500 font-normal">· Business Systems & AI Architect</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-6 text-slate-400">
-            <a href="#pillars" className="hover:text-emerald-400 transition-colors">Pillars</a>
-            <a href="#case-studies" className="hover:text-emerald-400 transition-colors">Case Studies</a>
-            <a href="#stack" className="hover:text-emerald-400 transition-colors">Tool Stack</a>
-            <a href="#remote" className="hover:text-emerald-400 transition-colors">Remote</a>
-            <a href="#ventures" className="hover:text-emerald-400 transition-colors">Ventures</a>
-            <a href="#resume" className="hover:text-emerald-400 transition-colors">Resume</a>
+          <div className="flex items-center gap-5 text-slate-400">
+            <a href="#architecture" className="hover:text-white transition-colors">Architecture</a>
+            <a href="#case-studies" className="hover:text-white transition-colors">Case Studies</a>
+            <a href="#stack" className="hover:text-white transition-colors">Stack</a>
+            <a href="#ventures" className="hover:text-white transition-colors">Ventures</a>
+            <a href="#experience" className="hover:text-white transition-colors">Experience</a>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <a
               href={personalInfo.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors"
+              className="p-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-white transition-colors"
               title="LinkedIn"
             >
-              <LinkedInIcon className="w-4 h-4" />
+              <LinkedInIcon className="w-3.5 h-3.5" />
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors"
+              className="p-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-white transition-colors"
               title="Email"
             >
-              <Mail className="w-4 h-4" />
+              <Mail className="w-3.5 h-3.5" />
             </a>
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800 transition-colors ml-2"
+              className="p-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-white transition-colors ml-2 cursor-pointer"
               title="Back to Top"
             >
-              <ArrowUp className="w-4 h-4" />
+              <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
 
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-[11px] text-slate-500">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px]">
           <div>
             © {new Date().getFullYear()} Rita Ndubi. All rights reserved.
           </div>
-
-          <div className="flex items-center gap-2">
-            <Cloud className="w-3.5 h-3.5 text-orange-400" />
-            <span>Optimized for Cloudflare Pages Global Edge Network</span>
+          <div>
+            Built with React & Vite · Hosted on Cloudflare Pages
           </div>
         </div>
       </div>
