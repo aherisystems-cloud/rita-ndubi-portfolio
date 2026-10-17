@@ -1,6 +1,6 @@
 import React from 'react';
 import { ventureSpotlights } from '../data/portfolioData';
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function VentureSpotlight() {
   return (
@@ -9,13 +9,13 @@ export default function VentureSpotlight() {
         
         <div className="max-w-2xl mb-14">
           <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
-            Ventures & Built Systems
+            Ventures
           </div>
           <h2 className="text-3xl font-bold text-white tracking-tight mb-3">
-            Platforms Engineered & Operated
+            Ventures I Build & Run
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Beyond client engagements, I conceive and scale ventures that resolve operational friction through systems thinking, localized tooling, and automation.
+            Beyond client work, I build and operate platforms that solve practical operational and workflow challenges for growing teams and regional businesses.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function VentureSpotlight() {
               </div>
 
               <div className="pt-4 border-t border-white/[0.06] text-[11px] font-mono text-slate-500">
-                Live & Operating
+                Live Platform
               </div>
             </div>
           ))}

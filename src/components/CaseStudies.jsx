@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { caseStudies } from '../data/portfolioData';
-import { ArrowRight, Workflow, CheckCircle2, TrendingUp, Layers } from 'lucide-react';
+import { ArrowRight, TrendingUp, Layers } from 'lucide-react';
 
 export default function CaseStudies() {
   const [selectedCaseId, setSelectedCaseId] = useState(caseStudies[0].id);
@@ -14,13 +14,13 @@ export default function CaseStudies() {
         {/* Section Header */}
         <div className="max-w-2xl mb-12">
           <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
-            Selected Work & Architecture
+            Selected Client Work
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
-            Production Systems & Quantified Impact
+            Systems Built & Measurable Results
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            Real systems engineered for scale. Explore the exact bottlenecks, automated middleware, and measurable business ROI delivered in live environments.
+            Real projects with practical outcomes. Here is how I identified the bottlenecks, connected the right tools, and eliminated hours of repetitive manual work.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function CaseStudies() {
             </div>
           </div>
 
-          {/* Problem vs Solution: Calm & Refined */}
+          {/* Problem vs Solution */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/[0.05]">
               <div className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2 font-medium">
@@ -89,7 +89,7 @@ export default function CaseStudies() {
 
             <div className="p-6 rounded-2xl bg-emerald-500/[0.03] border border-emerald-500/20">
               <div className="text-xs font-mono uppercase tracking-wider text-emerald-400 mb-2 font-medium">
-                The Engineered System
+                The Solution
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
                 {activeCase.solution}
@@ -97,11 +97,11 @@ export default function CaseStudies() {
             </div>
           </div>
 
-          {/* Quantified Metrics: Calm & High Contrast */}
+          {/* Quantified Metrics */}
           <div>
             <div className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
               <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Measurable Business ROI</span>
+              <span>Measurable Results & Time Saved</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {activeCase.metrics.map((m) => (
@@ -120,21 +120,21 @@ export default function CaseStudies() {
             </div>
           </div>
 
-          {/* Architecture Pipeline Flow */}
+          {/* Workflow Steps Flow */}
           <div className="pt-2">
             <div className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
               <Layers className="w-3.5 h-3.5 text-emerald-400" />
-              <span>System Flow & Execution Stages</span>
+              <span>Step-by-Step Workflow</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {activeCase.architecture.map((step, idx) => (
+              {(activeCase.workflowSteps || []).map((step, idx) => (
                 <div
                   key={step.title}
                   className="p-4 rounded-2xl bg-white/[0.015] border border-white/[0.05] flex flex-col justify-between"
                 >
                   <div>
                     <div className="text-[10px] font-mono text-emerald-400/80 mb-2">
-                      Stage 0{idx + 1}
+                      Step 0{idx + 1}
                     </div>
                     <div className="text-xs font-bold text-white mb-1.5">
                       {step.title}

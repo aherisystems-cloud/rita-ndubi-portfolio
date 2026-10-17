@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo, experienceTimeline, corePillars, techStack } from '../data/portfolioData';
-import { X, Printer, Download, Mail, MapPin, CheckCircle2, ArrowUpRight } from 'lucide-react';
+import { X, Printer, Mail, MapPin } from 'lucide-react';
 import LinkedInIcon from './icons/LinkedInIcon';
 
 export default function ResumeModal({ isOpen, onClose }) {
@@ -19,14 +19,14 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
             <span className="font-mono text-xs sm:text-sm font-semibold text-white">
-              Executive Resume / CV — Rita Ndubi
+              Resume / CV — Rita Ndubi
             </span>
           </div>
 
           <div className="flex items-center gap-2">
             <button
               onClick={handlePrint}
-              className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono flex items-center gap-1.5 transition-colors"
+              className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono flex items-center gap-1.5 transition-colors cursor-pointer"
               title="Print or Save to PDF"
             >
               <Printer className="w-3.5 h-3.5" />
@@ -34,7 +34,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             </button>
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
@@ -75,20 +75,20 @@ export default function ResumeModal({ isOpen, onClose }) {
             </div>
           </div>
 
-          {/* Executive Summary */}
+          {/* Professional Summary */}
           <div>
             <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-2">
-              Executive Summary
+              Professional Summary
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
               {personalInfo.bio}
             </p>
           </div>
 
-          {/* Core Competencies Matrix */}
+          {/* Core Competencies */}
           <div>
             <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
-              Core Competencies & Systems Capabilities
+              Core Skills & Systems Expertise
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               {corePillars.map(p => (
@@ -129,13 +129,31 @@ export default function ResumeModal({ isOpen, onClose }) {
             </div>
           </div>
 
+          {/* Education & Financial Background */}
+          <div>
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
+              Education & Background
+            </h2>
+            <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1 text-xs">
+              <div className="font-bold text-white text-sm">
+                Bachelor of Business Management (Finance & Banking)
+              </div>
+              <div className="text-slate-400">
+                Moi University · Second Class Upper Division
+              </div>
+              <div className="text-slate-500 text-[11px] pt-1">
+                Provides the financial literacy and commercial process rigor applied across all CRM, quotation, and revenue operations workflows.
+              </div>
+            </div>
+          </div>
+
           {/* Technical Toolkit */}
           <div>
             <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
               Key Platforms & Software
             </h2>
             <div className="flex flex-wrap gap-1.5 text-xs font-mono">
-              {["Zoho CRM & Bigin", "Make.com (Integromat)", "Zapier", "HubSpot", "Airtable", "Notion", "ClickUp", "OpenAI API", "REST Webhooks", "Slack / Loom", "Google Workspace"].map(tool => (
+              {["Zoho One & CRM", "Make.com (Integromat)", "Zapier", "HubSpot", "GoHighLevel", "Airtable", "Notion", "ClickUp", "OpenAI & Claude Tools", "REST Webhooks", "Google Workspace"].map(tool => (
                 <span key={tool} className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
                   {tool}
                 </span>

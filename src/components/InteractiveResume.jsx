@@ -7,7 +7,7 @@ export default function InteractiveResume({ onOpenModal }) {
 
   const handleCopyTextResume = () => {
     const resumeText = `RITA NDUBI
-Business Systems & AI Automation Architect
+Business Systems & Automation Specialist
 Location: ${personalInfo.location}
 LinkedIn: ${personalInfo.linkedinUrl}
 Email: ${personalInfo.email}
@@ -34,13 +34,13 @@ ${exp.highlights.map(h => `- ${h}`).join('\n')}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div className="max-w-2xl">
             <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
-              Career Trajectory
+              Experience
             </div>
             <h2 className="text-3xl font-bold text-white tracking-tight mb-3">
-              Leadership & Operational Experience
+              Work Experience & Background
             </h2>
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-              Proven experience building automation systems, unblocking cross-functional teams, and architecting scalable operations.
+              Proven experience setting up CRM systems, automating everyday business tasks, and helping cross-functional teams run with clarity.
             </p>
           </div>
 

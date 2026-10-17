@@ -30,13 +30,13 @@ export default function ContactSection() {
         
         <div className="max-w-2xl mb-16 text-left">
           <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
-            Initiate Collaboration
+            Contact
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
-            Let's Engineer Your Next Growth Stage
+            Let's Work Together
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            Whether you are hiring for a critical business systems & automation role, seeking a comprehensive systems audit, or looking to streamline your operations, let's start a conversation.
+            Whether you are hiring for a business systems & automation role, looking to streamline client intake, or cleaning up your daily workflows, I'd be glad to connect.
           </p>
         </div>
 
@@ -152,14 +152,14 @@ export default function ContactSection() {
 
                   <div>
                     <label className="block text-[11px] font-mono text-slate-400 uppercase mb-1.5">
-                      Message / Systems Scope *
+                      Message *
                     </label>
                     <textarea
                       required
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Describe your current systems bottlenecks, operational objectives, or role..."
+                      placeholder="Tell me a bit about your team, what you're looking to automate, or the role you're hiring for..."
                       className="w-full px-4 py-2.5 rounded-xl bg-white/[0.02] border border-white/[0.08] text-white text-sm focus:outline-none focus:border-emerald-500 transition-colors placeholder:text-slate-600"
                     />
                   </div>

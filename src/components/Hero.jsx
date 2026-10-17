@@ -14,19 +14,19 @@ export default function Hero({ onOpenResume }) {
         {/* Subtle pill badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-slate-300 text-xs font-medium mb-8 backdrop-blur-md">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-          <span>Business Systems & AI Automation Architect</span>
+          <span>Business Systems & Automation Specialist</span>
           <span className="text-slate-600">·</span>
-          <span className="text-slate-400">Collaborating Globally</span>
+          <span className="text-slate-400">Working Globally</span>
         </div>
 
         {/* Hero Title */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-8 max-w-4xl mx-auto">
-          Architecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300">Scalable Systems</span> & Predictable Revenue Engines
+          Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300">Clean Systems</span> & Automated Workflows That Scale
         </h1>
 
         {/* Narrative Description */}
         <p className="text-base sm:text-lg md:text-xl text-slate-400 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-          I bridge the gap between business operations and modern technology. From custom CRM lifecycles to fault-tolerant workflow automations and practical AI agents, I build the internal infrastructure that allows ambitious companies to scale with clarity.
+          I help growing companies get their CRM tools, customer intake, and daily operations running smoothly. By removing manual copy-pasting and connecting everyday tools, I eliminate operational friction so your team can focus on growth.
         </p>
 
         {/* CTAs */}
@@ -35,7 +35,7 @@ export default function Hero({ onOpenResume }) {
             href="#case-studies"
             className="px-6 py-3 rounded-xl font-semibold text-slate-950 bg-white hover:bg-slate-100 shadow-sm transition-all flex items-center gap-2 text-sm"
           >
-            Explore Selected Systems
+            View Case Studies & Results
             <ArrowRight className="w-4 h-4" />
           </a>
 
@@ -48,16 +48,16 @@ export default function Hero({ onOpenResume }) {
           </button>
         </div>
 
-        {/* Lit-Glass System Architecture Preview Canvas */}
+        {/* Lit-Glass System Workflow Preview Canvas */}
         <div className="lit-card rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto text-left mb-16">
           <div className="flex items-center justify-between pb-4 mb-6 border-b border-white/[0.06] text-xs font-mono text-slate-400">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              <span className="text-white font-medium">Standard Operating Architecture:</span>
-              <span className="text-slate-400 hidden sm:inline">Autonomous Lead-to-Cash Pipeline</span>
+              <span className="text-white font-medium">How It Works in Practice:</span>
+              <span className="text-slate-400 hidden sm:inline">Automated Inquiry-to-Delivery Pipeline</span>
             </div>
             <div className="text-emerald-400/90 text-[11px]">
-              99.9% Pipeline Reliability
+              99.9% Workflow Reliability
             </div>
           </div>
 

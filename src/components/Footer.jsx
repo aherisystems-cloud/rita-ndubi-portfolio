@@ -18,12 +18,12 @@ export default function Footer() {
               RN
             </div>
             <div className="text-white font-medium text-sm">
-              Rita Ndubi <span className="text-slate-500 font-normal">· Business Systems & AI Architect</span>
+              Rita Ndubi <span className="text-slate-500 font-normal">· Business Systems & Automation</span>
             </div>
           </div>
 
           <div className="flex items-center gap-5 text-slate-400">
-            <a href="#architecture" className="hover:text-white transition-colors">Architecture</a>
+            <a href="#systems" className="hover:text-white transition-colors">Systems</a>
             <a href="#case-studies" className="hover:text-white transition-colors">Case Studies</a>
             <a href="#stack" className="hover:text-white transition-colors">Stack</a>
             <a href="#ventures" className="hover:text-white transition-colors">Ventures</a>

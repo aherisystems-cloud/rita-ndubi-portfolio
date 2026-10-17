@@ -1,6 +1,5 @@
 import React from 'react';
 import { techStack } from '../data/portfolioData';
-import { Layers } from 'lucide-react';
 
 export default function TechStack() {
   return (
@@ -9,13 +8,13 @@ export default function TechStack() {
         
         <div className="max-w-2xl mb-12">
           <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
-            Ecosystem
+            Platforms & Tools
           </div>
           <h2 className="text-3xl font-bold text-white tracking-tight mb-3">
-            Core Technology & Platform Arsenal
+            Tools & Software I Work With
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Software is only as effective as the underlying operational model. Here are the core platforms I architect and integrate into unified workflows.
+            Tools are only useful when they talk to each other cleanly. Here are the core platforms I set up, connect, and manage for teams.
           </p>
         </div>
 

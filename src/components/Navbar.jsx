@@ -15,7 +15,7 @@ export default function Navbar({ onOpenResume }) {
   }, []);
 
   const navLinks = [
-    { name: 'Architecture', href: '#architecture' },
+    { name: 'Systems', href: '#systems' },
     { name: 'Case Studies', href: '#case-studies' },
     { name: 'Stack', href: '#stack' },
     { name: 'Ventures', href: '#ventures' },
@@ -39,7 +39,7 @@ export default function Navbar({ onOpenResume }) {
                 Rita Ndubi
               </div>
               <div className="text-[11px] text-slate-400 font-mono">
-                Business Systems & AI Architect
+                Business Systems & Automation
               </div>
             </div>
           </a>

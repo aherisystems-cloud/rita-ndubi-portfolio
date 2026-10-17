@@ -1,34 +1,34 @@
 import React from 'react';
 import { corePillars } from '../data/portfolioData';
-import { Target, Cpu, Database, ArrowUpRight } from 'lucide-react';
+import { Target, Cpu, Database } from 'lucide-react';
 
 const iconMap = {
-  revops: Target,
+  crm: Target,
   automation: Cpu,
-  governance: Database,
+  operations: Database,
 };
 
 export default function CorePillars() {
   return (
-    <section id="architecture" className="py-24 md:py-32 border-t border-white/[0.06] relative">
+    <section id="systems" className="py-24 md:py-32 border-t border-white/[0.06] relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-2xl mb-16">
           <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
-            Core Disciplines
+            Core Focus Areas
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
-            How I Engineer Operational Leverage
+            Systems I Build & Manage
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            High-output companies do not rely on brute force. They run on decoupled, resilient architectures that connect lead acquisition, data hygiene, and automated delivery.
+            Growing companies don't need bloated tech stacks. They need clean, reliable setups that connect customer inquiries, sales pipelines, and daily fulfillment without manual drag.
           </p>
         </div>
 
         {/* 3 Clean Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {corePillars.map((pillar, i) => {
+          {corePillars.map((pillar) => {
             const Icon = iconMap[pillar.id] || Target;
             return (
               <div
@@ -51,7 +51,7 @@ export default function CorePillars() {
 
                 <div className="pt-6 border-t border-white/[0.06]">
                   <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider mb-2.5">
-                    Competencies:
+                    Tools & Methods:
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {pillar.skills.map((skill) => (

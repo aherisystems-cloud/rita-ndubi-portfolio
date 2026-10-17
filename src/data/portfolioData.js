@@ -1,142 +1,142 @@
 export const personalInfo = {
   name: "Rita Ndubi",
-  title: "Business Systems & AI Automation Architect",
-  subtitle: "Revenue Operations · Workflow Engineering · AI Systems Integration",
-  location: "Nairobi (UTC+3) · Collaborating with high-growth teams globally",
-  bio: "I design and scale the operational engines behind high-growth businesses. By uniting CRM architecture, fault-tolerant workflow automations, and practical AI agents, I replace manual drag with predictable revenue pipelines and single sources of truth.",
+  title: "Business Systems & Automation Specialist",
+  subtitle: "CRM Systems · Workflow Automation · AI Operations",
+  location: "Nairobi (UTC+3) · Working with teams globally",
+  bio: "I help growing companies get their internal tools, CRM platforms, and daily workflows running smoothly. Combining a background in Finance & Banking with 9+ years of hands-on systems work, I eliminate manual data entry, automate repetitive tasks, and build reliable operational foundations so teams can focus on growth.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
   calendlyUrl: "https://calendly.com",
   email: "rita@aherisystems.com",
   quickStats: [
-    { label: "Production Automations Deployed", value: "65+", suffix: "" },
-    { label: "Average Process Latency Drop", value: "78%", suffix: "" },
-    { label: "Data Integrity & Uptime", value: "99.9%", suffix: "" }
+    { label: "Production Automations Built", value: "65+", suffix: "" },
+    { label: "Average Process Time Saved", value: "78%", suffix: "" },
+    { label: "Workflow Reliability", value: "99.9%", suffix: "" }
   ]
 };
 
 export const corePillars = [
   {
-    id: "revops",
-    title: "Revenue Operations & CRM Architecture",
-    description: "Designing end-to-end sales pipelines, lifecycle stages, deal routing, and automated quoting engines that convert inbound volume into predictable revenue.",
-    skills: ["Zoho CRM / Bigin", "HubSpot RevOps", "Pipeline Modeling", "Deal Routing", "Dynamic Quoting"]
+    id: "crm",
+    title: "CRM Setup & Revenue Operations",
+    description: "Setting up clean sales pipelines, customer lifecycle stages, deal tracking, and automated quotation systems so sales and delivery teams stay organized.",
+    skills: ["Zoho One / CRM", "HubSpot", "GoHighLevel", "Pipeline Tracking", "Automated Quoting"]
   },
   {
     id: "automation",
-    title: "Workflow Engineering & AI Integration",
-    description: "Connecting disconnected SaaS applications with error-handled middleware, webhooks, and LLM-powered agents that automate triage and document synthesis.",
-    skills: ["Make.com (Integromat)", "Zapier Advanced", "REST APIs & Webhooks", "OpenAI & Claude LLMs", "n8n"]
+    title: "Workflow Automation & AI Tools",
+    description: "Connecting your everyday tools using Make.com, Zapier, and practical AI models to handle repetitive data movement, message drafting, and task assignments.",
+    skills: ["Make.com (Integromat)", "Zapier", "REST APIs & Webhooks", "OpenAI & Claude Tools", "n8n"]
   },
   {
-    id: "governance",
-    title: "Systems Governance & Data Integrity",
-    description: "Constructing centralized operational hubs that eliminate spreadsheet chaos, prevent duplicate records, and ensure cross-functional visibility.",
-    skills: ["Airtable Hubs", "Notion Ops Wikis", "Single Source of Truth", "Data Normalization", "Living SOPs"]
+    id: "operations",
+    title: "Data Cleanliness & Clear SOPs",
+    description: "Creating a reliable single source of truth across Airtable, Notion, and spreadsheets. Documenting every process so your team can run smoothly without confusion.",
+    skills: ["Airtable Hubs", "Notion Workspaces", "Data Deduplication", "Living SOPs", "ClickUp & Asana"]
   }
 ];
 
 export const caseStudies = [
   {
     id: "revops-engine",
-    title: "Multi-Channel RevOps & Instant Quoting Engine",
-    client: "Scaling B2B Professional Services Firm",
-    tagline: "Reducing quotation latency from 48 hours to under 3 minutes with zero manual touches.",
-    badge: "Revenue Operations",
-    problem: "Inbound requests arrived across web forms, WhatsApp, and email into fragmented spreadsheets. Preparing quotations required manual pricing lookups, taking 48 hours and leading to high prospect drop-off.",
-    solution: "Engineered an automated ingestion pipeline using Make.com and Zoho CRM. Integrated instant WhatsApp/email confirmation, dynamic service tier calculation, on-the-fly PDF proposal generation, and instant round-robin rep dispatch.",
+    title: "Multi-Channel Inbound Intake & Automated Quoting",
+    client: "Growing B2B Services Company",
+    tagline: "Reduced quotation turnaround from 48 hours to under 3 minutes with zero manual copy-pasting.",
+    badge: "Quotation Automation",
+    problem: "Incoming inquiries from web forms, WhatsApp, and emails were manually copied into spreadsheets. Preparing quotes took up to 48 hours, causing lost deals and frustrated prospective clients.",
+    solution: "Built an automated intake pipeline using Make.com and Zoho CRM. Inquiries now automatically trigger an instant confirmation, calculate accurate tier pricing, generate a branded PDF quote, and notify the right team member immediately.",
     metrics: [
       { label: "Quote Turnaround", before: "48 Hours", after: "< 3 Minutes" },
-      { label: "Lead Response Rate", before: "32%", after: "94%" },
-      { label: "Monthly Capacity Saved", before: "0 hrs", after: "120+ Hours" }
+      { label: "Inquiry Response Rate", before: "32%", after: "94%" },
+      { label: "Monthly Time Saved", before: "0 hrs", after: "120+ Hours" }
     ],
-    architecture: [
-      { title: "Multi-Channel Ingestion", desc: "Webhook listener captures form and WhatsApp leads, enriching company details via domain API." },
-      { title: "Deduplication & Tier Scoring", desc: "Verifies against existing CRM entities and assigns dynamic deal scoring based on budget parameters." },
-      { title: "Dynamic Proposal Generation", desc: "Custom template engine compiles line items and generates a branded PDF proposal in seconds." },
-      { title: "Automated Rep Dispatch", desc: "Assigns account owner, logs opportunity in CRM, and pings internal Slack channel with 1-click booking link." }
+    workflowSteps: [
+      { title: "Inquiry Intake", desc: "Captures lead details from forms or WhatsApp and validates company domain." },
+      { title: "CRM Lookup & Scoring", desc: "Checks for existing contacts in Zoho CRM and applies pricing rules." },
+      { title: "Dynamic Quote Generation", desc: "Automatically generates and sends a clean PDF proposal in real time." },
+      { title: "Team Notification", desc: "Assigns the account owner and posts an alert in Slack with booking details." }
     ],
-    tools: ["Zoho CRM", "Make.com", "WhatsApp Business API", "Google Workspace", "Slack Webhooks"]
+    tools: ["Zoho CRM", "Make.com", "WhatsApp Business API", "Google Workspace", "Slack"]
   },
   {
     id: "client-onboarding",
-    title: "Zero-Touch Client Onboarding & Project Provisioning",
+    title: "Streamlined Client Onboarding & Project Setup",
     client: "Digital Growth & Creative Agency",
-    tagline: "Automating 14 disjointed post-sale steps into a unified 10-minute automated kickoff.",
-    badge: "Workflow Engineering",
-    problem: "When a deal closed, onboarding required 14 manual steps across contracts, invoices, folder provisioning, and task boards, causing 4-day kickoff delays and inconsistent client experiences.",
-    solution: "Engineered a closed-won trigger pipeline that automatically generates agreements, invoices the initial milestone, provisions standardized ClickUp project structures and Google Drive folders, and issues client welcome kits.",
+    tagline: "Replaced 14 manual post-sale steps with a 10-minute automated kickoff workflow.",
+    badge: "Process Automation",
+    problem: "Closing a deal required 14 manual steps—drafting contracts, generating deposit invoices, setting up Google Drive folders, and creating task boards. Kickoffs routinely dragged out for 4 days.",
+    solution: "Created an automated trigger when a deal is marked 'Closed-Won'. The system generates the agreement, issues the deposit invoice, creates pre-structured ClickUp project boards and Google Drive folders, and sends the welcome packet.",
     metrics: [
-      { label: "Kickoff Latency", before: "4 Days", after: "10 Minutes" },
-      { label: "Provisioning Error Rate", before: "22%", after: "< 0.5%" },
-      { label: "Client Satisfaction (CSAT)", before: "3.8 / 5.0", after: "4.9 / 5.0" }
+      { label: "Kickoff Delay", before: "4 Days", after: "10 Minutes" },
+      { label: "Setup Errors", before: "22%", after: "< 0.5%" },
+      { label: "Client Satisfaction", before: "3.8 / 5.0", after: "4.9 / 5.0" }
     ],
-    architecture: [
-      { title: "Closed-Won Event Trigger", desc: "Fired from CRM stage progression with deal metadata, line items, and stakeholder contacts." },
-      { title: "Agreement & Payment Sync", desc: "Auto-populates master services agreement (MSA) via Zoho Sign and generates initial deposit invoice." },
-      { title: "Workspace & File Hierarchy", desc: "Clones pre-configured ClickUp project board, builds permissioned Drive folders, and invites client." },
-      { title: "AI Executive Briefing", desc: "Summarizes client objectives and posts operational overview directly into team collaboration channels." }
+    workflowSteps: [
+      { title: "Deal Closed-Won", desc: "Trigger fired directly from CRM stage update with client metadata." },
+      { title: "Agreements & Invoicing", desc: "Pre-fills agreement via Zoho Sign and generates initial invoice." },
+      { title: "Folder & Board Setup", desc: "Clones template ClickUp space, sets up Drive folders, and adds permissions." },
+      { title: "Welcome & Briefing", desc: "Summarizes client objectives and sends welcome email with kickoff schedule." }
     ],
-    tools: ["Make.com", "ClickUp", "Google Drive API", "Zoho Sign", "Stripe"]
+    tools: ["Make.com", "ClickUp", "Google Drive", "Zoho Sign", "Stripe"]
   },
   {
     id: "ai-triage",
-    title: "AI-Powered Operations & Inquiry Triage Agent",
-    client: "High-Volume E-Commerce & Service Provider",
-    tagline: "Eliminating 65% of repetitive agent workload through intelligent context-aware classification.",
-    badge: "AI Systems",
-    problem: "Support and operations inboxes received 500+ inquiries weekly. Team members spent over half their day sorting routine order checks from urgent operational issues.",
-    solution: "Implemented an intelligent triage pipeline using OpenAI API connected directly to ticketing and order management. Auto-classifies sentiment, extracts order IDs, drafts context-aware responses against company SOPs, and routes high-priority escalations immediately.",
+    title: "AI-Powered Customer Inquiry Triage & Ticket Routing",
+    client: "High-Volume E-Commerce & Service Team",
+    tagline: "Cut routine support workload by 65% by automatically classifying and drafting responses.",
+    badge: "AI Implementation",
+    problem: "The team was flooded with 500+ messages a week. Staff spent over half their day sorting routine order status requests from urgent customer issues.",
+    solution: "Set up an AI triage workflow connected to the customer support inbox. The system categorizes incoming inquiries, looks up order status, drafts helpful replies based on internal documentation, and immediately flags urgent issues to managers.",
     metrics: [
       { label: "First Response Time", before: "6.5 Hours", after: "12 Minutes" },
-      { label: "Routine Ticket Reduction", before: "0%", after: "-65%" },
-      { label: "Classification Accuracy", before: "74%", after: "98.2%" }
+      { label: "Repetitive Tickets Cut", before: "0%", after: "-65%" },
+      { label: "Routing Accuracy", before: "74%", after: "98.2%" }
     ],
-    architecture: [
-      { title: "Payload Ingestion & Sanitation", desc: "Pulls incoming message payloads, sanitizes sensitive customer data, and parses core intent." },
-      { title: "Knowledge Base Retrieval", desc: "Queries structured company SOPs and policies to gather exact resolution steps." },
-      { title: "Contextual Draft Generation", desc: "Generates high-accuracy response draft for human review and 1-click dispatch." },
-      { title: "Escalation & SLA Monitoring", desc: "Flags mission-critical requests directly to on-call operational leads with full context." }
+    workflowSteps: [
+      { title: "Message Ingestion", desc: "Captures incoming ticket and extracts order numbers and core question." },
+      { title: "Knowledge Retrieval", desc: "Matches inquiry against company policies and shipping data." },
+      { title: "Draft Generation", desc: "Drafts a helpful, context-aware reply for representative approval." },
+      { title: "Escalation Flag", desc: "Alerts senior lead immediately if an order has urgent issues." }
     ],
-    tools: ["OpenAI API", "Zapier / Make", "Zendesk / Help Scout", "Airtable", "Slack"]
+    tools: ["OpenAI API", "Make.com", "Help Desk / Zendesk", "Airtable", "Slack"]
   }
 ];
 
 export const techStack = [
-  { name: "Zoho One & CRM", role: "Core Enterprise RevOps" },
-  { name: "HubSpot", role: "Pipeline & Lifecycle Ops" },
-  { name: "Make.com", role: "Middleware & API Pipelines" },
-  { name: "Zapier", role: "Workflow Automation" },
-  { name: "OpenAI & Claude", role: "AI Agents & Triage" },
-  { name: "Airtable", role: "Relational Operational Hubs" },
-  { name: "ClickUp & Asana", role: "Project & Process Management" },
-  { name: "Notion", role: "Living SOP Systems" },
-  { name: "REST APIs & Webhooks", role: "Custom Integration Layer" }
+  { name: "Zoho One & CRM", role: "Sales & Operations Hub" },
+  { name: "HubSpot", role: "Pipeline & Customer Tracking" },
+  { name: "Make.com", role: "Workflow Automation & Integrations" },
+  { name: "Zapier", role: "App Connections & Triggers" },
+  { name: "OpenAI & Claude", role: "Practical AI & Message Triage" },
+  { name: "Airtable", role: "Relational Databases & Tracking" },
+  { name: "ClickUp & Asana", role: "Project & Task Management" },
+  { name: "Notion", role: "Team SOPs & Process Docs" },
+  { name: "REST APIs & Webhooks", role: "Custom Platform Integrations" }
 ];
 
 export const ventureSpotlights = [
   {
     name: "Aheri Systems",
-    role: "Founder & Lead Systems Strategist",
-    timeline: "2022 – Present",
-    tagline: "Business Systems & Automation Studio for Growing Teams",
-    description: "Bridging the operational divide for companies scaling from 2 to 50 employees. We eliminate spreadsheet sprawl, manual friction, and slow turnaround times by architecting bespoke CRM pipelines and automated operational infrastructure.",
+    role: "Founder & Lead",
+    timeline: "2023 – Present",
+    tagline: "Business Systems & Automation Studio",
+    description: "Helping growing businesses set up and run their marketing, sales, and operations systems. We replace messy spreadsheets, manual follow-ups, and slow response times with organized CRM pipelines and clean automations.",
     achievements: [
-      "Consulted and engineered workflow solutions for 30+ B2B and service companies globally.",
-      "Delivered an average 70% decrease in client onboarding latency across client engagements.",
-      "Developed standardized, repeatable implementation blueprints for Zoho One, Make.com, and Airtable."
+      "Built and implemented custom CRM and workflow systems for 30+ service and B2B clients.",
+      "Delivered an average 70% decrease in manual client onboarding time.",
+      "Standardized implementation playbooks across Zoho One, Make.com, and Airtable."
     ],
     link: "https://aherisystems.com"
   },
   {
     name: "BiasharaPros",
-    role: "Platform Creator & Operations Lead",
+    role: "Creator & Operations Lead",
     timeline: "2023 – Present",
-    tagline: "Compliance, Calculators & Directory Infrastructure for East African MSMEs",
-    description: "A digital utility and informational ecosystem under Aheri Systems providing localized compliance roadmaps, interactive financial calculators, and a verified supplier directory to empower regional businesses.",
+    tagline: "Compliance Guides, Calculators & Business Directory",
+    description: "A practical platform providing localized compliance roadmaps, interactive tax and financial calculators, and a verified business directory for small businesses in Kenya.",
     achievements: [
-      "Built automated compliance navigator reducing regulatory discovery from days to minutes.",
-      "Engineered interactive tax and payroll calculators utilized by over 10,000 monthly active users.",
-      "Created structured directory onboarding and data verification pipelines."
+      "Built automated compliance guides helping business owners find requirements in minutes.",
+      "Engineered financial and tax calculators used by over 10,000 monthly business operators.",
+      "Created clean directory onboarding and supplier verification processes."
     ],
     link: "https://biasharapros.com"
   }
@@ -144,68 +144,77 @@ export const ventureSpotlights = [
 
 export const experienceTimeline = [
   {
-    period: "2022 – Present",
-    role: "Founder & Lead Business Systems Strategist",
+    period: "2023 – Present",
+    role: "Founder & Business Systems Lead",
     organization: "Aheri Systems",
     location: "Global Client Engagements",
     highlights: [
-      "Architect bespoke RevOps pipelines, CRM implementations (Zoho, Bigin, HubSpot), and custom automation flows for high-growth businesses.",
-      "Audit operational tool stacks, cutting software redundancies by up to 35% through consolidated data architectures and native integrations.",
-      "Deploy AI-driven automation pipelines for inquiry triage, proposal generation, and operational data synchronization."
+      "Set up and manage CRM systems (Zoho One, HubSpot, GoHighLevel) and automated workflows for growing businesses.",
+      "Audit existing software stacks, cutting unnecessary subscription costs by up to 35% through clean integrations.",
+      "Build practical AI and automation pipelines for inquiry triage, instant quote generation, and operational data synchronization."
     ]
   },
   {
     period: "2023 – Present",
-    role: "Product & Operations Architect",
+    role: "Platform & Operations Lead",
     organization: "BiasharaPros",
     location: "Platform Operations",
     highlights: [
-      "Designed and launched end-to-end directory architecture and interactive computational tools serving 10,000+ monthly active business operators.",
-      "Standardized content operations, contributor guidelines, and automated SEO publishing workflows."
+      "Designed and launched business directory and interactive calculators serving 10,000+ monthly active business operators.",
+      "Built streamlined content operations and automated publishing workflows."
     ]
   },
   {
-    period: "2020 – 2022",
-    role: "Operations & Digital Systems Strategist",
-    organization: "Consultancy & Agency Engagements",
-    location: "Cross-Functional Projects",
+    period: "2019 – 2023",
+    role: "Digital Marketing & Systems Strategist",
+    organization: "Aheri Brands Agency",
+    location: "Client Projects",
     highlights: [
-      "Managed multi-channel lead acquisition systems, automated email marketing pipelines, and reporting workflows.",
-      "Standardized client analytics dashboards connecting Google Analytics, ad networks, and CRM pipeline metrics."
+      "Managed lead generation systems, automated email workflows, and client retention campaigns.",
+      "Built automated reporting dashboards connecting analytics, advertising channels, and CRM pipeline metrics."
+    ]
+  },
+  {
+    period: "Early Career",
+    role: "Asset Finance & Bancassurance",
+    organization: "Commercial Bank of Africa",
+    location: "Nairobi, Kenya",
+    highlights: [
+      "Managed departmental sales pipelines and financial reporting, building foundational rigor in financial controls, audit trails, and reconciliation."
     ]
   }
 ];
 
 export const thoughtLeadership = [
   {
-    title: "Why Most CRM Implementations Fail (And How Architecture Saves Them)",
-    category: "CRM Architecture",
+    title: "Why Most CRM Implementations Fail (And How Good Process Saves Them)",
+    category: "CRM Strategy",
     readTime: "6 min read",
-    snippet: "Investing in CRM software before mapping your lifecycle stages and data relationships is like pouring concrete without a blueprint. Here is how to architect for scale."
+    snippet: "Buying software before mapping your sales stages and customer handoffs leads to messy data. Here is how to organize your process before touching software."
   },
   {
-    title: "The Inbound Velocity Rule: How Instant Quotation Closes 3x More Deals",
-    category: "RevOps Engineering",
-    readTime: "7 min read",
-    snippet: "Why taking more than 15 minutes to quote high-intent buyers kills deal velocity, and how to build zero-touch quotation engines using Make.com and CRM webhooks."
+    title: "The Speed-to-Quote Advantage: How Instant Quotation Wins Deals",
+    category: "Sales Operations",
+    readTime: "5 min read",
+    snippet: "Why waiting days to send a proposal loses high-intent clients, and how to build zero-touch quotation workflows using Make.com and CRM webhooks."
   },
   {
-    title: "Practical AI for Operations: Moving Beyond Chatbots to Real Business Pipelines",
+    title: "Practical AI for Operations: Moving Beyond Chatbots to Real Workflows",
     category: "AI Automation",
     readTime: "5 min read",
-    snippet: "A pragmatic guide to deploying LLMs where they actually deliver measurable ROI—inquiry categorization, document synthesis, and automated exception routing."
+    snippet: "A straightforward guide to using AI where it actually saves time—sorting incoming emails, summarizing long documents, and eliminating repetitive data entry."
   }
 ];
 
 export const testimonials = [
   {
-    quote: "Rita transformed our sales operations into a predictable engine. What used to take our team two days of manual back-and-forth now happens automatically in under 5 minutes. Her systems architecture is unmatched.",
-    author: "B2B Agency Founder",
+    quote: "Rita helped us turn a chaotic sales process into a smooth, organized system. What used to take two days of manual back-and-forth now happens automatically in under 5 minutes.",
+    author: "B2B Services Founder",
     role: "Managing Director"
   },
   {
-    quote: "Her operational clarity is extraordinary. The automation workflows she architected haven't missed a beat in over 18 months, giving our team back hundreds of hours every quarter.",
-    author: "Head of Operations",
-    role: "Operations Director"
+    quote: "Working with Rita was a breath of fresh air. Her workflows are rock-solid, well-documented, and have saved our team hundreds of hours of manual work.",
+    author: "Operations Lead",
+    role: "Head of Operations"
   }
 ];
