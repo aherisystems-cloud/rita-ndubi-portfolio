@@ -1,65 +1,65 @@
 export const personalInfo = {
   name: "Rita Ndubi",
-  title: "Business Systems & Automation Specialist",
-  subtitle: "CRM Systems · Workflow Automation · AI Operations",
+  title: "Business Systems & RevOps Specialist",
+  subtitle: "AI & Workflow Automation · Zoho Catalyst · Make.com",
   location: "Nairobi (UTC+3) · Working with teams globally",
-  bio: "I help growing companies get their internal tools, CRM platforms, and daily workflows running smoothly. Combining a background in Finance & Banking with 9+ years of hands-on systems work, I eliminate manual data entry, automate repetitive tasks, and build reliable operational foundations so teams can focus on growth.",
+  bio: "I help growing companies get their internal tools, CRM pipelines, and operations running smoothly. Combining a background in Finance & Banking with 9+ years in systems setup, I build end-to-end operational engines—from quotation portals and vendor compliance to automated billing and custom executive dashboards.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
   calendlyUrl: "https://calendly.com",
   email: "rita@aherisystems.com",
   quickStats: [
-    { label: "Production Automations Built", value: "65+", suffix: "" },
-    { label: "Average Process Time Saved", value: "78%", suffix: "" },
-    { label: "Workflow Reliability", value: "99.9%", suffix: "" }
+    { label: "Production Workflows Built", value: "65+", suffix: "" },
+    { label: "Quotation & Intake Speedup", value: "90%", suffix: "" },
+    { label: "Operational Reliability", value: "99.9%", suffix: "" }
   ]
 };
 
 export const corePillars = [
   {
-    id: "crm",
-    title: "CRM Setup & Revenue Operations",
-    description: "Setting up clean sales pipelines, customer lifecycle stages, deal tracking, and automated quotation systems so sales and delivery teams stay organized.",
-    skills: ["Zoho One / CRM", "HubSpot", "GoHighLevel", "Pipeline Tracking", "Automated Quoting"]
-  },
-  {
-    id: "automation",
-    title: "Workflow Automation & AI Tools",
-    description: "Connecting your everyday tools using Make.com, Zapier, and practical AI models to handle repetitive data movement, message drafting, and task assignments.",
-    skills: ["Make.com (Integromat)", "Zapier", "REST APIs & Webhooks", "OpenAI & Claude Tools", "n8n"]
+    id: "revops",
+    title: "RevOps & Quotation-to-Cash",
+    description: "Designing end-to-end quotation workflows, client approval portals, automated agreement signing, and invoice generation so revenue flows without manual friction.",
+    skills: ["Zoho CRM & Catalyst", "Dynamic Quoting", "Client Portals", "Zoho Sign / Stripe", "Pipeline Tracking"]
   },
   {
     id: "operations",
-    title: "Data Cleanliness & Clear SOPs",
-    description: "Creating a reliable single source of truth across Airtable, Notion, and spreadsheets. Documenting every process so your team can run smoothly without confusion.",
-    skills: ["Airtable Hubs", "Notion Workspaces", "Data Deduplication", "Living SOPs", "ClickUp & Asana"]
+    title: "Vendor, HR & Process Operations",
+    description: "Building automated onboarding engines for employees and external vendors. Tracking compliance, active licenses, renewal dates, and cross-team task handoffs.",
+    skills: ["Vendor Compliance Hubs", "Paperless HR Onboarding", "License Expiry Tracking", "Living SOPs", "ClickUp / Asana"]
+  },
+  {
+    id: "automation",
+    title: "Workflow Automation & AI Triage",
+    description: "Connecting your everyday tools using Make.com, APIs, and practical AI models to eliminate repetitive data entry, triage customer requests, and sync data reliably.",
+    skills: ["Make.com (Integromat)", "Zapier", "REST APIs & Webhooks", "OpenAI & Claude Tools", "Airtable Hubs"]
   }
 ];
 
 export const caseStudies = [
   {
-    id: "revops-engine",
-    title: "Multi-Channel Inbound Intake & Automated Quoting",
-    client: "Growing B2B Services Company",
-    tagline: "Reduced quotation turnaround from 48 hours to under 3 minutes with zero manual copy-pasting.",
-    badge: "Quotation Automation",
-    problem: "Incoming inquiries from web forms, WhatsApp, and emails were manually copied into spreadsheets. Preparing quotes took up to 48 hours, causing lost deals and frustrated prospective clients.",
-    solution: "Built an automated intake pipeline using Make.com and Zoho CRM. Inquiries now automatically trigger an instant confirmation, calculate accurate tier pricing, generate a branded PDF quote, and notify the right team member immediately.",
+    id: "klock-aviation",
+    title: "End-to-End Business Operating System & Quotation Portal",
+    client: "Klock Aviation (Private Charter & Aviation Services)",
+    tagline: "Unifying charter quoting, client approval portals, vendor compliance, HR onboarding, and an executive command center.",
+    badge: "Enterprise Business System",
+    problem: "Private charter quote requests required manual back-and-forth calculations across flight legs. Client approvals, passenger agreements, and invoices were tracked across disjointed emails, while vendor licenses (hotels, charter partners) and staff onboarding lacked centralized tracking.",
+    solution: "Built a complete business operating engine on Zoho One and Zoho Catalyst. Engineered an end-to-end quotation workflow with an interactive client approval portal that automatically generates agreements and invoices. Added an automated vendor compliance tracker with license expiry reminders, paperless employee onboarding, and a custom executive command center for management.",
     metrics: [
-      { label: "Quote Turnaround", before: "48 Hours", after: "< 3 Minutes" },
-      { label: "Inquiry Response Rate", before: "32%", after: "94%" },
-      { label: "Monthly Time Saved", before: "0 hrs", after: "120+ Hours" }
+      { label: "Quote-to-Invoice Turnaround", before: "48 Hours", after: "< 5 Minutes" },
+      { label: "Vendor Compliance Visibility", before: "Fragmented", after: "100% Automated" },
+      { label: "Executive Reporting Time", before: "Days", after: "Instant (1-Click)" }
     ],
     workflowSteps: [
-      { title: "Inquiry Intake", desc: "Captures lead details from forms or WhatsApp and validates company domain." },
-      { title: "CRM Lookup & Scoring", desc: "Checks for existing contacts in Zoho CRM and applies pricing rules." },
-      { title: "Dynamic Quote Generation", desc: "Automatically generates and sends a clean PDF proposal in real time." },
-      { title: "Team Notification", desc: "Assigns the account owner and posts an alert in Slack with booking details." }
+      { title: "Charter Quote Request", desc: "Captures flight requirements, calculates route pricing, and generates a dynamic proposal." },
+      { title: "Client Approval Portal", desc: "Client reviews quote in an interactive portal; 1-click approval converts deal to invoice." },
+      { title: "Agreements & Invoicing", desc: "Auto-generates flight documentation, passenger agreements via Zoho Sign, and deposit invoices." },
+      { title: "Catalyst Command Center", desc: "Custom management dashboard consolidates flights, revenue, vendors, and team activity." }
     ],
-    tools: ["Zoho CRM", "Make.com", "WhatsApp Business API", "Google Workspace", "Slack"]
+    tools: ["Zoho CRM", "Zoho Catalyst", "Zoho Sign", "Make.com", "Zoho Analytics", "Google Workspace"]
   },
   {
     id: "client-onboarding",
-    title: "Streamlined Client Onboarding & Project Setup",
+    title: "Zero-Touch Client Onboarding & Project Provisioning",
     client: "Digital Growth & Creative Agency",
     tagline: "Replaced 14 manual post-sale steps with a 10-minute automated kickoff workflow.",
     badge: "Process Automation",
@@ -80,7 +80,7 @@ export const caseStudies = [
   },
   {
     id: "ai-triage",
-    title: "AI-Powered Customer Inquiry Triage & Ticket Routing",
+    title: "AI Customer Inquiry Triage & Automated Dispatch",
     client: "High-Volume E-Commerce & Service Team",
     tagline: "Cut routine support workload by 65% by automatically classifying and drafting responses.",
     badge: "AI Implementation",
@@ -102,12 +102,12 @@ export const caseStudies = [
 ];
 
 export const techStack = [
-  { name: "Zoho One & CRM", role: "Sales & Operations Hub" },
+  { name: "Zoho One & Catalyst", role: "Custom Command Centers & CRM" },
   { name: "HubSpot", role: "Pipeline & Customer Tracking" },
   { name: "Make.com", role: "Workflow Automation & Integrations" },
   { name: "Zapier", role: "App Connections & Triggers" },
-  { name: "OpenAI & Claude", role: "Practical AI & Message Triage" },
-  { name: "Airtable", role: "Relational Databases & Tracking" },
+  { name: "OpenAI & Claude", role: "AI Triage & Classification" },
+  { name: "Airtable", role: "Relational Tracking & Hubs" },
   { name: "ClickUp & Asana", role: "Project & Task Management" },
   { name: "Notion", role: "Team SOPs & Process Docs" },
   { name: "REST APIs & Webhooks", role: "Custom Platform Integrations" }
@@ -119,11 +119,11 @@ export const ventureSpotlights = [
     role: "Founder & Lead",
     timeline: "2023 – Present",
     tagline: "Business Systems & Automation Studio",
-    description: "Helping growing businesses set up and run their marketing, sales, and operations systems. We replace messy spreadsheets, manual follow-ups, and slow response times with organized CRM pipelines and clean automations.",
+    description: "Helping service businesses set up and run their marketing, sales, and operations systems. We replace messy spreadsheets, manual quoting bottlenecks, and scattered data with organized CRM pipelines and clean automations.",
     achievements: [
-      "Built and implemented custom CRM and workflow systems for 30+ service and B2B clients.",
-      "Delivered an average 70% decrease in manual client onboarding time.",
-      "Standardized implementation playbooks across Zoho One, Make.com, and Airtable."
+      "Delivered full operating system implementations for clients in aviation, real estate, and healthcare.",
+      "Built custom executive dashboards (Zoho Catalyst) unifying sales, vendors, and revenue.",
+      "Delivered an average 70% decrease in manual client onboarding and quote generation time."
     ],
     link: "https://aherisystems.com"
   },
@@ -131,12 +131,12 @@ export const ventureSpotlights = [
     name: "BiasharaPros",
     role: "Creator & Operations Lead",
     timeline: "2023 – Present",
-    tagline: "Compliance Guides, Calculators & Business Directory",
-    description: "A practical platform providing localized compliance roadmaps, interactive tax and financial calculators, and a verified business directory for small businesses in Kenya.",
+    tagline: "Automated Knowledge, Calculators & Business Directory",
+    description: "An automated digital platform providing localized compliance guides, interactive financial calculators, and a verified business directory for MSMEs in Kenya.",
     achievements: [
-      "Built automated compliance guides helping business owners find requirements in minutes.",
-      "Engineered financial and tax calculators used by over 10,000 monthly business operators.",
-      "Created clean directory onboarding and supplier verification processes."
+      "Engineered automated compliance navigator reducing regulatory research from days to minutes.",
+      "Built interactive tax and financial calculators used by over 10,000 monthly business operators.",
+      "Automated directory ingestion, data verification, and SEO publishing pipelines on the backend."
     ],
     link: "https://biasharapros.com"
   }
@@ -149,9 +149,10 @@ export const experienceTimeline = [
     organization: "Aheri Systems",
     location: "Global Client Engagements",
     highlights: [
-      "Set up and manage CRM systems (Zoho One, HubSpot, GoHighLevel) and automated workflows for growing businesses.",
-      "Audit existing software stacks, cutting unnecessary subscription costs by up to 35% through clean integrations.",
-      "Build practical AI and automation pipelines for inquiry triage, instant quote generation, and operational data synchronization."
+      "Architect and implement comprehensive business operating systems across CRM, quoting, vendor management, HR onboarding, and executive dashboards (Zoho One, Catalyst, HubSpot).",
+      "Engineered end-to-end private charter quotation engine with interactive client approval portals and automated invoice generation for aviation client.",
+      "Built automated vendor tracking system monitoring licensing, certifications, and compliance expiration alerts.",
+      "Automated employee recruitment and paperless onboarding workflows with digital contract signing."
     ]
   },
   {
@@ -160,17 +161,17 @@ export const experienceTimeline = [
     organization: "BiasharaPros",
     location: "Platform Operations",
     highlights: [
-      "Designed and launched business directory and interactive calculators serving 10,000+ monthly active business operators.",
-      "Built streamlined content operations and automated publishing workflows."
+      "Designed and launched automated business platform featuring interactive tax/payroll calculators serving 10,000+ monthly active business operators.",
+      "Architected backend automated directory ingestion, vendor verification, and programmatic publishing workflows."
     ]
   },
   {
     period: "2019 – 2023",
-    role: "Digital Marketing & Systems Strategist",
+    role: "Operations & Digital Systems Strategist",
     organization: "Aheri Brands Agency",
     location: "Client Projects",
     highlights: [
-      "Managed lead generation systems, automated email workflows, and client retention campaigns.",
+      "Managed lead generation pipelines, email marketing automation, and customer journey touchpoints across multiple client industries.",
       "Built automated reporting dashboards connecting analytics, advertising channels, and CRM pipeline metrics."
     ]
   },
