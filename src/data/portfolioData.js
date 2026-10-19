@@ -60,10 +60,31 @@ export const caseStudies = [
       { label: "72-Hour Abandoned Recovery", before: "Zero Follow-up", after: "26% Orders Rescued" }
     ],
     workflowSteps: [
-      { title: "Inbound Ad Routing", desc: "Captures shopper traffic from Click-to-WhatsApp ads, website widgets, and campaign forms into a live AI chat session." },
-      { title: "Inventory-Linked Consultation", desc: "AI queries live backend database to confirm availability, pricing, sizes, and specs in natural conversational language." },
-      { title: "Intelligent Cross-Sell / Upsell", desc: "If an item is out of stock, the agent recommends relevant matching alternatives and complementary accessories to protect the sale." },
-      { title: "72-Hour Re-Engagement Trigger", desc: "Automated sequence follows up with undecided shoppers via WhatsApp within 72 hours to answer objections and close the order." }
+      { 
+        stage: "01 · Attract & Capture", 
+        title: "Click-to-WhatsApp & Ad Routing", 
+        desc: "Captures high-intent shopper traffic from Click-to-WhatsApp ads, web stores, and social campaigns directly into an autonomous AI chat session." 
+      },
+      { 
+        stage: "02 · Follow Up & Nurture", 
+        title: "Live Inventory Consultation", 
+        desc: "AI autonomously queries backend inventory (Supabase/Airtable) to verify real-time sizing, specifications, and availability without human delay." 
+      },
+      { 
+        stage: "03 · Convert & Contract", 
+        title: "Smart Cross-Sell & Instant Checkout", 
+        desc: "Suggests matching in-stock alternatives if a product is sold out and generates instant frictionless checkout links to secure the sale." 
+      },
+      { 
+        stage: "04 · Onboard & Retain", 
+        title: "72-Hour Abandoned Chat Recovery", 
+        desc: "Autonomous re-engagement sequence contacts hesitant shoppers within 72 hours via WhatsApp with personalized incentives and delivery updates." 
+      },
+      { 
+        stage: "05 · Operations Engine", 
+        title: "Inventory Sync & Analytics Hub", 
+        desc: "Automates real-time catalog synchronization, multi-channel stock deduction, low-inventory alerts, and drop-off analytics for management." 
+      }
     ],
     tools: ["WhatsApp Business API", "Claude & OpenAI", "Make.com & Webhooks", "Airtable / Supabase", "Inventory APIs"]
   },
@@ -81,10 +102,31 @@ export const caseStudies = [
       { label: "Executive Reporting Speed", before: "Days", after: "Real-Time (1-Click)" }
     ],
     workflowSteps: [
-      { title: "Multi-Tier Inquiry Funnel", desc: "Captures and routes high-value inquiries across distinct service lines with automated scoring and VIP priority assignment." },
-      { title: "Dynamic Quoting & Portal", desc: "Calculates complex route pricing and delivers an interactive client portal for rapid agreement approval." },
-      { title: "Automated Documentation", desc: "Generates digital agreements via Zoho Sign and synchronizes verified billing records directly into finance systems." },
-      { title: "Vendor Compliance & Command Center", desc: "Monitors vendor certifications, partner compliance deadlines, and cross-departmental KPIs on an executive dashboard." }
+      { 
+        stage: "01 · Attract & Capture", 
+        title: "Multi-Division Inquiry Funnel", 
+        desc: "Captures inbound charter requests across distinct commercial divisions from web funnels, Google Ads, and private referral networks." 
+      },
+      { 
+        stage: "02 · Follow Up & Nurture", 
+        title: "Lead Scoring & Route Triage", 
+        desc: "Automated qualification engine scores charter leads, assigns VIP priority, and runs 30-day partner follow-up cadences so no inquiry goes cold." 
+      },
+      { 
+        stage: "03 · Convert & Contract", 
+        title: "Dynamic Quoting & Client Portal", 
+        desc: "Calculates complex multi-leg route pricing and provides a 1-click client approval portal with digital Zoho Sign contracts and deposit invoicing." 
+      },
+      { 
+        stage: "04 · Onboard & Retain", 
+        title: "Flight Manifest & VIP Care", 
+        desc: "Automates passenger manifest delivery, automated WhatsApp flight status updates, post-charter feedback, and repeat booking triggers." 
+      },
+      { 
+        stage: "05 · Operations Engine", 
+        title: "Catalyst Command Center & Compliance", 
+        desc: "Custom Zoho Catalyst executive dashboard monitoring live fleet KPIs, automated vendor/crew license expiry alerts, and 20 living SOP guides." 
+      }
     ],
     tools: ["Zoho One", "Zoho Catalyst", "Zoho Sign", "Make.com", "Analytics"]
   },
@@ -102,10 +144,31 @@ export const caseStudies = [
       { label: "Maintenance Overhead", before: "Ongoing", after: "Zero Server Drag" }
     ],
     workflowSteps: [
-      { title: "AI-Assisted Build", desc: "Leveraged Claude AI coding assistants to scaffold components, content pipelines, and layouts." },
-      { title: "Git Version Control", desc: "Automated repository triggers for continuous integration and content updates." },
-      { title: "Cloudflare Edge Delivery", desc: "Deployed to Cloudflare Pages global network with instant SSL and edge caching." },
-      { title: "Automated Catalog Feeds", desc: "Streamlined product metadata, SEO schema, and publishing workflows." }
+      { 
+        stage: "01 · Attract & Capture", 
+        title: "Programmatic SEO & Content Funnel", 
+        desc: "Automated product catalog publishing and structured metadata engineered to capture high-intent organic search and shopping queries." 
+      },
+      { 
+        stage: "02 · Follow Up & Nurture", 
+        title: "Sub-400ms Edge Experience", 
+        desc: "Global edge delivery on Cloudflare Pages guarantees instantaneous browsing, eliminating bounce rates and keeping prospective buyers engaged." 
+      },
+      { 
+        stage: "03 · Convert & Contract", 
+        title: "Frictionless Digital Checkout", 
+        desc: "Optimized conversion pathways with clear product specifications, schema markup, and streamlined payment gateway integrations." 
+      },
+      { 
+        stage: "04 · Onboard & Retain", 
+        title: "Transactional Updates & Reviews", 
+        desc: "Automates post-purchase receipts, dispatch tracking notifications, and timed review solicitation sequences to drive customer lifetime value." 
+      },
+      { 
+        stage: "05 · Operations Engine", 
+        title: "Claude CI/CD & Zero-Drag Cloud", 
+        desc: "Autonomous Claude AI workflows integrated with GitHub repository webhooks and Cloudflare edge builds for zero-server maintenance overhead." 
+      }
     ],
     tools: ["Claude AI", "Cloudflare Pages", "GitHub", "Hugo", "REST APIs"]
   },
@@ -123,10 +186,31 @@ export const caseStudies = [
       { label: "Investor Retention Path", before: "Undefined", after: "Structured Nurture" }
     ],
     workflowSteps: [
-      { title: "Operational System Audit", desc: "Analyzed existing CRM architecture, identifying leakage points in lead handoffs." },
-      { title: "Journey Blueprinting", desc: "Mapped milestones from first inquiry to off-plan construction updates and deed handover." },
-      { title: "Stage Gate Rules", desc: "Defined mandatory deal progression fields, payment milestone alerts, and owner accountability." },
-      { title: "Investor Retention Engine", desc: "Created post-close nurture strategy targeting portfolio investors for secondary property purchases." }
+      { 
+        stage: "01 · Attract & Capture", 
+        title: "Investor Acquisition Funnels", 
+        desc: "Captures high-net-worth real estate leads and off-plan property inquiries across digital advertising, landing pages, and private investor networks." 
+      },
+      { 
+        stage: "02 · Follow Up & Nurture", 
+        title: "Automated Investor Qualification", 
+        desc: "Triages buyer budget and timeline, triggers automated private viewing invitations, and maintains timely nurture touchpoints." 
+      },
+      { 
+        stage: "03 · Convert & Contract", 
+        title: "Reservation & Milestone Invoicing", 
+        desc: "Automates unit reservations, digital purchase agreements, and structured deposit milestone invoicing linked to construction phases." 
+      },
+      { 
+        stage: "04 · Onboard & Retain", 
+        title: "Post-Sale Onboarding & Repeat Buying", 
+        desc: "Delivers automated off-plan construction progress updates, deed handover milestone tracking, and secondary property investment alerts." 
+      },
+      { 
+        stage: "05 · Operations Engine", 
+        title: "CRM Stage-Gate Governance & Audit", 
+        desc: "Enforces strict deal progression fields, eliminates lead handoff leakage, automates broker commissions, and gives executives real-time pipeline visibility." 
+      }
     ],
     tools: ["Zoho CRM", "Process Mapping", "Pipeline Governance", "Audit Blueprint", "Lifecycle Analytics"]
   }

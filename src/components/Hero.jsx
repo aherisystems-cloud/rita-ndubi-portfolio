@@ -49,42 +49,73 @@ export default function Hero({ onOpenResume }) {
         </div>
 
         {/* Real System Architecture Preview (Enterprise Flow) */}
-        <div className="lit-card rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto text-left mb-14 shadow-sm border border-slate-200/90 bg-white">
-          <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100 text-xs font-mono text-slate-500">
+        <div className="lit-card rounded-3xl p-6 sm:p-8 max-w-5xl mx-auto text-left mb-14 shadow-sm border border-slate-200/90 bg-white">
+          <div className="flex flex-wrap items-center justify-between pb-4 mb-6 border-b border-slate-100 text-xs font-mono text-slate-500 gap-2">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span className="text-slate-900 font-semibold">Real-World Implementation:</span>
-              <span className="text-slate-600 hidden sm:inline">Klock Aviation Complete Operating Engine</span>
+              <span className="text-slate-900 font-semibold">Complete Operating Engine:</span>
+              <span className="text-slate-600 hidden sm:inline">Klock Aviation (Customer Capture → Operations Engine)</span>
             </div>
-            <div className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded text-[11px] font-semibold border border-emerald-100">
-              Zoho One + Catalyst + Sign
+            <div className="flex items-center gap-2">
+              <span className="text-slate-500 text-[11px] font-mono hidden md:inline">Aheri Systems Framework</span>
+              <div className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded text-[11px] font-semibold border border-emerald-100">
+                Zoho One + Catalyst + Sign
+              </div>
             </div>
           </div>
 
-          {/* 4 Connected Stages */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {/* 5 Connected Stages: Customer Capture to Operations Engine */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
             {[
-              { title: "Charter Quote Request", sub: "Route & Pricing Engine", tag: "Quoting" },
-              { title: "Client Approval Portal", sub: "1-Click Agreement & Invoice", tag: "Client Portal" },
-              { title: "Vendor Compliance Hub", sub: "Licenses & Expiry Alerts", tag: "Operations" },
-              { title: "Catalyst Command Center", sub: "Executive Live Dashboard", tag: "Management" },
-            ].map((node, i) => (
+              { 
+                stage: "01 · Attract & Capture", 
+                title: "Inbound Charter Funnel", 
+                sub: "Web & VIP referral capture into multi-division CRM", 
+                tag: "Capture" 
+              },
+              { 
+                stage: "02 · Follow Up & Route", 
+                title: "Lead Scoring & Triage", 
+                sub: "Automated VIP triage & 30-day partner nurture cadence", 
+                tag: "Nurture" 
+              },
+              { 
+                stage: "03 · Convert & Contract", 
+                title: "Dynamic Quoting & Portal", 
+                sub: "Route pricing engine, 1-click Zoho Sign & deposit invoice", 
+                tag: "Convert" 
+              },
+              { 
+                stage: "04 · Onboard & Retain", 
+                title: "Flight Manifest & VIP Care", 
+                sub: "Passenger itinerary updates, debrief & repeat booking", 
+                tag: "Retain" 
+              },
+              { 
+                stage: "05 · Operations Engine", 
+                title: "Catalyst Command Center", 
+                sub: "Vendor compliance alerts, live KPIs & SOP execution", 
+                tag: "Ops Engine" 
+              },
+            ].map((node) => (
               <div
                 key={node.title}
-                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-500/40 hover:bg-white hover:shadow-xs transition-all"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-500/40 hover:bg-white hover:shadow-xs transition-all flex flex-col justify-between"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider font-semibold">
-                    Stage 0{i + 1}
-                  </span>
-                  <span className="text-[10px] font-mono text-emerald-700 px-1.5 py-0.5 rounded bg-emerald-50 border border-emerald-100">
-                    {node.tag}
-                  </span>
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider font-semibold">
+                      {node.stage}
+                    </span>
+                    <span className="text-[10px] font-mono text-emerald-700 px-1.5 py-0.5 rounded bg-emerald-50 border border-emerald-100 font-semibold">
+                      {node.tag}
+                    </span>
+                  </div>
+                  <div className="text-xs font-bold text-slate-900 mb-1">
+                    {node.title}
+                  </div>
                 </div>
-                <div className="text-sm font-bold text-slate-900 mb-0.5">
-                  {node.title}
-                </div>
-                <div className="text-xs text-slate-500 font-mono">
+                <div className="text-[11px] text-slate-500 leading-snug mt-2">
                   {node.sub}
                 </div>
               </div>

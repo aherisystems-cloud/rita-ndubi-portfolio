@@ -120,26 +120,32 @@ export default function CaseStudies() {
             </div>
           </div>
 
-          {/* Workflow Steps Flow */}
+          {/* Workflow Steps Flow - Aheri Systems Framework */}
           <div className="pt-2">
-            <div className="text-xs font-mono uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2 font-medium">
-              <Layers className="w-3.5 h-3.5 text-emerald-600" />
-              <span>Step-by-Step Workflow</span>
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <div className="text-xs font-mono uppercase tracking-wider text-slate-500 flex items-center gap-2 font-medium">
+                <Layers className="w-3.5 h-3.5 text-emerald-600" />
+                <span>Customer Capture to Operations Engine Flow</span>
+              </div>
+              <span className="text-[11px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">
+                Aheri Systems Framework
+              </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
               {(activeCase.workflowSteps || []).map((step, idx) => (
                 <div
                   key={step.title}
                   className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:border-emerald-400 hover:shadow-xs transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <div className="text-[10px] font-mono text-emerald-700 mb-2 font-bold">
-                      Step 0{idx + 1}
+                    <div className="text-[10px] font-mono text-emerald-700 mb-2 font-bold flex items-center justify-between">
+                      <span>{step.stage || `Stage 0${idx + 1}`}</span>
                     </div>
                     <div className="text-xs font-bold text-slate-900 mb-1.5">
                       {step.title}
                     </div>
-                    <p className="text-[12px] text-slate-600 leading-relaxed">
+                    <p className="text-[11px] text-slate-600 leading-relaxed">
                       {step.desc}
                     </p>
                   </div>
