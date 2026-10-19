@@ -30,13 +30,20 @@ export default function Hero({ onOpenResume }) {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
           <a
-            href="#case-studies"
+            href="#framework"
             className="px-6 py-3 rounded-xl font-semibold text-white bg-slate-900 hover:bg-slate-800 shadow-sm hover:shadow transition-all flex items-center gap-2 text-sm"
           >
-            View Case Studies & Results
+            My Operating Framework
             <ArrowRight className="w-4 h-4" />
+          </a>
+
+          <a
+            href="#case-studies"
+            className="px-6 py-3 rounded-xl font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-200 shadow-2xs hover:shadow-xs transition-all flex items-center gap-2 text-sm"
+          >
+            10 Client Projects
           </a>
 
           <button
@@ -46,6 +53,45 @@ export default function Hero({ onOpenResume }) {
             <FileText className="w-4 h-4 text-emerald-600" />
             Executive Resume
           </button>
+        </div>
+
+        {/* Quick Positioning Matrix Strip (Who I Help · What I Do · How I Help) */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-4xl mx-auto mb-14 text-left">
+          <div className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-emerald-400/40 transition-all">
+            <div className="text-[10px] font-mono uppercase tracking-wider text-emerald-700 font-bold mb-1">
+              Who I Help
+            </div>
+            <div className="text-xs font-bold text-slate-900 mb-0.5">
+              Service Companies & Retail
+            </div>
+            <div className="text-[11px] text-slate-500 leading-snug">
+              Aviation, real estate, clinics, and e-commerce brands investing in paid ads & inbound inquiries.
+            </div>
+          </div>
+          
+          <div className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-emerald-400/40 transition-all">
+            <div className="text-[10px] font-mono uppercase tracking-wider text-emerald-700 font-bold mb-1">
+              What I Do
+            </div>
+            <div className="text-xs font-bold text-slate-900 mb-0.5">
+              Revenue-to-Ops Engines
+            </div>
+            <div className="text-[11px] text-slate-500 leading-snug">
+              Map the complete customer journey, plug revenue leakages, and automate back-office operations.
+            </div>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-emerald-400/40 transition-all">
+            <div className="text-[10px] font-mono uppercase tracking-wider text-emerald-700 font-bold mb-1">
+              How I Help
+            </div>
+            <div className="text-xs font-bold text-slate-900 mb-0.5">
+              Agentic AI & Custom Portals
+            </div>
+            <div className="text-[11px] text-slate-500 leading-snug">
+              Deploy autonomous sales agents, 1-click quoting (Zoho Sign), and Catalyst command centers.
+            </div>
+          </div>
         </div>
 
         {/* Real System Architecture Preview (Enterprise Flow) */}

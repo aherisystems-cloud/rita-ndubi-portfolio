@@ -7,13 +7,19 @@ export default function InteractiveResume({ onOpenModal }) {
 
   const handleCopyTextResume = () => {
     const resumeText = `RITA NDUBI
-Business Systems & AI Automation Specialist
+Business Systems, AI Automation & RevOps Specialist
 Location: ${personalInfo.location}
 LinkedIn: ${personalInfo.linkedinUrl}
 Email: ${personalInfo.email}
 
 PROFESSIONAL SUMMARY
 ${personalInfo.bio}
+
+CORE OPERATING FRAMEWORK: The Revenue-to-Operations Engine
+- What I Do: Turn fragmented customer journeys into autonomous, leak-proof revenue & ops engines
+- Who I Help: High-ticket service firms, clinical practices, and retail/e-commerce brands running paid media
+- How I Help: Agentic AI workflows, custom client portals (Zoho Creator/Supabase), and unified CRM pipelines
+- 5-Stage Process: 01 Attract & Capture → 02 Follow Up & Nurture → 03 Convert & Contract → 04 Onboard & Retain → 05 Operations Engine
 
 CORE EXPERIENCE
 ${experienceTimeline.map(exp => `

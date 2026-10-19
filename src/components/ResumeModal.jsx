@@ -85,6 +85,34 @@ export default function ResumeModal({ isOpen, onClose }) {
             </p>
           </div>
 
+          {/* Signature Operating Model */}
+          <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/80">
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-900 font-bold mb-1.5">
+              Signature Methodology: The Revenue-to-Operations (RevOps) Engine
+            </h2>
+            <div className="text-xs text-slate-700 leading-relaxed mb-3">
+              Deploying a unified 5-stage operating methodology: <strong>01 Attract & Capture</strong> (Catch every inquiry) → <strong>02 Follow Up & Nurture</strong> (Never let leads go cold) → <strong>03 Convert & Contract</strong> (Quote-to-cash with 1-click Zoho Sign) → <strong>04 Onboard & Retain</strong> (72-hr recovery & client care) → <strong>05 Operations Engine</strong> (Executive Catalyst command centers & compliance).
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px] font-mono text-emerald-950 font-medium">
+              <div className="p-2 rounded-lg bg-white/80 border border-emerald-100">
+                <span className="text-slate-400 block text-[9px]">WHO I HELP</span>
+                Service, High-Ticket & Retail
+              </div>
+              <div className="p-2 rounded-lg bg-white/80 border border-emerald-100">
+                <span className="text-slate-400 block text-[9px]">WHAT I DO</span>
+                Stop Revenue Leakage
+              </div>
+              <div className="p-2 rounded-lg bg-white/80 border border-emerald-100">
+                <span className="text-slate-400 block text-[9px]">HOW I HELP</span>
+                Agentic AI & Custom Portals
+              </div>
+              <div className="p-2 rounded-lg bg-white/80 border border-emerald-100">
+                <span className="text-slate-400 block text-[9px]">PROCESS</span>
+                5-Stage Journey Engine
+              </div>
+            </div>
+          </div>
+
           {/* Core Competencies */}
           <div>
             <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-800 font-bold mb-3">

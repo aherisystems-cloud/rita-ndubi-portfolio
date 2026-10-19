@@ -16,7 +16,8 @@ export default function Navbar({ onOpenResume }) {
 
   const navLinks = [
     { name: 'Systems', href: '#systems' },
-    { name: 'Case Studies', href: '#case-studies' },
+    { name: 'Framework', href: '#framework' },
+    { name: 'Projects', href: '#case-studies' },
     { name: 'Stack', href: '#stack' },
     { name: 'Ventures', href: '#ventures' },
     { name: 'Experience', href: '#experience' },

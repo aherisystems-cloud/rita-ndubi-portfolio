@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CorePillars from './components/CorePillars';
+import FrameworkSection from './components/FrameworkSection';
 import CaseStudies from './components/CaseStudies';
 import TechStack from './components/TechStack';
 import VentureSpotlight from './components/VentureSpotlight';
@@ -27,6 +28,7 @@ export default function App() {
           onOpenResume={() => setIsResumeOpen(true)}
         />
         <CorePillars />
+        <FrameworkSection />
         <CaseStudies />
         <TechStack />
         <VentureSpotlight />
