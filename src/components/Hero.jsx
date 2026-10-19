@@ -54,7 +54,7 @@ export default function Hero({ onOpenResume }) {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span className="text-slate-900 font-semibold">Real-World Implementation:</span>
-              <span className="text-slate-600 hidden sm:inline">Enterprise Operations & Client Portal Architecture</span>
+              <span className="text-slate-600 hidden sm:inline">Klock Aviation Complete Operating Engine</span>
             </div>
             <div className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded text-[11px] font-semibold border border-emerald-100">
               Zoho One + Catalyst + Sign

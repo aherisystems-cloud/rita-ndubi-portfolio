@@ -68,13 +68,13 @@ export const caseStudies = [
     tools: ["WhatsApp Business API", "Claude & OpenAI", "Make.com & Webhooks", "Airtable / Supabase", "Inventory APIs"]
   },
   {
-    id: "aviation-enterprise",
-    title: "Enterprise Multi-Division Operations & Executive Command Center",
-    client: "Private Aviation & Luxury Charter Group",
+    id: "klock-aviation",
+    title: "Multi-Division Enterprise Ecosystem & Executive Command Center",
+    client: "Klock Aviation (Private Charter & Aviation Services)",
     tagline: "Unifying multi-division CRM pipelines, dynamic client quoting portals, vendor compliance governance, and executive performance dashboards.",
     badge: "Enterprise Operating Engine",
-    problem: "The organization operated multiple commercial aviation divisions with disconnected inquiry channels, manual pricing calculations, and scattered compliance tracking for external vendors, fleet partners, and personnel onboarding.",
-    solution: "Delivered a centralized enterprise operating system built on Zoho One. Configured dedicated commercial pipelines with automated lead scoring and VIP routing; built an interactive client quotation portal that streamlines route pricing into 1-click agreements (Zoho Sign) and invoice generation; engineered a custom executive command dashboard on Zoho Catalyst for live operational visibility; and automated partner vendor compliance alerts and employee onboarding workflows.",
+    problem: "The company operated multiple distinct aviation business lines with disconnected inquiry channels, manual pricing calculations, and scattered compliance tracking for external vendors, fleet partners, and personnel onboarding.",
+    solution: "Architected a unified enterprise ecosystem using Zoho One. Configured dedicated commercial pipelines with automated lead scoring and VIP routing; built an interactive client quotation portal that streamlines route pricing into 1-click agreements (Zoho Sign) and invoice generation; engineered a custom executive command dashboard on Zoho Catalyst for live operational visibility; and automated partner vendor compliance alerts and employee onboarding workflows.",
     metrics: [
       { label: "Quote-to-Invoice Turnaround", before: "48 Hours", after: "< 5 Minutes" },
       { label: "Vendor Compliance Visibility", before: "Fragmented", after: "100% Automated" },
@@ -110,13 +110,13 @@ export const caseStudies = [
     tools: ["Claude AI", "Cloudflare Pages", "GitHub", "Hugo", "REST APIs"]
   },
   {
-    id: "property-investment-revops",
+    id: "sydia-realty",
     title: "CRM Strategy Audit & Investor Journey Optimization",
-    client: "Property Investment & Real Estate Group",
+    client: "Sydia Realty (Property Investment & Real Estate)",
     tagline: "Auditing and mapping the end-to-end investor lifecycle to prevent off-plan deal fall-throughs and drive repeat purchases.",
     badge: "CRM Strategy & RevOps Audit",
     problem: "High-value real estate leads and off-plan property investors were slipping through operational cracks due to fragmented CRM stage tracking, delayed off-plan development updates, and lack of structured post-sale retention.",
-    solution: "Conducted a comprehensive CRM audit and formulated an optimization blueprint. Mapped the entire customer journey from initial inquiry, private viewing, deposit payment, and milestone off-plan construction updates, through to deal close and multi-property investor retention nurture.",
+    solution: "Conducted a comprehensive Zoho CRM audit and formulated an optimization blueprint. Mapped the entire customer journey from initial inquiry, private viewing, deposit payment, and milestone off-plan construction updates, through to deal close and multi-property investor retention nurture.",
     metrics: [
       { label: "Pipeline Visibility", before: "Fragmented", after: "100% Clear Stages" },
       { label: "Follow-up Consistency", before: "Ad-hoc", after: "Automated Cadence" },
@@ -207,8 +207,8 @@ export const experienceTimeline = [
       "Build AI-powered business systems, quotation engines, client portals, and automation workflows across Zoho One, Zoho Catalyst, Zoho Creator, Supabase, and Cloudflare.",
       "Deploy practical AI pipelines and agents using Claude, Model Context Protocol (MCP), and OpenAI for inquiry classification, quoting, and operational triage.",
       "Retail AI Sales Agent: Developed conversational AI order processing agents for retail and e-commerce brands running Click-to-WhatsApp and paid ads; integrated live backend inventory, intelligent out-of-stock cross-selling, and automated 72-hour re-engagement sequences to stop ad-spend revenue leakage.",
-      "Private Aviation & Charter Group: Delivered enterprise Zoho One operating infrastructure across multiple commercial divisions; engineered custom executive command dashboard (Zoho Catalyst), automated quoting workflows, vendor compliance tracking, and paperless onboarding with digital signatures.",
-      "Property Investment Firm: Conducted comprehensive CRM audit and customer journey optimization to eliminate pipeline leakages from off-plan inquiry to repeat investor retention.",
+      "Klock Aviation: Delivered enterprise Zoho One operating infrastructure across multiple commercial divisions; engineered custom executive command dashboard (Zoho Catalyst), automated quoting workflows, vendor compliance tracking, and paperless onboarding with digital signatures.",
+      "Sydia Realty: Conducted comprehensive Zoho CRM audit and customer journey optimization to eliminate pipeline leakages from off-plan inquiry to repeat investor retention.",
       "Mapenzi Connect: Built complete CRM architecture, automated newsletter delivery, and webinar registration-to-attendee workflows."
     ]
   },
