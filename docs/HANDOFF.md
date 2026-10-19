@@ -3,7 +3,8 @@
 **Timestamp**: 2026-10-19T12:10:00+03:00  
 **Project**: Rita Ndubi — Personal Brand, Portfolio & Operating Engine  
 **Live Dev Server**: `http://localhost:3000` (Background Daemon)  
-**Latest Git Commit**: `44500c4` on branch `master`
+**GitHub Repository**: [https://github.com/aherisystems-cloud/rita-ndubi-portfolio](https://github.com/aherisystems-cloud/rita-ndubi-portfolio)  
+**Branch**: `main` (Tracking `origin/main`)
 
 ---
 
