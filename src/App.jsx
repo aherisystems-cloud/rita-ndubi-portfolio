@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import MissionSection from './components/MissionSection';
 import CorePillars from './components/CorePillars';
 import FrameworkSection from './components/FrameworkSection';
 import CaseStudies from './components/CaseStudies';
@@ -15,7 +16,7 @@ export default function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-emerald-500 selection:text-white">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-brand-500 selection:text-white">
       
       {/* Sleek Floating Navbar */}
       <Navbar
@@ -27,6 +28,7 @@ export default function App() {
         <Hero
           onOpenResume={() => setIsResumeOpen(true)}
         />
+        <MissionSection />
         <CorePillars />
         <FrameworkSection />
         <CaseStudies />

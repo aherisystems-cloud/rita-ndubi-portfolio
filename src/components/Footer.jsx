@@ -63,7 +63,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Rita Ndubi. All rights reserved.
           </div>
           <div>
-            Nairobi, Kenya · Working with teams globally
+            Nairobi, Kenya · Working with teams worldwide
           </div>
         </div>
       </div>

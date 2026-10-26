@@ -7,7 +7,7 @@ export default function InteractiveResume({ onOpenModal }) {
 
   const handleCopyTextResume = () => {
     const resumeText = `RITA NDUBI
-Business Systems, AI Automation & RevOps Specialist
+${personalInfo.title}
 Location: ${personalInfo.location}
 LinkedIn: ${personalInfo.linkedinUrl}
 Email: ${personalInfo.email}
@@ -16,14 +16,14 @@ PROFESSIONAL SUMMARY
 ${personalInfo.bio}
 
 CORE OPERATING FRAMEWORK: The Revenue-to-Operations Engine
-- What I Do: Turn fragmented customer journeys into autonomous, leak-proof revenue & ops engines
-- Who I Help: High-ticket service firms, clinical practices, and retail/e-commerce brands running paid media
-- How I Help: Agentic AI workflows, custom client portals (Zoho Creator/Supabase), and unified CRM pipelines
-- 5-Stage Process: 01 Attract & Capture → 02 Follow Up & Nurture → 03 Convert & Contract → 04 Onboard & Retain → 05 Operations Engine
+- What I do: turn manual sales and back-office work into connected, automated workflows
+- Who I help: service businesses with complex quotes, busy inboxes and too many spreadsheets
+- How: CRM pipelines, quote-to-invoice automation, integrations, and AI where the input is messy
+- Process: 01 Attract & Capture, 02 Follow Up & Nurture, 03 Convert & Contract, 04 Onboard & Retain, 05 Operations Engine
 
-CORE EXPERIENCE
+EXPERIENCE
 ${experienceTimeline.map(exp => `
-${exp.role} — ${exp.organization} (${exp.period})
+${exp.role}, ${exp.organization} (${exp.period})
 ${exp.highlights.map(h => `- ${h}`).join('\n')}
 `).join('\n')}
 `;
@@ -39,32 +39,25 @@ ${exp.highlights.map(h => `- ${h}`).join('\n')}
         
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div className="max-w-2xl">
-            <div className="text-xs font-mono uppercase tracking-widest text-emerald-700 font-semibold mb-3">
+            <div className="text-xs font-mono uppercase tracking-widest text-brand-700 font-semibold mb-3">
               Experience
             </div>
             <h2 className="text-3xl font-bold text-slate-900 tracking-tight mb-3">
               Work Experience & Background
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Proven experience setting up CRM systems, automating everyday business tasks, and helping cross-functional teams run with clarity.
+              From banking operations to marketing automation to building business systems and AI-powered platforms: nine years of making the way organizations work faster, clearer and more connected.
             </p>
           </div>
 
           <div className="flex items-center gap-3">
-            <button
-              onClick={handleCopyTextResume}
-              className="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono flex items-center gap-2 transition-all cursor-pointer shadow-2xs"
-            >
-              {copied ? <Check className="w-3.5 h-3.5 text-emerald-600 font-bold" /> : <Copy className="w-3.5 h-3.5 text-slate-400" />}
-              <span>{copied ? "Copied ATS Text" : "Copy Plaintext ATS"}</span>
-            </button>
 
             <button
               onClick={onOpenModal}
               className="px-4 py-2 rounded-xl font-semibold text-white bg-slate-900 hover:bg-slate-800 text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-sm"
             >
               <FileText className="w-3.5 h-3.5" />
-              <span>Full Interactive CV</span>
+              <span>View Full Resume</span>
             </button>
           </div>
         </div>
@@ -81,7 +74,7 @@ ${exp.highlights.map(h => `- ${h}`).join('\n')}
                   <h3 className="text-lg font-bold text-slate-900">
                     {item.role}
                   </h3>
-                  <div className="text-xs font-mono text-emerald-700 font-semibold">
+                  <div className="text-xs font-mono text-brand-700 font-semibold">
                     {item.organization} · {item.location}
                   </div>
                 </div>
@@ -93,7 +86,7 @@ ${exp.highlights.map(h => `- ${h}`).join('\n')}
               <div className="space-y-2 pt-2 border-t border-slate-100">
                 {item.highlights.map((h, i) => (
                   <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    <span className="text-emerald-600 font-mono font-bold mt-0.5">›</span>
+                    <span className="text-brand-600 font-mono font-bold mt-0.5">›</span>
                     <span>{h}</span>
                   </div>
                 ))}

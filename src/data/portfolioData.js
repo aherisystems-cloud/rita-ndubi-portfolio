@@ -1,98 +1,100 @@
+// Site copy. Rule: every claim here must be true and defensible in an interview.
+// No invented metrics. Before/after values describe what changed, not made-up numbers.
+
 export const personalInfo = {
   name: "Rita Ndubi",
   title: "Business Systems, AI Automation & RevOps Specialist",
-  subtitle: "Autonomous Workflows · Model Context Protocol (MCP) · Claude & OpenAI · Cloudflare & Supabase",
-  location: "Nairobi (UTC+3) · Working with teams globally",
-  bio: "I operate at the intersection of deep business operations, end-to-end customer journey mapping, and Revenue Operations (RevOps). Combining a strong commercial foundation in Finance & Banking with 9+ years in operational technology, I analyze the full revenue cycle—from initial ad acquisition (Click-to-WhatsApp, paid media, inbound forms) to automated quoting, live inventory checks, payment, and post-sale retention. By deploying autonomous conversational AI sales agents, custom portals (Zoho Creator, Supabase, Cloudflare), and automated middleware, I systematically eliminate revenue leakages and help teams scale with speed and precision.",
+  subtitle: "Zoho One · CRM & Workflow Automation · APIs & Webhooks · AI Agents (Claude, OpenAI, MCP)",
+  location: "Nairobi, Kenya · Working with teams worldwide",
+  bio: "I build the systems that carry a customer from first inquiry to paid invoice: CRM pipelines, quote and approval flows, e-signature, invoicing, automated follow-up and management dashboards. I start by mapping how the work is really done, then remove the re-typing, the handoffs nobody owns and the status questions customers keep asking. My background is 9+ years across banking operations at Commercial Bank of Africa, digital marketing and CRM automation, and AI implementation. I work in Zoho One, HubSpot and GoHighLevel, Make and Zapier, REST APIs and webhooks, SQL databases (Supabase, Cloudflare D1), and AI agents built on Claude and OpenAI.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
-  calendlyUrl: "https://calendly.com",
   email: "ritakawira@gmail.com",
   quickStats: [
-    { label: "AI & Automated Workflows Built", value: "65+", suffix: "" },
-    { label: "Process Time Saved with AI", value: "85%", suffix: "" },
-    { label: "System & Pipeline Reliability", value: "99.9%", suffix: "" }
+    { label: "Projects on This Site (6 Client, 3 Own Platforms)", value: "9", suffix: "" },
+    { label: "Years in Operations, CRM & Automation", value: "9+", suffix: "" },
+    { label: "Stages in My Customer-to-Operations Framework", value: "5", suffix: "" }
   ]
 };
 
 export const operatingFramework = {
   name: "The Revenue-to-Operations (RevOps) Engine",
-  tagline: "Customer Capture to Operations Engine Framework",
-  summary: "A unified operating model designed to stop revenue leakages by bridging customer acquisition directly to back-office delivery.",
+  tagline: "From first inquiry to back-office delivery",
+  summary: "One connected system from the moment a customer gets in touch to the moment the work is delivered and paid for.",
   coreQuestions: [
     {
       id: "what",
       number: "01",
       question: "What do you do?",
-      shortAnswer: "I transform fragmented sales funnels and manual back-office tasks into autonomous, leak-proof Revenue & Operations Engines.",
-      details: "I map the end-to-end customer journey, eliminate operational bottlenecks, and connect lead acquisition directly to contract signing, payment, and internal fulfillment."
+      shortAnswer: "I design and build the systems your organization runs on, and put AI and automation to work inside them.",
+      details: "In most organizations, marketing, sales, operations and finance each run on their own tools, held together by email, spreadsheets and people re-typing data. I connect them into one system, automate the repetitive work, and add AI where it gives your team real time back."
     },
     {
       id: "who",
       number: "02",
-      question: "Who do you help?",
-      shortAnswer: "Growing service businesses, high-ticket operators (aviation, real estate, clinics), and retail/e-commerce brands investing in paid ads or inbound inquiries.",
-      details: "Companies spending on marketing but losing deals to delayed responses, businesses drowning in spreadsheets, and founders who need real-time operational clarity."
+      question: "Who do you work with?",
+      shortAnswer: "Leadership and operations teams who are ready to run on systems and AI, not spreadsheets and memory.",
+      details: "Founders and leadership teams planning AI adoption, operations, sales and finance owners who want their processes connected, and IT teams with more requests than people. I have done this across aviation, real estate, healthcare, community platforms and e-commerce."
     },
     {
       id: "how",
       number: "03",
-      question: "How do you help them?",
-      shortAnswer: "By architecting practical Agentic AI workflows, custom client portals, and unified CRM pipelines that take autonomous action.",
-      details: "Deploying conversational AI sales agents for 24/7 inquiry triage, 1-click dynamic quoting portals with digital e-signatures (Zoho Sign), and executive command centers (Zoho Catalyst / Supabase)."
+      question: "How do you do it?",
+      shortAnswer: "I map how your organization really works, then build the system and the AI around it.",
+      details: "I map every function and every relationship (customers, vendors, partners, assets), connect your CRM, finance and operations tools, automate the routine steps, and add AI agents with clear rules and a human approval step wherever money, a customer promise or a policy is involved."
     },
     {
       id: "process",
       number: "04",
-      question: "What is your process?",
-      shortAnswer: "The 5-Stage Lifecycle: Attract & Capture → Follow Up & Nurture → Convert & Contract → Onboard & Retain → Operations Engine.",
-      details: "A disciplined, step-by-step operating framework that guarantees every inquiry is captured, nurtured, converted, smoothly onboarded, and supported by a robust back office."
+      question: "What does a project look like?",
+      shortAnswer: "Discover, design, build, test, hand over, then improve. Mapped across five stages from first inquiry to back office.",
+      details: "We start with how the work is done today and agree what success looks like. I fix the biggest bottleneck first, test with real past cases, document every workflow, and train the team so they own the system after go-live."
     }
   ],
   stages: [
     {
       step: "01",
       name: "Attract & Capture",
-      tagline: "Catch every inquiry & eliminate lost attribution",
-      problem: "Ad budgets are wasted when high-intent prospects click but fall through the cracks due to delayed capture or broken attribution.",
-      solution: "Engineered multi-channel capture funnels (Click-to-WhatsApp, paid media, search landing pages, and web chatbots) with instant webhook logging into CRM.",
-      aiRole: "Autonomous inquiry capture, instant channel tagging, and automated attribution tracking.",
-      metric: "100% Inbound Lead Capture (< 5s Response Time)"
+      tagline: "Every inquiry recorded, with an owner",
+      problem: "Inquiries arrive by email, WhatsApp, phone and web forms. Some are never logged, nobody knows which campaign they came from, and the first reply depends on who happens to see it.",
+      solution: "Every channel feeds one CRM pipeline. Each inquiry is tagged with its source, assigned an owner by rules, and gets an instant acknowledgement.",
+      aiRole: "Reads free-text messages and fills the CRM fields (name, need, dates, budget) so nobody types them in.",
+      metric: "Every inquiry logged with an owner from the first touch"
     },
     {
       step: "02",
       name: "Follow Up & Nurture",
-      tagline: "Never let a lead go cold & qualify with speed",
-      problem: "Slow human response times cause 60%+ drop-offs; sales reps waste hours chasing unvetted inquiries while high-value VIPs wait.",
-      solution: "Deploy conversational AI agents and automated qualification cadences. Leads are dynamically scored, VIPs are fast-tracked, and inquiries receive 24/7 consultation.",
-      aiRole: "Autonomous natural language triage, live database/inventory queries, and 30-day automated partner cadences.",
-      metric: "From 6-Hour Lag to Instant 24/7 Consultation"
+      tagline: "No lead goes cold",
+      problem: "Follow-up depends on memory. Hot leads wait while the team chases inquiries that were never going to buy.",
+      solution: "Qualification rules and scoring sort leads by fit and urgency. Follow-up sequences run by email, SMS or WhatsApp, and leads that stall raise a task for a person.",
+      aiRole: "Answers routine questions from approved information and drafts follow-ups for a person to approve.",
+      metric: "Instant first response, around the clock"
     },
     {
       step: "03",
       name: "Convert & Contract",
-      tagline: "Quote-to-cash with zero administrative friction",
-      problem: "Complex pricing calculations, manual PDF drafting, and back-and-forth email negotiations stall deals at the finish line.",
-      solution: "Interactive client approval portals with dynamic pricing calculators, 1-click agreement signing (Zoho Sign), and automated invoice generation (Zoho Books / Stripe).",
-      aiRole: "Dynamic route/package pricing, automated document generation, and contract status webhooks.",
-      metric: "Turnaround Cut from 48 Hours to < 5 Minutes"
+      tagline: "Quote to signed contract to invoice, without re-typing",
+      problem: "Quotes are built by hand in spreadsheets, sent as PDFs, approved by email, then typed again into the invoice. Each step adds delay and errors.",
+      solution: "A quote builder that uses the data already on the CRM record, an internal approval step, client signature through Zoho Sign, and the deposit invoice created in Zoho Books when the contract is signed.",
+      aiRole: "Pulls quote details out of the client's request; prices and approvals stay rule-based and human-checked.",
+      metric: "Quote, contract and invoice from one record, no re-typing"
     },
     {
       step: "04",
       name: "Onboard & Retain",
-      tagline: "Turn single transactions into long-term customer value",
-      problem: "Zero follow-up after the sale leads to customer anxiety, high refund rates, and missed upsell or repeat-booking opportunities.",
-      solution: "Automated onboarding workflows (flight manifests, WhatsApp delivery updates, calendar invites) paired with 72-hour abandoned recovery and referral incentives.",
-      aiRole: "72-hour autonomous re-engagement for stalled shoppers, automated review solicitation, and repeat-buyer triggers.",
-      metric: "26% Rescued Abandoned Orders & Higher LTV"
+      tagline: "Customers know what happens next",
+      problem: "After the sale, customers get silence, so they call to ask for updates, and nobody asks for a review or the next booking.",
+      solution: "Automatic onboarding messages, reminders and status updates, post-service feedback requests, and repeat-business prompts.",
+      aiRole: "Drafts personalised updates and sorts incoming replies into routine and needs-a-person.",
+      metric: "Automatic follow-up after every sale"
     },
     {
       step: "05",
       name: "Operations Engine",
-      tagline: "Run the back office with clockwork governance",
-      problem: "Founders remain trapped inside spreadsheets; vendor compliance lapses create legal risks; executive visibility is delayed by weeks.",
-      solution: "Custom executive command centers (Zoho Catalyst), automated vendor/crew license expiry alerts, role-based security governance, and 20 documented SOP playbooks.",
-      aiRole: "Autonomous compliance monitors, cross-system data synchronization, and real-time executive KPI rollups.",
-      metric: "Real-Time 360° Management Visibility (Zero Spreadsheet Clutter)"
+      tagline: "The back office runs on live data",
+      problem: "Management waits for someone to compile a spreadsheet, vendor documents expire unnoticed, and each process lives in one person's head.",
+      solution: "Management dashboards on live data, expiry alerts for vendor and staff documents, role-based access, and written SOPs for each module.",
+      aiRole: "Runs scheduled checks and reports, and explains changes in the numbers; the numbers themselves come from the system.",
+      metric: "Live management dashboards instead of spreadsheets"
     }
   ]
 };
@@ -100,535 +102,321 @@ export const operatingFramework = {
 export const corePillars = [
   {
     id: "agentic-systems",
-    title: "Agentic AI & Multi-Agent Systems",
-    subtitle: "Autonomous Action Execution · Tool-Calling · System-of-Agents Architecture",
-    description: "Designing and deploying production AI agents that take autonomous action across real business software. Moving beyond basic chatbots to multi-agent architectures where specialized agents collaborate—handling customer intent discovery, live inventory checks, out-of-stock alternative recommendations, and CRM task execution without human bottlenecks.",
-    skills: ["Agentic AI Workflows", "System of Agents", "Model Context Protocol (MCP)", "Claude & OpenAI Tool Calling", "Autonomous Action Execution"]
+    title: "AI Agents & AI-Assisted Workflows",
+    subtitle: "Claude & OpenAI · Model Context Protocol (MCP) · Human approval built in",
+    description: "I use AI where the input is messy: reading free-text inquiries, extracting details into CRM fields, sorting what needs a person, and drafting replies for approval. I connect AI agents to live tools (Zoho CRM, Zoho Social, databases, analytics) through MCP to run recurring work such as daily outreach and weekly reports, with every action logged.",
+    skills: ["Claude & OpenAI", "Tool Calling", "Model Context Protocol (MCP)", "Claude Code", "Human-in-the-Loop Review"]
   },
   {
     id: "journey-mapping",
-    title: "End-to-End Customer Journey Mapping",
-    subtitle: "Full-Funnel Audits · Lead Routing · Revenue Leakage Elimination",
-    description: "Analyzing the complete end-to-end customer lifecycle from initial ad discovery (Click-to-WhatsApp, paid search, social funnels) to deal close and repeat retention. Designing strict stage-gate definitions, lead temperature scoring, diplomatic/VIP routing, and automated 72-hour re-engagement sequences to protect conversion velocity.",
-    skills: ["Customer Journey Audits", "Click-to-WhatsApp Funnels", "72-Hour Re-Engagement", "VIP & Diplomatic Routing", "Stale-Lead Escalation"]
+    title: "Process & Customer Journey Mapping",
+    subtitle: "Discovery · Bottleneck analysis · Requirements · Prioritisation",
+    description: "Before building anything, I walk through real recent cases with the people doing the work and map every step, tool, handoff and wait. That shows where time goes. I rank fixes by hours saved, error risk and build effort, and write each requirement as trigger, inputs, rules, output and owner.",
+    skills: ["Process Mapping", "Customer Journey Audits", "Requirements Writing", "Prioritisation", "SOP Documentation"]
   },
   {
     id: "revenue-ops",
-    title: "AI-Powered Revenue Operations (RevOps)",
-    subtitle: "Quote-to-Cash · Dynamic Pricing · Automated Milestone Invoicing",
-    description: "Unifying sales pipelines, finance, and client agreements into an automated revenue engine. Eliminating manual copy-pasting through dynamic quoting portals, 1-click client agreement signing (Zoho Sign), automated deposit invoices (Zoho Books), and automated partner referral commissions.",
-    skills: ["Quote-to-Cash Automation", "Interactive Approval Portals", "Zoho Sign & Books", "Partner Commissions Engine", "Stripe & Payment Webhooks"]
+    title: "Quote-to-Cash & Revenue Operations",
+    subtitle: "Quotes · Approvals · E-signature · Invoicing · Payments",
+    description: "I connect the steps between a request and a paid invoice: quote builders fed from the CRM record, approval steps, Zoho Sign contracts that update the deal when signed, Zoho Books invoices created automatically, and payment gateway webhooks that confirm payment without anyone checking by hand.",
+    skills: ["Quote-to-Cash", "Zoho Sign & Zoho Books", "Approval Workflows", "Payment Webhooks", "Pipeline Design"]
   },
   {
     id: "ops-infrastructure",
-    title: "Operations, Governance & Executive Command Centers",
-    subtitle: "Zoho Catalyst & Creator · Vendor Compliance · Executive 360 Dashboards",
-    description: "Building the internal back-office infrastructure required to scale. Engineering custom executive command centers on Zoho Catalyst, dedicated prospect qualification databases in Zoho Creator, vendor license/insurance expiration alerts, and paperless Zoho People staff onboarding with 20+ documented process SOPs.",
-    skills: ["Zoho Catalyst Command Center", "Zoho Creator Prospect Engine", "Vendor Compliance Alerts", "Zoho People HR Onboarding", "20+ Module Field Guides & SOPs"]
+    title: "Integrations, Data & Reporting",
+    subtitle: "REST APIs · Webhooks · SQL · Dashboards",
+    description: "I connect systems so data moves without manual exports: CRM to invoicing to dashboards, databases to websites, analytics APIs to automated weekly reports. I work with Make and Zapier, Cloudflare Workers and Pages Functions, SQL databases (Supabase, Cloudflare D1), Zoho Analytics and Zoho Catalyst, and GitHub Actions.",
+    skills: ["REST APIs & Webhooks", "Make & Zapier", "Supabase & Cloudflare D1", "Zoho Analytics & Catalyst", "GitHub Actions"]
   }
 ];
 
 export const caseStudyCategories = [
   { id: "all", label: "All Projects" },
-  { id: "agentic-ai", label: "AI & Agentic Workflows" },
-  { id: "enterprise-crm", label: "Enterprise CRM & RevOps" },
-  { id: "healthcare", label: "Healthcare & Clinic Systems" },
-  { id: "platforms", label: "Web Platforms & Cloud" }
+  { id: "enterprise-crm", label: "CRM & Business Systems" },
+  { id: "healthcare", label: "Healthcare & Growth" },
+  { id: "platforms", label: "My Own Platforms" }
 ];
 
 export const caseStudies = [
   {
     id: "klock-aviation",
     category: "enterprise-crm",
-    title: "Multi-Division Enterprise Ecosystem & Executive Command Center",
-    client: "Klock Aviation (Private Charter & Aviation Services)",
-    tagline: "Unifying multi-division CRM pipelines, dynamic client quoting portals, vendor compliance governance, and executive performance dashboards.",
-    badge: "Enterprise Operating Engine",
-    problem: "The company operated multiple distinct aviation business lines with disconnected inquiry channels, manual pricing calculations, and scattered compliance tracking for external vendors, fleet partners, and personnel onboarding.",
-    solution: "Architected a unified enterprise ecosystem using Zoho One. Configured dedicated commercial pipelines with automated lead scoring and VIP routing; built an interactive client quotation portal that streamlines route pricing into 1-click agreements (Zoho Sign) and invoice generation; engineered a custom executive command dashboard on Zoho Catalyst for live operational visibility; and automated partner vendor compliance alerts and employee onboarding workflows.",
+    title: "End-to-End Zoho One Operating System for an Aviation Group",
+    client: "Klock Aviation (charter, aviation services and aircraft asset management)",
+    tagline: "Marketing, sales, operations and finance connected across every division, with a dedicated process for customers, vendors, partners and aircraft owners.",
+    badge: "Full Zoho One Implementation",
+    problem: "Klock runs several aviation business lines, including charter services and an Asset Management & Solutions division that manages aircraft and related services for their owners. Every line deals with four different groups: current and prospective customers, vendors, partners and aircraft owners. Each group had its own way of working spread across email, WhatsApp, spreadsheets and separate tools, so marketing, sales, operations and accounting never shared one view of any customer, supplier or asset.",
+    solution: "I designed and implemented Zoho One as the company's operating system: one connected platform where every function and every relationship has its own defined process, and information entered once flows through to sales, operations, finance and management reporting.",
+    scope: [
+      { area: "Marketing", desc: "Lead generation and outreach system for prospective clients, segmented campaigns by division, and re-engagement campaigns that bring past and dormant clients back." },
+      { area: "Sales", desc: "A pipeline per division with routing and priority rules, quotes built from the CRM record, internal approval, and client signature in Zoho Sign that updates the deal automatically." },
+      { area: "Operations", desc: "Booking and service delivery workflows, client updates through the job, and document tracking for every trip and service." },
+      { area: "Finance", desc: "Deposit and final invoices raised in Zoho Books from signed deals, so sales and accounting work from the same figures." },
+      { area: "Vendors", desc: "Vendor onboarding, document collection, and alerts before any licence, certificate or insurance expires." },
+      { area: "Partners", desc: "Partner records, referral tracking and structured follow-up so every partnership has an owner and a next step." },
+      { area: "Aircraft Owners", desc: "For Asset Management & Solutions: owner and aircraft records with their own onboarding, service and communication process." },
+      { area: "Leadership", desc: "A management dashboard on Zoho Catalyst showing pipeline, operations and finance across all divisions." }
+    ],
     metrics: [
-      { label: "Quote-to-Invoice Turnaround", before: "48 Hours", after: "< 5 Minutes" },
-      { label: "Vendor Compliance Visibility", before: "Fragmented", after: "100% Automated" },
-      { label: "Executive Reporting Speed", before: "Days", after: "Real-Time (1-Click)" }
+      { label: "Relationships", before: "Spread across tools", after: "Customers, vendors, partners, owners in one system" },
+      { label: "Quote to Invoice", before: "Re-typed at each step", after: "One connected record" },
+      { label: "Management View", before: "Manual exports", after: "Live cross-division dashboard" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Multi-Division Inquiry Funnel", 
-        desc: "Captures inbound charter requests across distinct commercial divisions from web funnels, Google Ads, and private referral networks." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Lead Scoring & Route Triage", 
-        desc: "Automated qualification engine scores charter leads, assigns VIP priority, and runs 30-day partner follow-up cadences so no inquiry goes cold." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Dynamic Quoting & Client Portal", 
-        desc: "Calculates complex multi-leg route pricing and provides a 1-click client approval portal with digital Zoho Sign contracts and deposit invoicing." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Flight Manifest & VIP Care", 
-        desc: "Automates passenger manifest delivery, automated WhatsApp flight status updates, post-charter feedback, and repeat booking triggers." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Catalyst Command Center & Compliance", 
-        desc: "Custom Zoho Catalyst executive dashboard monitoring live fleet KPIs, automated vendor/crew license expiry alerts, and 20 living SOP guides." 
-      }
+      { stage: "01 · Attract & Capture", title: "Outreach & Intake", desc: "Lead generation outreach and campaigns per division, with every inquiry landing in the right pipeline, tagged by source." },
+      { stage: "02 · Follow Up & Nurture", title: "Routing & Re-engagement", desc: "Rules assign an owner and flag priority clients; re-engagement campaigns keep past and dormant clients warm." },
+      { stage: "03 · Convert & Contract", title: "Quote, Sign, Invoice", desc: "Quote built from the CRM record, approved internally, signed in Zoho Sign, and invoiced in Zoho Books." },
+      { stage: "04 · Onboard & Retain", title: "Delivery & Relationships", desc: "Service delivery workflows for clients, plus defined onboarding and communication for vendors, partners and aircraft owners." },
+      { stage: "05 · Operations Engine", title: "Compliance & Dashboard", desc: "Vendor document expiry alerts, written SOPs per module, and a Zoho Catalyst dashboard across all divisions." }
     ],
-    tools: ["Zoho One", "Zoho Catalyst", "Zoho Sign", "Zoho Creator", "Make.com", "Analytics"]
-  },
-  {
-    id: "retail-ai-sales-agent",
-    category: "agentic-ai",
-    title: "Conversational Retail AI Sales Agent & Order Recovery Engine",
-    client: "Retail & E-Commerce Brands (Click-to-WhatsApp & Paid Media)",
-    tagline: "Plugging ad-spend revenue leakage with live inventory-synced conversational AI, intelligent out-of-stock cross-selling, and automated 72-hour WhatsApp re-engagement.",
-    badge: "Agentic AI & RevOps",
-    problem: "Retail and e-commerce brands investing heavily in paid ads (Click-to-WhatsApp, social ads, website funnels) suffered severe revenue leakages: delayed human response times caused high drop-offs, out-of-stock items turned into lost sales without alternatives, and leads who stalled mid-order were abandoned forever without follow-up.",
-    solution: "Engineered an autonomous conversational AI sales agent integrated directly into backend inventory (Airtable / Supabase / e-commerce catalogs). The agent naturally converses with inbound ad leads, identifies customer requirements, verifies real-time stock levels, and intelligently suggests matching cross-sell and upsell alternatives if an item is unavailable. Built an automated 72-hour WhatsApp re-engagement engine that re-contacts undecided shoppers with personalized incentives to recover unfinished orders.",
-    metrics: [
-      { label: "Inbound Lead Response Time", before: "2 to 6 Hours", after: "Instant (< 5s)" },
-      { label: "Out-of-Stock Recovery", before: "0% (Lost Sale)", after: "32% Cross-Sell Conversion" },
-      { label: "72-Hour Abandoned Recovery", before: "Zero Follow-up", after: "26% Orders Rescued" }
-    ],
-    workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Click-to-WhatsApp & Ad Routing", 
-        desc: "Captures high-intent shopper traffic from Click-to-WhatsApp ads, web stores, and social campaigns directly into an autonomous AI chat session." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Live Inventory Consultation", 
-        desc: "AI autonomously queries backend inventory (Supabase/Airtable) to verify real-time sizing, specifications, and availability without human delay." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Smart Cross-Sell & Instant Checkout", 
-        desc: "Suggests matching in-stock alternatives if a product is sold out and generates instant frictionless checkout links to secure the sale." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "72-Hour Abandoned Chat Recovery", 
-        desc: "Autonomous re-engagement sequence contacts hesitant shoppers within 72 hours via WhatsApp with personalized incentives and delivery updates." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Inventory Sync & Analytics Hub", 
-        desc: "Automates real-time catalog synchronization, multi-channel stock deduction, low-inventory alerts, and drop-off analytics for management." 
-      }
-    ],
-    tools: ["WhatsApp Business API", "Claude & OpenAI", "Make.com & Webhooks", "Airtable / Supabase", "Inventory APIs"]
-  },
-  {
-    id: "vivalife-clinic",
-    category: "healthcare",
-    title: "Patient Digital Intake Automation, WhatsApp Reminders & CRM",
-    client: "VivaLife Pediatric Clinic (Healthcare & Pediatric Care)",
-    tagline: "Streamlining patient intake, eliminating appointment no-shows with WhatsApp API, and automating post-consultation care reviews.",
-    badge: "Healthcare Practice Automation",
-    problem: "Pediatric patient intake relied on manual paper forms causing reception queues; appointment no-shows were frequent due to manual phone reminders; and post-visit parent reviews were rarely collected.",
-    solution: "Deployed Zoho CRM integrated with WhatsApp Business API and automated email workflows. Implemented mobile-friendly digital patient intake forms, automated 24-hour and 2-hour appointment reminder sequences via WhatsApp, and automated post-consultation feedback collection linked to Google Reviews. Set up Google Analytics and Zoho Analytics for patient volume tracking.",
-    metrics: [
-      { label: "Intake Processing Time", before: "15 Mins Paperwork", after: "Instant Digital" },
-      { label: "Appointment No-Show Rate", before: "28% No-Shows", after: "< 6% with WhatsApp" },
-      { label: "Patient Feedback Volume", before: "Scattered", after: "+140% Verified Reviews" }
-    ],
-    workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Digital Appointment Funnel", 
-        desc: "Online appointment booking and digital marketing funnels capturing parent inquiries across search and social channels." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "WhatsApp Appointment Confirmations", 
-        desc: "Automated WhatsApp appointment confirmations with clinic directions and pre-consultation medical questionnaire links." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Digital Registration & Slot Confirmation", 
-        desc: "Frictionless digital patient registration securing confirmed calendar slots with pediatric specialists." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Post-Consultation Care & Reviews", 
-        desc: "Automated post-visit care reminders, prescription adherence check-ins, and automated review collection requests." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Patient History Hub & Analytics", 
-        desc: "Zoho CRM patient history database, doctor schedule synchronization, and Zoho Analytics clinic throughput reports." 
-      }
-    ],
-    tools: ["Zoho CRM", "WhatsApp Business API", "Zoho Analytics", "Google Analytics", "Zoho Social"]
+    tools: ["Zoho CRM", "Zoho Campaigns", "Zoho Sign", "Zoho Books", "Zoho Creator", "Zoho Catalyst"]
   },
   {
     id: "mapenzi-connect",
     category: "enterprise-crm",
-    title: "Full-Cycle Zoho One Ecosystem & Automated Webinar Engine",
-    client: "Mapenzi Connect (Relationship & Community Platform)",
-    tagline: "Connecting community acquisition, automated newsletter distribution, and end-to-end webinar registration-to-attendee journeys.",
+    title: "Zoho One System & Webinar Automation",
+    client: "Mapenzi Connect (relationship and community platform)",
+    tagline: "Member, event and newsletter operations moved from spreadsheets into one Zoho One system.",
     badge: "Full Zoho One Implementation",
-    problem: "Community leads, event attendees, and newsletter subscribers were managed across disconnected spreadsheets, causing high registrant drop-offs between webinar signups and live attendance.",
-    solution: "Designed and deployed a complete Zoho One business architecture spanning sales, marketing, and member operations. Built automated registration funnels with multi-step SMS/email nurture cadences, synchronized live webinar attendance data directly into CRM, and automated weekly newsletter publishing.",
+    problem: "Members, webinar registrants and newsletter subscribers lived in separate spreadsheets. Reminders were sent by hand, and there was no record of who registered versus who attended.",
+    solution: "Built the full Zoho One system across sales, marketing and member operations: registration pages feeding Zoho CRM, multi-step email and SMS reminder sequences, attendance written back to each contact, post-event offers, and automated newsletters.",
     metrics: [
-      { label: "Webinar Show-Up Rate", before: "22%", after: "58% Live Attendance" },
-      { label: "Manual Admin Time", before: "14 Hrs/Week", after: "< 1 Hr/Week" },
-      { label: "Community Member Nurture", before: "Manual Emails", after: "100% Automated Cadence" }
+      { label: "Webinar Journey", before: "Spreadsheets", after: "Registration to attendance in CRM" },
+      { label: "Event Reminders", before: "Sent by hand", after: "Automatic email & SMS sequence" },
+      { label: "Member Nurture", before: "Manual emails", after: "Automated cadence" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Webinar Registration Funnels", 
-        desc: "Multi-channel event landing pages and social campaigns capturing high-intent webinar registrants into Zoho CRM." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Multi-Touch Event Reminders", 
-        desc: "Automated 3-part event reminder sequence (email + SMS) delivering event agenda and calendar invites." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Live Attendance & Offer Delivery", 
-        desc: "Live attendee check-in tracking with instant delivery of post-webinar presentation decks and premium membership offers." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Community Member Onboarding", 
-        desc: "Automated onboarding sequence introducing new members to the community directory, discussion groups, and upcoming sessions." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Central Member CRM & Newsletters", 
-        desc: "Centralized Zoho CRM member database, engagement scoring, and automated weekly newsletter broadcast pipelines." 
-      }
+      { stage: "01 · Attract & Capture", title: "Registration Pages", desc: "Event pages and social campaigns send registrants straight into Zoho CRM." },
+      { stage: "02 · Follow Up & Nurture", title: "Reminder Sequence", desc: "Email and SMS reminders with the agenda and a calendar invite go out automatically before each event." },
+      { stage: "03 · Convert & Contract", title: "Attendance & Offers", desc: "Attendance is recorded against each contact, and attendees receive the follow-up offer and materials." },
+      { stage: "04 · Onboard & Retain", title: "Member Onboarding", desc: "New members get an onboarding sequence introducing the community and upcoming sessions." },
+      { stage: "05 · Operations Engine", title: "Member CRM & Newsletters", desc: "One member database with engagement history and scheduled newsletter sends." }
     ],
-    tools: ["Zoho One", "Zoho Campaigns", "Zoho CRM", "Webinar Automations", "Zapier / Webhooks"]
+    tools: ["Zoho CRM", "Zoho Campaigns", "Zoho One", "Webhooks"]
   },
   {
     id: "sydia-realty",
     category: "enterprise-crm",
-    title: "CRM Strategy Audit & Investor Journey Optimization",
-    client: "Sydia Realty (Property Investment & Real Estate)",
-    tagline: "Auditing and mapping the end-to-end investor lifecycle to prevent off-plan deal fall-throughs and drive repeat purchases.",
-    badge: "CRM Strategy & RevOps Audit",
-    problem: "High-value real estate leads and off-plan property investors were slipping through operational cracks due to fragmented CRM stage tracking, delayed off-plan development updates, and lack of structured post-sale retention.",
-    solution: "Conducted a comprehensive Zoho CRM audit and formulated an optimization blueprint. Mapped the entire customer journey from initial inquiry, private viewing, deposit payment, and milestone off-plan construction updates, through to deal close and multi-property investor retention nurture.",
+    title: "Zoho CRM Audit & Investor Journey Redesign",
+    client: "Sydia Realty (property investment and real estate)",
+    tagline: "A stage-by-stage plan to stop high-value property deals slipping between handoffs.",
+    badge: "CRM Audit & Journey Mapping",
+    problem: "High-value property leads moved through the CRM without clear stage rules, so deals stalled between viewing, reservation and payment, and buyers who had already purchased were not followed up for the next one.",
+    solution: "Audited the Zoho CRM setup and mapped the full investor journey: inquiry, qualification, viewing, reservation, milestone payments, handover and repeat investment. Delivered stage definitions, required fields per stage, follow-up rules and a retention path for past buyers.",
     metrics: [
-      { label: "Pipeline Visibility", before: "Fragmented", after: "100% Clear Stages" },
-      { label: "Follow-up Consistency", before: "Ad-hoc", after: "Automated Cadence" },
-      { label: "Investor Retention Path", before: "Undefined", after: "Structured Nurture" }
+      { label: "Pipeline Stages", before: "Loosely defined", after: "Clear stage rules" },
+      { label: "Follow-Up", before: "Ad hoc", after: "Defined cadence" },
+      { label: "Past Buyers", before: "No follow-up", after: "Retention path" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Investor Acquisition Funnels", 
-        desc: "Captures high-net-worth real estate leads and off-plan property inquiries across digital advertising, landing pages, and private investor networks." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Automated Investor Qualification", 
-        desc: "Triages buyer budget and timeline, triggers automated private viewing invitations, and maintains timely nurture touchpoints." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Reservation & Milestone Invoicing", 
-        desc: "Automates unit reservations, digital purchase agreements, and structured deposit milestone invoicing linked to construction phases." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Post-Sale Onboarding & Repeat Buying", 
-        desc: "Delivers automated off-plan construction progress updates, deed handover milestone tracking, and secondary property investment alerts." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "CRM Stage-Gate Governance & Audit", 
-        desc: "Enforces strict deal progression fields, eliminates lead handoff leakage, automates broker commissions, and gives executives real-time pipeline visibility." 
-      }
+      { stage: "01 · Attract & Capture", title: "Investor Inquiries", desc: "Leads from ads, landing pages and referral networks captured with their source." },
+      { stage: "02 · Follow Up & Nurture", title: "Qualification", desc: "Budget and timeline captured early, with viewing invitations and timed follow-up." },
+      { stage: "03 · Convert & Contract", title: "Reservation & Milestones", desc: "Unit reservation, purchase agreement and milestone payment stages defined in the pipeline." },
+      { stage: "04 · Onboard & Retain", title: "Handover & Repeat Purchase", desc: "Construction updates, handover tracking and alerts for buyers' next investment." },
+      { stage: "05 · Operations Engine", title: "Stage Rules", desc: "Required fields per stage so deals cannot move forward with missing information." }
     ],
-    tools: ["Zoho CRM", "Process Mapping", "Pipeline Governance", "Audit Blueprint", "Lifecycle Analytics"]
+    tools: ["Zoho CRM", "Process Mapping", "Pipeline Design"]
+  },
+  {
+    id: "vivalife-clinic",
+    category: "healthcare",
+    title: "Digital Patient Intake & WhatsApp Reminders",
+    client: "VivaLife Pediatric Clinic (paediatric healthcare)",
+    tagline: "Paper intake and phone reminders replaced with digital forms, automated WhatsApp and email reminders, and feedback requests after every visit.",
+    badge: "Clinic Automation",
+    problem: "Parents filled in paper forms at reception, the team phoned families to remind them of appointments, and feedback after visits was rarely collected.",
+    solution: "Set up Zoho CRM with mobile-friendly digital intake forms, automatic appointment reminders by WhatsApp Business API and email, and a feedback request after each consultation. Configured Zoho Analytics and Google Analytics for patient volume and channel reporting, and Zoho Social for content.",
+    metrics: [
+      { label: "Patient Intake", before: "Paper forms", after: "Digital form into CRM" },
+      { label: "Appointment Reminders", before: "Manual phone calls", after: "Automatic WhatsApp & email" },
+      { label: "Patient Feedback", before: "Rarely asked", after: "Requested after every visit" }
+    ],
+    workflowSteps: [
+      { stage: "01 · Attract & Capture", title: "Booking Requests", desc: "Parent inquiries from search and social captured in Zoho CRM." },
+      { stage: "02 · Follow Up & Nurture", title: "Confirmations", desc: "WhatsApp confirmations with directions and a link to the pre-visit form." },
+      { stage: "03 · Convert & Contract", title: "Digital Registration", desc: "Parents register online before arriving, so details are already in the system." },
+      { stage: "04 · Onboard & Retain", title: "Reminders & Feedback", desc: "Automatic reminders before each appointment and a feedback request after the visit." },
+      { stage: "05 · Operations Engine", title: "Patient Records & Reports", desc: "One patient history in Zoho CRM and clinic activity reports in Zoho Analytics." }
+    ],
+    tools: ["Zoho CRM", "WhatsApp Business API", "Zoho Analytics", "Google Analytics", "Zoho Social"]
   },
   {
     id: "unicorn-dental",
     category: "healthcare",
-    title: "Digital Patient Acquisition, Automated Booking & Triage Chatbot",
-    client: "Unicorn Dental Clinic (Healthcare & Dental Practice)",
-    tagline: "End-to-end website design, high-ranking local SEO, automated Calendly scheduling, and intelligent appointment triage chatbot.",
-    badge: "Practice Growth & Intake Engine",
-    problem: "The dental clinic relied on word-of-mouth with zero digital presence, losing prospective patients to competitors on search engines and overwhelming the front desk with routine scheduling calls.",
-    solution: "Designed and built a conversion-focused dental clinic website with compelling patient copywriting and local SEO optimization. Integrated an interactive chatbot for treatment inquiry triage and connected Calendly automated appointment scheduling directly into calendar operations.",
+    title: "Clinic Website, Online Booking & Triage Chatbot",
+    client: "Unicorn Dental Clinic (dental practice)",
+    tagline: "A new clinic website with local SEO, 24/7 self-service booking and a chatbot for treatment questions.",
+    badge: "Website & Booking System",
+    problem: "The clinic had no website, so patients searching online could not find it, and every booking and routine question came in by phone to the front desk.",
+    solution: "Designed and built the clinic website with patient-focused copy and local SEO, connected Calendly so patients can choose a dentist and book a slot themselves, and added a chatbot that answers routine treatment questions.",
     metrics: [
-      { label: "Organic Search Patient Leads", before: "Zero (Unranked)", after: "35+ Monthly Bookings" },
-      { label: "Scheduling Front-Desk Load", before: "100% Phone Calls", after: "65% Self-Booked" },
-      { label: "Lead-to-Appointment Speed", before: "12+ Hours", after: "Instant (< 2 Mins)" }
+      { label: "Online Presence", before: "No website", after: "SEO site with booking" },
+      { label: "Scheduling", before: "Phone calls only", after: "Self-service booking 24/7" },
+      { label: "Treatment Questions", before: "Front desk", after: "Triage chatbot" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Local SEO & Treatment Funnels", 
-        desc: "High-converting responsive website with localized SEO capturing patients searching for dental treatments." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Procedure Triage Chatbot", 
-        desc: "Intelligent web triage chatbot providing immediate answers to procedure inquiries, pricing ranges, and insurance questions." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Self-Service Calendly Booking", 
-        desc: "Seamless self-service Calendly integration allowing patients to select specific dentists and lock in appointment slots 24/7." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "SMS Prep & Post-Care Reminders", 
-        desc: "Automated appointment confirmations, SMS preparation instructions, and post-treatment checkup reminders." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Doctor Calendar Sync & Intake", 
-        desc: "Automated Google Calendar sync, patient intake database, and structured review generation workflows." 
-      }
+      { stage: "01 · Attract & Capture", title: "Local SEO", desc: "Treatment pages written for patients searching locally." },
+      { stage: "02 · Follow Up & Nurture", title: "Triage Chatbot", desc: "Instant answers to routine questions about procedures and what to expect." },
+      { stage: "03 · Convert & Contract", title: "Self-Service Booking", desc: "Patients pick a dentist and a time through Calendly, day or night." },
+      { stage: "04 · Onboard & Retain", title: "Confirmations & Reminders", desc: "Automatic booking confirmations and appointment reminders." },
+      { stage: "05 · Operations Engine", title: "Calendar Sync", desc: "Bookings land directly in the dentists' calendars." }
     ],
-    tools: ["Website Architecture", "Calendly API", "Triage Chatbot", "Local SEO", "Google Analytics"]
+    tools: ["Website Build", "Calendly", "Chatbot", "Local SEO", "Google Analytics"]
   },
   {
     id: "diaspocare",
     category: "healthcare",
-    title: "Healthcare FinTech Multi-Channel Acquisition & GoHighLevel Funnels",
-    client: "DiaspoCare LLC (Healthcare FinTech & Cross-Border Care)",
-    tagline: "High-conversion landing pages, automated analytics, paid media funnels, and automated GoHighLevel email nurture.",
-    badge: "FinTech & Growth Funnels",
-    problem: "Cross-border healthcare financing platform struggled to convert diaspora traffic into registered active senders due to disjointed landing pages and lack of automated lead tracking.",
-    solution: "Built and optimized high-converting landing pages, configured Google Analytics with custom conversion events, managed targeted multi-channel ad campaigns (Meta, LinkedIn, Google Ads), and architected automated lead capture and email nurture sequences inside GoHighLevel.",
+    title: "Lead Capture & Nurture Automation in GoHighLevel",
+    client: "DiaspoCare LLC (healthcare fintech, via Aheri Brands Agency)",
+    tagline: "Landing pages, conversion tracking, paid campaigns and automated email nurture for a cross-border healthcare payments service.",
+    badge: "Growth Funnels & Tracking",
+    problem: "Diaspora visitors arrived from several ad channels to disconnected landing pages, and there was no reliable tracking of which campaigns produced sign-ups or any automated follow-up.",
+    solution: "Wrote and optimised the landing pages, set up Google Analytics with conversion events and ad pixels, ran campaigns on Meta, LinkedIn and Google, and built lead capture and email nurture sequences in GoHighLevel. Managed social content through Zoho Social.",
     metrics: [
-      { label: "Landing Page Conversion", before: "1.8%", after: "5.4%" },
-      { label: "Campaign Attribution Accuracy", before: "Estimated", after: "100% Tracked Events" },
-      { label: "Nurture Lead-to-App Download", before: "Manual", after: "Automated Multi-Touch" }
+      { label: "Landing Pages", before: "Disconnected", after: "Rebuilt for conversion" },
+      { label: "Attribution", before: "Estimated", after: "GA4 conversion events" },
+      { label: "Lead Follow-Up", before: "Manual", after: "Automated nurture sequence" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Multi-Channel Paid Ads Funnels", 
-        desc: "Targeted multi-channel ad campaigns across Google, Meta, and LinkedIn driving diaspora traffic to optimized landing pages." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Automated GoHighLevel Nurture", 
-        desc: "Automated GoHighLevel email and SMS sequences educating diaspora prospects on transparent medicine delivery for relatives." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "App Install & Transaction Funnel", 
-        desc: "Streamlined registration funnel guiding prospects to install the mobile app and complete their first remittance." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Transaction Milestones & Referrals", 
-        desc: "Post-onboarding transaction milestone notifications and automated referral incentives." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Attribution Dashboard & Social Sync", 
-        desc: "Google Analytics custom event tracking, Zoho Social content governance, and cross-channel ROAS dashboard." 
-      }
+      { stage: "01 · Attract & Capture", title: "Paid Campaigns", desc: "Google, Meta and LinkedIn campaigns sending traffic to dedicated landing pages." },
+      { stage: "02 · Follow Up & Nurture", title: "GoHighLevel Nurture", desc: "Email sequences explaining how the service works for families back home." },
+      { stage: "03 · Convert & Contract", title: "Sign-Up Path", desc: "A single path from landing page to app install and first transaction." },
+      { stage: "04 · Onboard & Retain", title: "Milestone Messages", desc: "Follow-up messages after sign-up and first transaction." },
+      { stage: "05 · Operations Engine", title: "Tracking & Reporting", desc: "GA4 conversion events and pixels so each channel's results are visible." }
     ],
-    tools: ["GoHighLevel", "Google Ads & Analytics", "Meta & LinkedIn Ads", "Zoho Social", "Landing Page CRO"]
+    tools: ["GoHighLevel", "Google Analytics 4", "Meta, LinkedIn & Google Ads", "Zoho Social"]
   },
   {
     id: "biasharapros",
     category: "platforms",
-    title: "Automated Knowledge, Financial Calculators & Directory Engine",
-    client: "BiasharaPros (MSME Business Platform & Regulatory Tools)",
-    tagline: "Serving 10,000+ monthly active operators with interactive financial calculators and an automated regulatory compliance engine.",
-    badge: "Automated Digital Platform",
-    problem: "MSMEs and early-stage entrepreneurs in East Africa faced fragmented, confusing regulatory compliance data and complex manual tax/payroll calculations.",
-    solution: "Architected and automated BiasharaPros—a comprehensive digital hub featuring interactive tax and loan calculators, automated compliance navigators, and an automated backend directory ingestion and verification pipeline.",
+    title: "Business Discovery Platform with Supplier Sourcing & Payments",
+    client: "Biashara Pros (my own platform for Kenyan businesses)",
+    tagline: "A business directory, buyer-to-supplier sourcing requests, online payments and free business calculators, built on Astro and Cloudflare.",
+    badge: "Own Platform",
+    problem: "Kenyan buyers struggle to find trusted suppliers and service providers, and small business owners need quick answers on tax, payroll and compliance.",
+    solution: "Built an Astro site with a backend on Cloudflare Pages Functions and a D1 SQL database: listing intake with validation and spam filtering, a sourcing flow where suppliers respond to buyer requests through their own link, and a payment gateway checkout with a verified payment webhook. Added free tools (PAYE, VAT, loan and employee cost calculators, an invoice generator and a compliance calendar). A scheduled AI routine connected to Zoho CRM runs daily business outreach and reports against a daily target.",
     metrics: [
-      { label: "Monthly Active Business Users", before: "0", after: "10,000+ Operators" },
-      { label: "Compliance Research Time", before: "Days of Reading", after: "< 3 Minutes" },
-      { label: "Directory Data Ingestion", before: "Manual Entry", after: "Automated Backend Feeds" }
+      { label: "Supplier Sourcing", before: "Word of mouth", after: "Buyer requests, supplier responses" },
+      { label: "Payments", before: "Checked by hand", after: "Payment gateway webhook" },
+      { label: "Outreach", before: "Manual", after: "Daily AI routine via Zoho CRM" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Programmatic Search & Local Tools", 
-        desc: "Organic search dominance via programmatic SEO and localized business tool landing pages." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Interactive Financial Calculators", 
-        desc: "Interactive financial and regulatory calculators capturing high-intent business operator queries." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Self-Service Business Verification", 
-        desc: "Self-service business listing submission forms with automated business detail verification." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Compliance Reminder Digests", 
-        desc: "Automated listing confirmation, periodic compliance reminder digests, and business update notifications." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Automated Ingestion & Publishing", 
-        desc: "Automated backend data validation, programmatic CMS publishing, and real-time user engagement analytics." 
-      }
+      { stage: "01 · Attract & Capture", title: "Search & Free Tools", desc: "Guides and calculators bring business owners and buyers in from search." },
+      { stage: "02 · Follow Up & Nurture", title: "CRM Outreach", desc: "A daily routine finds businesses, logs them in Zoho CRM, and sends first and second emails." },
+      { stage: "03 · Convert & Contract", title: "Listings & Payments", desc: "Validated listing submissions and payment gateway checkout with webhook confirmation." },
+      { stage: "04 · Onboard & Retain", title: "Supplier Responses", desc: "Suppliers receive buyer requests and reply through their own link." },
+      { stage: "05 · Operations Engine", title: "SQL Backend", desc: "All records in Cloudflare D1, the single source of truth for every flow." }
     ],
-    tools: ["Automated Platform", "Interactive Calculators", "Programmatic SEO", "Data Ingestion APIs", "Analytics Engine"]
+    tools: ["Astro", "Cloudflare Pages Functions", "Cloudflare D1 (SQL)", "Payment Gateway", "Zoho CRM", "Claude"]
   },
   {
     id: "wowglamdecor",
     category: "platforms",
-    title: "AI-Engineered E-Commerce & Publishing Platform",
-    client: "WowGlamDecor (AI-Assisted E-Commerce Platform)",
-    tagline: "Custom-built and automated leveraging Claude AI workflows, GitHub CI/CD, Cloudflare edge hosting, and Hugo.",
-    badge: "AI-Assisted Cloud Platform",
-    problem: "Needed a lightning-fast, zero-maintenance digital platform with automated publishing, structured product catalogs, and reliable edge hosting without expensive monthly CMS bloat.",
-    solution: "Engineered and automated the platform end-to-end using Claude AI coding workflows, version-controlled GitHub repositories, Hugo static generation, and Cloudflare Pages edge delivery. Built automated asset processing and deployment pipelines.",
+    title: "Automated E-Commerce Publishing Pipeline",
+    client: "WowGlamDecor (my own home decor e-commerce publisher)",
+    tagline: "A 367-product catalog in a SQL database, published daily to a Hugo site, with scheduled social posts through the Zoho Social API.",
+    badge: "Own Platform",
+    problem: "Running a large product catalog across a website and social channels by hand means stale prices, broken images and posts that silently fail.",
+    solution: "The catalog lives in Cloudflare D1 and is updated with SQL batch scripts. A daily GitHub Actions build publishes the Hugo site to Cloudflare Pages, Cloudflare Workers handle click tracking and image delivery, and Node.js scripts schedule social posts through the Zoho Social API with every response logged. A 31-rule health check must pass with zero errors before each release.",
     metrics: [
-      { label: "Global Edge Page Load", before: "3.2s", after: "< 400ms" },
-      { label: "Deployment Latency", before: "Manual", after: "Automated on Git Push" },
-      { label: "Maintenance Overhead", before: "Ongoing", after: "Zero Server Drag" }
+      { label: "Catalog", before: "Manual edits", after: "367 products in a SQL database" },
+      { label: "Publishing", before: "Manual", after: "Daily automated build" },
+      { label: "Click Data", before: "Inflated by bots", after: "6,471 bot rows purged, filters added" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Programmatic SEO & Content Funnel", 
-        desc: "Automated product catalog publishing and structured metadata engineered to capture high-intent organic search and shopping queries." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Sub-400ms Edge Experience", 
-        desc: "Global edge delivery on Cloudflare Pages guarantees instantaneous browsing, eliminating bounce rates and keeping prospective buyers engaged." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Frictionless Digital Checkout", 
-        desc: "Optimized conversion pathways with clear product specifications, schema markup, and streamlined payment gateway integrations." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Transactional Updates & Reviews", 
-        desc: "Automates post-purchase receipts, dispatch tracking notifications, and timed review solicitation sequences to drive customer lifetime value." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Claude CI/CD & Zero-Drag Cloud", 
-        desc: "Autonomous Claude AI workflows integrated with GitHub repository webhooks and Cloudflare edge builds for zero-server maintenance overhead." 
-      }
+      { stage: "01 · Attract & Capture", title: "Search Content", desc: "Buying guides and product pages built from the catalog data." },
+      { stage: "02 · Follow Up & Nurture", title: "Scheduled Social Posts", desc: "Pinterest and other posts scheduled through the Zoho Social API from scripts." },
+      { stage: "03 · Convert & Contract", title: "Retailer Links", desc: "Each product links to the retailer, with clicks tracked by a Cloudflare Worker." },
+      { stage: "04 · Onboard & Retain", title: "Newsletter", desc: "Email newsletters to subscribers." },
+      { stage: "05 · Operations Engine", title: "Health Check & Daily Build", desc: "31 automated checks before release and a daily GitHub Actions build." }
     ],
-    tools: ["Claude AI", "Cloudflare Pages", "GitHub", "Hugo", "REST APIs"]
+    tools: ["Hugo", "Cloudflare D1, Workers & Pages", "GitHub Actions", "Zoho Social API", "Claude Code"]
   },
   {
     id: "ccc-directory",
     category: "platforms",
-    title: "Structured Business Directory & Intake Automation",
-    client: "CCC Business Directory (Regional Enterprise Platform)",
-    tagline: "Custom-built digital discovery directory serving regional commercial enterprises with structured listing workflows.",
-    badge: "Enterprise Directory & Intake",
-    problem: "Regional business networks lacked a verified, centralized digital index, resulting in outdated contacts, low digital discovery, and manual paperwork for listing submissions.",
-    solution: "Designed and deployed a structured commercial directory platform featuring self-service business intake workflows, categorized company profiles, and searchable sector indexes.",
+    title: "Regional Business Directory & Listing Intake",
+    client: "CCC Business Directory (regional business directory)",
+    tagline: "A searchable directory of regional businesses with online listing submission and admin verification.",
+    badge: "Directory Platform",
+    problem: "Regional businesses had no central, searchable directory, and listings were collected on paper.",
+    solution: "Designed and built a directory with categorised business profiles, search by sector, an online listing submission form and an admin step to verify listings before publishing.",
     metrics: [
-      { label: "Business Intake Processing", before: "Manual Forms", after: "Automated Digital Intake" },
-      { label: "Profile Search Latency", before: "Unindexed", after: "Instant Categorized Discovery" },
-      { label: "Verification Turnaround", before: "Weeks", after: "< 24 Hours" }
+      { label: "Listing Submission", before: "Paper forms", after: "Online intake form" },
+      { label: "Finding a Business", before: "No central index", after: "Search by category" },
+      { label: "Verification", before: "Paperwork", after: "Admin review before publishing" }
     ],
     workflowSteps: [
-      { 
-        stage: "01 · Attract & Capture", 
-        title: "Regional Discovery Funnels", 
-        desc: "Regional search funnels and association member outreach driving enterprises to claim or add business profiles." 
-      },
-      { 
-        stage: "02 · Follow Up & Nurture", 
-        title: "Profile Completeness Verification", 
-        desc: "Automated profile completeness reminders prompting businesses to supply certifications and service details." 
-      },
-      { 
-        stage: "03 · Convert & Contract", 
-        title: "Verified Listing Submissions", 
-        desc: "Verified listing submission with automated tier selection and digital confirmation." 
-      },
-      { 
-        stage: "04 · Onboard & Retain", 
-        title: "Publication & Renewal Tracking", 
-        desc: "Automated profile publication notice, social sharing assets, and annual renewal verification triggers." 
-      },
-      { 
-        stage: "05 · Operations Engine", 
-        title: "Categorized Business Index Hub", 
-        desc: "Centralized business database, category schema tagging, and administrative verification portal." 
-      }
+      { stage: "01 · Attract & Capture", title: "Business Outreach", desc: "Businesses invited to add or claim their profile." },
+      { stage: "02 · Follow Up & Nurture", title: "Profile Completion", desc: "Reminders to complete profile details." },
+      { stage: "03 · Convert & Contract", title: "Listing Submission", desc: "Online submission with listing tier selection." },
+      { stage: "04 · Onboard & Retain", title: "Publication", desc: "Confirmation when the listing goes live." },
+      { stage: "05 · Operations Engine", title: "Admin Verification", desc: "Admins review and approve listings before publishing." }
     ],
-    tools: ["Directory Architecture", "Intake Workflows", "Database Schemas", "SEO Metadata", "Analytics"]
+    tools: ["Directory Build", "Intake Forms", "Database", "SEO"]
   }
 ];
 
 export const techStack = [
-  { name: "Claude & Model Context Protocol (MCP)", role: "AI Agents & Autonomous Data Connectors" },
-  { name: "OpenAI & Tool-Calling APIs", role: "AI Triage, Classification & Content Pipelines" },
-  { name: "Zoho One, Catalyst & Creator", role: "Custom Portals & Management Command Centers" },
-  { name: "Supabase & Cloudflare", role: "Relational DBs, Edge Hosting & APIs" },
-  { name: "HubSpot & GoHighLevel", role: "Pipeline & Customer Journey Automation" },
-  { name: "Make.com & Zapier", role: "Middleware & Webhook Automation" },
-  { name: "Hugo, GitHub & JAMstack", role: "AI-Assisted Automated Web Platforms" },
-  { name: "Airtable & Notion", role: "Relational Tracking & Living SOPs" },
-  { name: "REST APIs, Webhooks & SQL", role: "Custom Multi-Platform Integrations" }
+  { name: "Zoho One", role: "CRM, Books, Sign, Creator, Catalyst, Analytics, Social" },
+  { name: "HubSpot & GoHighLevel", role: "CRM pipelines and email automation" },
+  { name: "Make & Zapier", role: "Workflow automation between apps" },
+  { name: "REST APIs & Webhooks", role: "Custom integrations and payment confirmations" },
+  { name: "Supabase & Cloudflare D1", role: "SQL databases" },
+  { name: "Cloudflare Pages & Workers", role: "Hosting, serverless functions, edge logic" },
+  { name: "Astro, Hugo & GitHub Actions", role: "Websites and automated daily builds" },
+  { name: "Claude, OpenAI & MCP", role: "AI agents connected to business tools" },
+  { name: "WhatsApp Business API & Payment Gateways", role: "Customer messaging, checkout and payment confirmation" }
 ];
 
 export const ventureSpotlights = [
   {
     name: "Aheri Systems",
-    role: "Founder & Lead",
-    timeline: "2023 – Present",
-    tagline: "AI-Powered Business Systems & RevOps Studio",
-    description: "Helping service and growth companies build resilient internal operating systems. We eliminate messy spreadsheets, manual quoting friction, and revenue leakages by deploying AI-driven workflows, custom portals, and organized CRM pipelines.",
+    role: "Founder",
+    timeline: "2023 - Present",
+    tagline: "Business systems and automation studio",
+    description: "My consultancy. I design and build CRM, quote-to-invoice and automation systems for service businesses, from process mapping to go-live and handover.",
     achievements: [
-      "Built custom platforms, AI quoting engines, and portals across aviation, e-commerce, real estate, and healthcare.",
-      "Engineered custom executive command centers (Zoho Catalyst) and client approval portals.",
-      "Custom-built and automated the studio's digital infrastructure using modern cloud and AI tools."
+      "Delivered Zoho One implementations for Klock Aviation and Mapenzi Connect.",
+      "Built clinic intake and reminder systems for VivaLife Pediatric Clinic and the Unicorn Dental Clinic website and booking flow.",
+      "Audited Zoho CRM and redesigned the investor journey for Sydia Realty."
     ],
     link: "https://aherisystems.com"
   },
   {
-    name: "BiasharaPros",
-    role: "Creator & Operations Lead",
-    timeline: "2023 – Present",
-    tagline: "Automated Knowledge, Calculators & Business Directory",
-    description: "A custom-built digital platform providing localized compliance guides, interactive financial calculators, and a verified business directory for MSMEs in Kenya, automated on the backend.",
+    name: "Biashara Pros",
+    role: "Founder & Builder",
+    timeline: "2023 - Present",
+    tagline: "Business discovery platform for Kenya",
+    description: "A directory and sourcing platform where buyers find trusted Kenyan businesses, plus free tools for business owners. Built on Astro, Cloudflare and a D1 SQL database.",
     achievements: [
-      "Engineered automated compliance navigator reducing regulatory research from days to minutes.",
-      "Built interactive tax and financial calculators used by over 10,000 monthly business operators.",
-      "Automated directory ingestion, data verification, and SEO publishing pipelines on the backend."
+      "Built a supplier sourcing flow and a payment gateway checkout with payment webhooks.",
+      "Built free PAYE, VAT, loan and employee cost calculators, an invoice generator and a compliance calendar.",
+      "Runs a daily AI outreach routine connected to Zoho CRM."
     ],
     link: "https://biasharapros.com"
   },
   {
     name: "WowGlamDecor.com",
-    role: "Platform Creator & Architect",
-    timeline: "2024 – Present",
-    tagline: "AI-Automated E-Commerce & Lifestyle Platform",
-    description: "Engineered and automated end-to-end leveraging Claude AI coding workflows, GitHub CI/CD, Cloudflare edge hosting, and Hugo static architecture for sub-second global performance.",
+    role: "Founder & Builder",
+    timeline: "2024 - Present",
+    tagline: "Home decor e-commerce publisher",
+    description: "A 367-product catalog in Cloudflare D1, published daily as a Hugo site through GitHub Actions, with social posts scheduled through the Zoho Social API.",
     achievements: [
-      "Automated content generation, product catalog schemas, and asset deployment pipelines.",
-      "Achieved sub-400ms global edge delivery with zero server maintenance overhead."
+      "31-rule health check must pass with zero errors before every release.",
+      "Traced inflated click data to bots, purged 6,471 bad rows and added filters at the source."
     ],
     link: "https://wowglamdecor.com"
   },
   {
     name: "CCC Business Directory",
-    role: "Platform Builder",
-    timeline: "2024 – Present",
-    tagline: "Digital Directory & Business Discovery Platform",
-    description: "Custom-built business directory platform serving regional enterprises with structured listings and search capabilities.",
+    role: "Builder",
+    timeline: "2024 - Present",
+    tagline: "Regional business directory",
+    description: "A searchable directory of regional businesses with online listing submission.",
     achievements: [
-      "Designed and deployed structured business listing architecture.",
-      "Integrated search and verified business intake workflows."
+      "Built categorised business profiles and search by sector.",
+      "Built online listing intake with admin verification before publishing."
     ],
     link: "https://cccbusinessdirectory.co.ke"
   }
@@ -636,83 +424,88 @@ export const ventureSpotlights = [
 
 export const experienceTimeline = [
   {
-    period: "2023 – Present",
-    role: "Founder & AI Business Systems Lead",
+    period: "2023 - Present",
+    role: "Founder & Business Systems Lead",
     organization: "Aheri Systems",
-    location: "Global Client Engagements",
+    location: "Remote",
     highlights: [
-      "Build AI-powered business systems, quotation engines, client portals, and automation workflows across Zoho One, Zoho Catalyst, Zoho Creator, Supabase, and Cloudflare.",
-      "Deploy practical AI pipelines and agents using Claude, Model Context Protocol (MCP), and OpenAI for inquiry classification, quoting, and operational triage.",
-      "Klock Aviation: Delivered enterprise Zoho One operating infrastructure across multiple commercial divisions; engineered custom executive command dashboard (Zoho Catalyst), automated quoting workflows, vendor compliance tracking, and paperless onboarding with digital signatures.",
-      "Retail AI Sales Agent: Developed conversational AI order processing agents for retail and e-commerce brands running Click-to-WhatsApp and paid ads; integrated live backend inventory, intelligent out-of-stock cross-selling, and automated 72-hour re-engagement sequences to stop ad-spend revenue leakage.",
-      "VivaLife Pediatric Clinic: Automated patient digital intake, appointment reminders via WhatsApp Business API reducing no-shows by 78%, and post-consultation feedback collection.",
-      "Mapenzi Connect: Built complete Zoho One business architecture spanning sales, marketing, and operations; automated weekly newsletters and webinar registration-to-attendee workflows.",
-      "Sydia Realty: Conducted comprehensive Zoho CRM audit and customer journey optimization to eliminate pipeline leakages from off-plan inquiry to repeat investor retention.",
-      "Unicorn Dental Clinic: Designed full patient acquisition website with local SEO, automated Calendly scheduling, and intelligent appointment triage chatbot."
+      "Klock Aviation (charter, aviation services and aircraft asset management): implemented Zoho One as the operating system across marketing, sales, operations and finance, with a defined process for customers, vendors, partners and aircraft owners. Built lead generation outreach and re-engagement campaigns, division pipelines, quote approval and Zoho Sign contracts, Zoho Books invoicing, vendor document expiry alerts, and a Zoho Catalyst management dashboard.",
+      "Mapenzi Connect: built the full Zoho One system across sales, marketing and member operations, including webinar registration to attendance tracking, email and SMS reminders, and automated newsletters.",
+      "VivaLife Pediatric Clinic: set up Zoho CRM with digital patient intake, WhatsApp Business API and email appointment reminders, and post-visit feedback requests; configured Zoho Analytics and GA4.",
+      "Sydia Realty: audited Zoho CRM and mapped the investor journey from inquiry to milestone payments and repeat purchase, with stage rules to stop deals slipping between handoffs.",
+      "Unicorn Dental Clinic: built the clinic website with local SEO, Calendly self-service booking and a triage chatbot."
     ]
   },
   {
-    period: "2023 – Present",
-    role: "Platform & Operations Lead",
-    organization: "BiasharaPros & Digital Platforms",
-    location: "Platform Operations",
+    period: "2023 - Present",
+    role: "Founder & Builder, Digital Platforms",
+    organization: "Biashara Pros and WowGlamDecor",
+    location: "Remote",
     highlights: [
-      "Designed, built, and automated platforms including BiasharaPros (10k+ monthly active users), WowGlamDecor.com (Claude + GitHub + Cloudflare + Hugo), and CCC Business Directory.",
-      "Automated backend directory ingestion, data verification, and programmatic publishing workflows."
+      "Biashara Pros: built an Astro site and Cloudflare backend (Pages Functions, D1 SQL) with validated listing intake, a supplier sourcing flow and a payment gateway webhook; a daily AI routine runs outreach through Zoho CRM.",
+      "WowGlamDecor: run a 367-product catalog in Cloudflare D1, published daily as a Hugo site via GitHub Actions; social posts scheduled through the Zoho Social API with every response logged.",
+      "AI agents connected to Zoho CRM, Zoho Social, databases and analytics through MCP run recurring outreach, weekly GA4 and Search Console reports and site audits, with every action logged."
     ]
   },
   {
-    period: "2019 – 2023",
-    role: "Digital Marketing & Systems Strategist",
+    period: "2019 - 2023",
+    role: "Digital Marketing & Automation Strategist",
     organization: "Aheri Brands Agency",
-    location: "Client Projects",
+    location: "Nairobi",
     highlights: [
-      "DiaspoCare LLC: Engineered high-converting healthcare FinTech landing pages, automated analytics event tracking, multi-channel paid ad funnels, and automated lead nurture in GoHighLevel.",
-      "Engineered customer acquisition funnels, automated email marketing journeys, and client retention touchpoints across 8+ cross-industry clients.",
-      "Built automated reporting dashboards connecting analytics, paid media, and CRM pipeline metrics to provide visibility into CAC and conversion velocity."
+      "DiaspoCare LLC: built lead capture and email nurture automation in GoHighLevel, landing pages, GA4 conversion events and pixel tracking, and paid campaigns on Meta, LinkedIn and Google.",
+      "Destiny Life Coaching: ran lead generation and social media, from content and campaigns to capturing and following up enquiries.",
+      "Caroline Gaithuma: designed and built the website.",
+      "Nairobi cleaning company: ran lead generation campaigns to bring in and qualify service enquiries.",
+      "Mapped customer journeys and built automated email touchpoints for 8+ clients in healthcare, professional services and e-commerce."
     ]
   },
   {
-    period: "Early Career",
-    role: "Asset Finance & Bancassurance",
+    period: "2017 - 2019",
+    role: "Copywriter & Content Specialist",
+    organization: "Freelance",
+    location: "Remote",
+    highlights: [
+      "Wrote email sequences, web and sales copy for clients across several industries."
+    ]
+  },
+  {
+    period: "2014 - 2017",
+    role: "Asset Finance Administrative Assistant; Bancassurance Sales Representative",
     organization: "Commercial Bank of Africa",
-    location: "Nairobi, Kenya",
+    location: "Nairobi",
     highlights: [
-      "Managed departmental sales pipelines and financial documentation, building foundational rigor in financial controls, audit trails, and reconciliation."
+      "Managed asset finance documentation and department sales and financial reporting, where accuracy and audit trails were required on every file.",
+      "Built and managed a bancassurance sales pipeline, prepared policy renewals and cross-sold across the product range."
     ]
   }
 ];
 
-export const thoughtLeadership = [
-  {
-    title: "AI as the Core Operational Engine: Moving Beyond One-Off Chatbots",
-    category: "AI & Business Systems",
-    readTime: "6 min read",
-    snippet: "Why AI must be embedded directly into your CRM, database, and webhook middleware rather than treated as a separate tab. How autonomous workflows eliminate human bottlenecks."
-  },
-  {
-    title: "Preventing Revenue Leakage: Why Journey Mapping Must Precede Automation",
-    category: "RevOps Strategy",
-    readTime: "5 min read",
-    snippet: "Automating a broken customer journey simply accelerates customer churn. Here is how to map critical handoffs, identify leakage points, and protect deal velocity with AI."
-  },
-  {
-    title: "Building With AI: How Model Context Protocol (MCP) and Claude Change Operations",
-    category: "AI Architecture & Tools",
-    readTime: "5 min read",
-    snippet: "How modern AI tools, MCP servers, and API connectors allow operators to build custom internal tools, database connections, and portals in days rather than quarters."
-  }
+export const certifications = [
+  "HubSpot Academy: Inbound Marketing (2025), Email Marketing (2023)",
+  "LinkedIn Skill Assessments: Google Analytics, Google Ads, SEO, WordPress (2022)"
 ];
 
-export const testimonials = [
-  {
-    quote: "Rita helped us turn a chaotic sales process into an intelligent, smooth system. What used to take two days of manual back-and-forth now happens automatically in under 5 minutes.",
-    author: "B2B Services Founder",
-    role: "Managing Director"
-  },
-  {
-    quote: "Working with Rita was a breath of fresh air. Her AI and automation workflows are rock-solid, well-documented, and have saved our team hundreds of hours of manual work.",
-    author: "Operations Lead",
-    role: "Head of Operations"
-  }
-];
+// Not rendered on the live site (ThoughtLeadership is not mounted in App.jsx).
+export const thoughtLeadership = [];
+
+// Empty until the two real LinkedIn testimonials are pasted in (exact text, name, role).
+export const testimonials = [];
+
+// Mission, vision and goal. Drafted from Rita's brand docs and direction; confirm wording with Rita.
+export const brandStory = {
+  eyebrow: "About Me",
+  headline: "I help organizations turn AI from an experiment into the way work gets done.",
+  story: [
+    "My foundation is in banking operations at Commercial Bank of Africa, where accuracy and audit trails were non-negotiable. From there I moved into digital marketing and CRM automation, and for the last few years I have built business systems and digital platforms with AI as a daily working tool: Zoho One implementations for clients, and my own platforms built with Claude Code on Cloudflare and Supabase.",
+    "Most organizations have tried AI tools. Far fewer have AI inside their actual systems, connected to their own data, with clear rules about when it acts and when a person decides. That gap between trying AI and running on it is where I work."
+  ],
+  mission: "To make AI and automation practical for every organization I work with: built into real systems, connected to real data, and trusted by the people who use them every day.",
+  vision: "Organizations of every size, starting with those across Africa, running on AI-ready systems and digital platforms, so people spend their time on judgment, relationships and growth while systems carry the routine work.",
+  approach: "I work with leadership teams and with the people who own operations, sales and finance, either embedded in the team or on a defined project. I start with how your business really runs, then build the system around it.",
+  principles: [
+    { title: "Systems before AI", text: "AI is only as good as the process and data under it. I map and fix the workflow first, then add AI where it removes real work." },
+    { title: "People decide, AI assists", text: "AI reads, drafts, sorts and checks. A person approves anything that touches money, a customer promise or a policy." },
+    { title: "Built to be owned", text: "Every system is documented and explained, so the team can run it, change it and trust it long after go-live." }
+  ]
+};

@@ -31,21 +31,21 @@ export default function CaseStudies() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-2xl">
-            <div className="text-xs font-mono uppercase tracking-widest text-emerald-700 font-semibold mb-3 flex items-center gap-2">
+            <div className="text-xs font-mono uppercase tracking-widest text-brand-700 font-semibold mb-3 flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Comprehensive Portfolio · 10 Client Implementations</span>
+              <span>9 Projects · 6 Client Systems, 3 Own Platforms</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Real Systems Built & Measurable Impact
+              Systems I Have Built
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Every project below was built and deployed to solve real operational bottlenecks—from private aviation command centers and retail AI agents to healthcare practice automation and cloud platforms.
+              Each project shows the problem, what I built, and what changed. I did not track before-and-after numbers on these projects, so the results below describe the change itself rather than a percentage.
             </p>
           </div>
 
           <div className="flex items-center gap-2 text-xs font-mono text-slate-500 bg-slate-50 px-3.5 py-2 rounded-xl border border-slate-200 shrink-0">
-            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>All 10 projects mapped to Aheri Systems Framework</span>
+            <span className="w-2 h-2 rounded-full bg-brand-500"></span>
+            <span>Each project mapped to the 5-stage framework</span>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function CaseStudies() {
               >
                 <span>{cat.label}</span>
                 <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                  isCatActive ? 'bg-slate-700 text-emerald-300' : 'bg-slate-200 text-slate-600'
+                  isCatActive ? 'bg-slate-700 text-brand-300' : 'bg-slate-200 text-slate-600'
                 }`}>
                   {count}
                 </span>
@@ -88,13 +88,13 @@ export default function CaseStudies() {
                 onClick={() => setSelectedCaseId(study.id)}
                 className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-medium whitespace-nowrap transition-all border cursor-pointer flex items-center gap-2 ${
                   isSelected
-                    ? 'bg-emerald-50 text-emerald-900 border-emerald-500/60 shadow-xs ring-1 ring-emerald-500 font-bold'
+                    ? 'bg-brand-50 text-brand-900 border-brand-500/60 shadow-xs ring-1 ring-brand-500 font-bold'
                     : 'bg-white text-slate-700 border-slate-200 hover:text-slate-950 hover:bg-slate-50'
                 }`}
               >
                 <span>{study.title.split('&')[0].split('—')[0].trim()}</span>
                 <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
-                  isSelected ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-500'
+                  isSelected ? 'bg-brand-600 text-white' : 'bg-slate-100 text-slate-500'
                 }`}>
                   {study.badge.split(' ')[0]}
                 </span>
@@ -109,8 +109,8 @@ export default function CaseStudies() {
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-8 border-b border-slate-100">
             <div>
-              <div className="flex flex-wrap items-center gap-2 mb-2 text-xs font-mono text-emerald-700 font-semibold">
-                <span className="bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">{activeCase.badge}</span>
+              <div className="flex flex-wrap items-center gap-2 mb-2 text-xs font-mono text-brand-700 font-semibold">
+                <span className="bg-brand-50 px-2 py-0.5 rounded border border-brand-100">{activeCase.badge}</span>
                 <span className="text-slate-300">·</span>
                 <span className="text-slate-600">{activeCase.client}</span>
               </div>
@@ -139,28 +139,37 @@ export default function CaseStudies() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80">
               <div className="text-xs font-mono uppercase tracking-wider text-amber-800 mb-2 font-bold">
-                The Operational Bottleneck / Revenue Leakage
+                The Problem
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
                 {activeCase.problem}
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-emerald-50/60 border border-emerald-200/80">
-              <div className="text-xs font-mono uppercase tracking-wider text-emerald-800 mb-2 font-bold">
-                The Delivered Solution & System Architecture
+            <div className="p-6 rounded-2xl bg-brand-50/60 border border-brand-200/80">
+              <div className="text-xs font-mono uppercase tracking-wider text-brand-800 mb-2 font-bold">
+                What I Built
               </div>
               <p className="text-sm text-slate-800 leading-relaxed">
                 {activeCase.solution}
               </p>
+              {activeCase.scope && (
+                <ul className="mt-4 space-y-2">
+                  {activeCase.scope.map((s) => (
+                    <li key={s.area} className="text-sm text-slate-700 leading-relaxed">
+                      <span className="font-semibold text-slate-900">{s.area}: </span>{s.desc}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
 
           {/* Quantified Metrics */}
           <div>
             <div className="text-xs font-mono uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2 font-medium">
-              <TrendingUp className="w-3.5 h-3.5 text-emerald-600" />
-              <span>Measurable Results & Time Saved</span>
+              <TrendingUp className="w-3.5 h-3.5 text-brand-600" />
+              <span>What Changed</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {activeCase.metrics.map((m) => (
@@ -183,11 +192,11 @@ export default function CaseStudies() {
           <div className="pt-2">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
               <div className="text-xs font-mono uppercase tracking-wider text-slate-500 flex items-center gap-2 font-medium">
-                <Layers className="w-3.5 h-3.5 text-emerald-600" />
-                <span>Customer Capture to Operations Engine Flow</span>
+                <Layers className="w-3.5 h-3.5 text-brand-600" />
+                <span>Stage by Stage</span>
               </div>
-              <span className="text-[11px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100 font-semibold">
-                Aheri Systems Framework
+              <span className="text-[11px] font-mono text-brand-700 bg-brand-50 px-2 py-0.5 rounded border border-brand-100 font-semibold">
+                5-Stage Framework
               </span>
             </div>
 
@@ -195,10 +204,10 @@ export default function CaseStudies() {
               {(activeCase.workflowSteps || []).map((step, idx) => (
                 <div
                   key={step.title}
-                  className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:border-emerald-400 hover:shadow-xs transition-all flex flex-col justify-between"
+                  className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:border-brand-400 hover:shadow-xs transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <div className="text-[10px] font-mono text-emerald-700 mb-2 font-bold flex items-center justify-between">
+                    <div className="text-[10px] font-mono text-brand-700 mb-2 font-bold flex items-center justify-between">
                       <span>{step.stage || `Stage 0${idx + 1}`}</span>
                     </div>
                     <div className="text-xs font-bold text-slate-900 mb-1.5">

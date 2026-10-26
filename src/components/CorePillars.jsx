@@ -16,14 +16,14 @@ export default function CorePillars() {
         
         {/* Section Header */}
         <div className="max-w-2xl mb-16">
-          <div className="text-xs font-mono uppercase tracking-widest text-emerald-700 font-semibold mb-3">
-            Core Focus Areas
+          <div className="text-xs font-mono uppercase tracking-widest text-brand-700 font-semibold mb-3">
+            What I Do
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mb-4" style={{ color: '#090d16' }}>
-            Systems, AI Agents & Operations
+            What I Bring
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
-            Growing companies need more than isolated chatbots and messy spreadsheets. I map the full customer journey, build autonomous agentic systems, and connect sales pipelines with back-office operations to eliminate revenue leakage.
+            Four capabilities sit behind every AI and automation project I take on: putting AI agents to work, mapping the process first, automating the revenue path, and connecting systems and data.
           </p>
         </div>
 
@@ -34,15 +34,15 @@ export default function CorePillars() {
             return (
               <div
                 key={pillar.id}
-                className="lit-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/50 hover:shadow-md transition-all"
+                className="lit-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between bg-white border border-slate-200/90 shadow-xs hover:border-brand-500/50 hover:shadow-md transition-all"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700">
+                    <div className="w-11 h-11 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-700">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[10px] font-mono text-emerald-800 bg-emerald-50/80 px-2 py-0.5 rounded border border-emerald-100 font-semibold">
-                      Core Discipline
+                    <span className="text-[10px] font-mono text-brand-800 bg-brand-50/80 px-2 py-0.5 rounded border border-brand-100 font-semibold">
+                      Skill Area
                     </span>
                   </div>
 
@@ -50,7 +50,7 @@ export default function CorePillars() {
                     {pillar.title}
                   </h3>
 
-                  <div className="text-xs font-mono text-emerald-700 font-semibold mb-3">
+                  <div className="text-xs font-mono text-brand-700 font-semibold mb-3">
                     {pillar.subtitle}
                   </div>
 
@@ -61,7 +61,7 @@ export default function CorePillars() {
 
                 <div className="pt-5 border-t border-slate-100">
                   <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-2 font-medium">
-                    Key Capabilities & Tools:
+                    Tools & Methods:
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {pillar.skills.map((skill) => (

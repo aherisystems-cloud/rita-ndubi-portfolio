@@ -15,7 +15,7 @@ export default function FAQSection() {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-emerald-400 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-brand-400 mb-3">
             <span>// FREQUENTLY ASKED QUESTIONS</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
@@ -42,7 +42,7 @@ export default function FAQSection() {
                   <span className="font-semibold text-white text-base sm:text-lg">
                     {item.q}
                   </span>
-                  <div className={`p-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 transition-transform ${isOpen ? 'rotate-180 text-emerald-400' : ''}`}>
+                  <div className={`p-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 transition-transform ${isOpen ? 'rotate-180 text-brand-400' : ''}`}>
                     <ChevronDown className="w-4 h-4" />
                   </div>
                 </button>

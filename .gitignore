@@ -30,3 +30,6 @@ Thumbs.db
 # Cloudflare
 .wrangler/
 .mf/
+
+# Job applications: CVs, pay expectations, phone. Repo is public, keep local only.
+docs/applications/

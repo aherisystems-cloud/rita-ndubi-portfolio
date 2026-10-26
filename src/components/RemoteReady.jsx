@@ -42,7 +42,7 @@ export default function RemoteReady() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-emerald-400 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-brand-400 mb-3">
             <span>// ASYNCHRONOUS EXCELLENCE</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -60,10 +60,10 @@ export default function RemoteReady() {
             return (
               <div
                 key={item.title}
-                className="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-emerald-500/30 transition-all glow-card"
+                className="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-brand-500/30 transition-all glow-card"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                  <div className="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400">
                     <Icon className="w-6 h-6" />
                   </div>
                   <div>
@@ -85,7 +85,7 @@ export default function RemoteReady() {
         <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 mb-8 border-b border-slate-800">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 mb-2">
+              <div className="inline-flex items-center gap-2 text-xs font-mono text-brand-400 mb-2">
                 <Globe className="w-4 h-4" />
                 <span>GLOBAL TIMEZONE COVERAGE</span>
               </div>
@@ -98,10 +98,10 @@ export default function RemoteReady() {
             </div>
 
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-slate-950 border border-slate-800/90 self-start lg:self-center">
-              <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></div>
+              <div className="w-3 h-3 rounded-full bg-brand-400 animate-pulse"></div>
               <div>
                 <div className="text-[11px] font-mono text-slate-400 uppercase">Current Time in Nairobi (EAT)</div>
-                <div className="text-lg font-mono font-bold text-emerald-300 tracking-wider">
+                <div className="text-lg font-mono font-bold text-brand-300 tracking-wider">
                   {currentTimeEAT || "12:55 PM"}
                 </div>
               </div>
@@ -117,13 +117,13 @@ export default function RemoteReady() {
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
                     <span className="font-semibold text-sm text-slate-200">{tz.city}</span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
                   </div>
                   <div className="text-xs font-mono text-slate-500 mb-2">
                     {tz.zone}
                   </div>
                 </div>
-                <div className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">
+                <div className="text-xs font-mono text-brand-400 bg-brand-500/10 px-2 py-1 rounded border border-brand-500/20">
                   {tz.overlap}
                 </div>
               </div>
@@ -132,10 +132,10 @@ export default function RemoteReady() {
 
           <div className="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400 font-mono">
             <div className="flex items-center gap-2">
-              <MessageSquare className="w-4 h-4 text-emerald-400" />
+              <MessageSquare className="w-4 h-4 text-brand-400" />
               <span>Async Toolkit: Slack Threads · Loom Video Briefs · Linear / ClickUp · Notion Wikis</span>
             </div>
-            <div className="text-emerald-400 font-medium">
+            <div className="text-brand-400 font-medium">
               ✓ Ready for 100% remote asynchronous contracts & roles
             </div>
           </div>

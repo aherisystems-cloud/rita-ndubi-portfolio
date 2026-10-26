@@ -9,7 +9,7 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-emerald-400 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-brand-400 mb-3">
             <span>// REPUTATION & VALIDATION</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -28,7 +28,7 @@ export default function Testimonials() {
               className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-between glow-card relative"
             >
               <div>
-                <Quote className="w-8 h-8 text-emerald-400/40 mb-4" />
+                <Quote className="w-8 h-8 text-brand-400/40 mb-4" />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed italic mb-6">
                   "{t.quote}"
                 </p>
@@ -38,7 +38,7 @@ export default function Testimonials() {
                 <div className="font-bold text-white text-sm">
                   {t.author}
                 </div>
-                <div className="text-xs text-emerald-400 font-mono">
+                <div className="text-xs text-brand-400 font-mono">
                   {t.role} · {t.company}
                 </div>
               </div>

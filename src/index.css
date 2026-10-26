@@ -8,8 +8,13 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-slate-50 text-slate-800 min-h-screen antialiased selection:bg-emerald-500 selection:text-white font-sans;
+    @apply bg-slate-50 text-slate-800 min-h-screen antialiased selection:bg-brand-500 selection:text-white font-sans;
     letter-spacing: -0.01em;
+  }
+  /* Serif headlines echo the serif RN monogram; Inter stays for reading text. */
+  h1, h2 {
+    @apply font-display;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -29,8 +34,8 @@
 }
 
 .lit-card:hover {
-  border-color: rgba(16, 185, 129, 0.4);
-  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  border-color: rgba(241, 98, 50, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(241, 98, 50, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
   transform: translateY(-2px);
 }
 

@@ -9,7 +9,7 @@ export default function ThoughtLeadership() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-emerald-400 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-brand-400 mb-3">
             <span>// PLAYBOOKS & THOUGHT LEADERSHIP</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -25,11 +25,11 @@ export default function ThoughtLeadership() {
           {thoughtLeadership.map((article) => (
             <div
               key={article.title}
-              className="bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-emerald-500/30 transition-all glow-card group cursor-pointer"
+              className="bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500/30 transition-all glow-card group cursor-pointer"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-4">
-                  <span className="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  <span className="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-brand-500/10 text-brand-400 border border-brand-500/20">
                     {article.category}
                   </span>
                   <div className="flex items-center gap-1.5 text-xs font-mono text-slate-500">
@@ -38,7 +38,7 @@ export default function ThoughtLeadership() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors leading-snug">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-brand-300 transition-colors leading-snug">
                   {article.title}
                 </h3>
 
@@ -47,7 +47,7 @@ export default function ThoughtLeadership() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-emerald-400 group-hover:translate-x-1 transition-transform">
+              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-brand-400 group-hover:translate-x-1 transition-transform">
                 <span className="font-semibold">Read System Framework</span>
                 <ArrowUpRight className="w-4 h-4" />
               </div>

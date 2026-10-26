@@ -15,11 +15,12 @@ export default function Navbar({ onOpenResume }) {
   }, []);
 
   const navLinks = [
-    { name: 'Systems', href: '#systems' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#systems' },
     { name: 'Framework', href: '#framework' },
     { name: 'Projects', href: '#case-studies' },
     { name: 'Stack', href: '#stack' },
-    { name: 'Ventures', href: '#ventures' },
+    { name: 'Platforms', href: '#ventures' },
     { name: 'Experience', href: '#experience' },
   ];
 
@@ -32,9 +33,7 @@ export default function Navbar({ onOpenResume }) {
           
           {/* Logo & Name */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center font-bold text-slate-900 text-sm tracking-tight group-hover:border-emerald-500/50 group-hover:bg-emerald-50 transition-all">
-              RN
-            </div>
+            <img src="/rn-logo.png" alt="Rita Ndubi logo" className="w-9 h-9 rounded-xl border border-slate-200 bg-white object-contain" />
             <div>
               <div className="font-bold text-slate-900 tracking-tight text-base flex items-center gap-2">
                 Rita Ndubi
@@ -64,7 +63,7 @@ export default function Navbar({ onOpenResume }) {
               onClick={onOpenResume}
               className="px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-100 border border-slate-200 rounded-xl transition-all flex items-center gap-1.5 cursor-pointer"
             >
-              <FileText className="w-3.5 h-3.5 text-emerald-600" />
+              <FileText className="w-3.5 h-3.5 text-brand-600" />
               <span>Resume / CV</span>
             </button>
 

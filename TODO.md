@@ -14,7 +14,12 @@
   - *Key Focus*: Highlight Retail Conversational AI Sales Agent (Click-to-WhatsApp, inventory check, 72-hr recovery) and VivaLife Clinic patient intake automation.
   - *Action*: Frame CRM/intake experience around customer operations, self-service portals, and objection-handling automation.
 
-- [ ] **Job 3: AI Automation & Integration Engineer (Full-Time, Finance/RevOps)**
+> 2026-10-26: full postings, form answers, 3 tailored CVs and video script now live in
+> `docs/applications/` (git-ignored, local only). Job 3 is actually **Workflow Automation Specialist**
+> ($2.3K/mo, ERP/SQL/reporting). All site metrics were invented and have been replaced with true
+> qualitative before/after; anonymous testimonials removed until real LinkedIn ones are pasted.
+
+- [ ] **Job 3: Workflow Automation Specialist (Full-Time, ERP/SQL/Reporting)** (old notes below are outdated)
   - *Company*: Scale Army
   - *Core Fit*: Commercial Bank of Africa asset finance foundation, Bachelor's in Finance & Banking, Quote-to-Cash revops, multi-tool webhook integrations.
   - *Key Focus*: Emphasize the bridge between financial literacy and operational technology (Zoho Books, Stripe, dynamic pricing engines).
