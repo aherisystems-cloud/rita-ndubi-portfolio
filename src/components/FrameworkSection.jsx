@@ -40,10 +40,10 @@ export default function FrameworkSection() {
             How I Work
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-            The Revenue-to-Operations <span className="text-brand-700">Engine</span>
+            The <span className="text-brand-700">CLEAR</span> Method
           </h2>
           <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
-            The same five-stage framework sits behind every project on this site. It is how I audit a business, decide what to fix first, and explain the plan to a team.
+            My method for taking an organization from scattered tools to AI-ready systems. It sits behind every project on this site, and it is how I decide what to fix first and explain the plan to a team.
           </p>
         </div>
 
@@ -93,14 +93,14 @@ export default function FrameworkSection() {
             <div>
               <div className="flex items-center gap-2 text-xs font-mono font-semibold text-brand-700 uppercase tracking-wider mb-1.5">
                 <Layers className="w-4 h-4" />
-                <span>The 5-Stage Customer Journey Flow</span>
+                <span>The Five Steps</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
-                From First Inquiry to Back-Office Delivery
+                Chart · Link · Eliminate · Add AI · Run & Refine
               </h3>
             </div>
             <div className="text-xs font-mono text-slate-500">
-              Click a stage to see the problem and the fix
+              Click a step to see the problem and the fix
             </div>
           </div>
 
@@ -120,7 +120,7 @@ export default function FrameworkSection() {
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span className={`text-[10px] font-mono font-bold ${isActive ? 'text-brand-400' : 'text-slate-400'}`}>
-                      Stage {stage.step}
+                      {stage.letter} · Step {stage.step}
                     </span>
                     {isActive && <span className="w-1.5 h-1.5 rounded-full bg-brand-400"></span>}
                   </div>
@@ -138,7 +138,7 @@ export default function FrameworkSection() {
             <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-slate-200">
               <div>
                 <span className="text-[10px] font-mono font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-2 py-0.5 rounded border border-brand-100">
-                  Stage {activeStage.step} of 05
+                  {activeStage.letter} · Step {activeStage.step} of 05
                 </span>
                 <h4 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
                   {activeStage.name}

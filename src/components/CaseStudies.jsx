@@ -33,7 +33,7 @@ export default function CaseStudies() {
           <div className="max-w-2xl">
             <div className="text-xs font-mono uppercase tracking-widest text-brand-700 font-semibold mb-3 flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>9 Projects · 6 Client Systems, 3 Own Platforms</span>
+              <span>9 Projects · 7 Client Systems, 2 Own Platforms</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
               Systems I Have Built
@@ -45,7 +45,7 @@ export default function CaseStudies() {
 
           <div className="flex items-center gap-2 text-xs font-mono text-slate-500 bg-slate-50 px-3.5 py-2 rounded-xl border border-slate-200 shrink-0">
             <span className="w-2 h-2 rounded-full bg-brand-500"></span>
-            <span>Each project mapped to the 5-stage framework</span>
+            <span>Each project mapped across the customer journey</span>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ export default function CaseStudies() {
                 <span>Stage by Stage</span>
               </div>
               <span className="text-[11px] font-mono text-brand-700 bg-brand-50 px-2 py-0.5 rounded border border-brand-100 font-semibold">
-                5-Stage Framework
+                Customer Journey
               </span>
             </div>
 

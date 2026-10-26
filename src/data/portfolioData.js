@@ -3,30 +3,30 @@
 
 export const personalInfo = {
   name: "Rita Ndubi",
-  title: "Business Systems, AI Automation & RevOps Specialist",
+  title: "Business Systems & AI Automation Strategist | CRM, Customer Journey & RevOps",
   subtitle: "Zoho One · CRM & Workflow Automation · APIs & Webhooks · AI Agents (Claude, OpenAI, MCP)",
   location: "Nairobi, Kenya · Working with teams worldwide",
   bio: "I build the systems that carry a customer from first inquiry to paid invoice: CRM pipelines, quote and approval flows, e-signature, invoicing, automated follow-up and management dashboards. I start by mapping how the work is really done, then remove the re-typing, the handoffs nobody owns and the status questions customers keep asking. My background is 9+ years across banking operations at Commercial Bank of Africa, digital marketing and CRM automation, and AI implementation. I work in Zoho One, HubSpot and GoHighLevel, Make and Zapier, REST APIs and webhooks, SQL databases (Supabase, Cloudflare D1), and AI agents built on Claude and OpenAI.",
   linkedinUrl: "https://www.linkedin.com/in/rita-ndubi",
   email: "ritakawira@gmail.com",
   quickStats: [
-    { label: "Projects on This Site (6 Client, 3 Own Platforms)", value: "9", suffix: "" },
+    { label: "Projects on This Site (7 Client, 2 Own Platforms)", value: "9", suffix: "" },
     { label: "Years in Operations, CRM & Automation", value: "9+", suffix: "" },
     { label: "Stages in My Customer-to-Operations Framework", value: "5", suffix: "" }
   ]
 };
 
 export const operatingFramework = {
-  name: "The Revenue-to-Operations (RevOps) Engine",
-  tagline: "From first inquiry to back-office delivery",
-  summary: "One connected system from the moment a customer gets in touch to the moment the work is delivered and paid for.",
+  name: "The CLEAR Method",
+  tagline: "From scattered tools to AI-ready systems",
+  summary: "Chart the whole business, Link the systems, Eliminate manual work, Add AI with guardrails, then Run, review and refine.",
   coreQuestions: [
     {
       id: "what",
       number: "01",
       question: "What do you do?",
       shortAnswer: "I design and build the systems your organization runs on, and put AI and automation to work inside them.",
-      details: "In most organizations, marketing, sales, operations and finance each run on their own tools, held together by email, spreadsheets and people re-typing data. I connect them into one system, automate the repetitive work, and add AI where it gives your team real time back."
+      details: "In most organizations, marketing, sales, operations and finance each run on their own tools, held together by email, spreadsheets and people re-typing data. I connect them into one system so revenue stops leaking between teams, automate the repetitive work, and add AI where it gives your team real time back."
     },
     {
       id: "who",
@@ -46,55 +46,60 @@ export const operatingFramework = {
       id: "process",
       number: "04",
       question: "What does a project look like?",
-      shortAnswer: "Discover, design, build, test, hand over, then improve. Mapped across five stages from first inquiry to back office.",
+      shortAnswer: "The CLEAR Method: Chart, Link, Eliminate, Add AI, Run and refine.",
       details: "We start with how the work is done today and agree what success looks like. I fix the biggest bottleneck first, test with real past cases, document every workflow, and train the team so they own the system after go-live."
     }
   ],
   stages: [
     {
       step: "01",
-      name: "Attract & Capture",
-      tagline: "Every inquiry recorded, with an owner",
-      problem: "Inquiries arrive by email, WhatsApp, phone and web forms. Some are never logged, nobody knows which campaign they came from, and the first reply depends on who happens to see it.",
-      solution: "Every channel feeds one CRM pipeline. Each inquiry is tagged with its source, assigned an owner by rules, and gets an instant acknowledgement.",
-      aiRole: "Reads free-text messages and fills the CRM fields (name, need, dates, budget) so nobody types them in.",
-      metric: "Every inquiry logged with an owner from the first touch"
+      letter: "C",
+      name: "Chart the Whole Business",
+      tagline: "See every function and relationship before changing anything",
+      problem: "Most system projects start with a tool. The result is software that matches nobody's real work, and gaps between marketing, sales, operations and finance that nobody owns.",
+      solution: "I map every function and every relationship: how customers, vendors, partners and assets move through the business today, where data is re-typed, where requests wait, and where revenue is quietly bleeding out between teams. Then we agree what success looks like.",
+      aiRole: "AI helps turn interviews, documents and data exports into a clear map of how the business runs today.",
+      metric: "A shared map of how the business really runs"
     },
     {
       step: "02",
-      name: "Follow Up & Nurture",
-      tagline: "No lead goes cold",
-      problem: "Follow-up depends on memory. Hot leads wait while the team chases inquiries that were never going to buy.",
-      solution: "Qualification rules and scoring sort leads by fit and urgency. Follow-up sequences run by email, SMS or WhatsApp, and leads that stall raise a task for a person.",
-      aiRole: "Answers routine questions from approved information and drafts follow-ups for a person to approve.",
-      metric: "Instant first response, around the clock"
+      letter: "L",
+      name: "Link the Systems",
+      tagline: "One connected platform, data entered once",
+      problem: "Each team runs its own tools. The same customer lives in five places, and every report means exporting and reconciling.",
+      solution: "I connect CRM, marketing, operations, finance and reporting into one platform, whether that is Zoho One, HubSpot or your existing stack, using native integrations, APIs and webhooks, so a record created once reaches every team that needs it.",
+      aiRole: "AI agents connect to the same systems through APIs and MCP, so they work with live data rather than copies.",
+      metric: "One source of truth across every team"
     },
     {
       step: "03",
-      name: "Convert & Contract",
-      tagline: "Quote to signed contract to invoice, without re-typing",
-      problem: "Quotes are built by hand in spreadsheets, sent as PDFs, approved by email, then typed again into the invoice. Each step adds delay and errors.",
-      solution: "A quote builder that uses the data already on the CRM record, an internal approval step, client signature through Zoho Sign, and the deposit invoice created in Zoho Books when the contract is signed.",
-      aiRole: "Pulls quote details out of the client's request; prices and approvals stay rule-based and human-checked.",
-      metric: "Quote, contract and invoice from one record, no re-typing"
+      letter: "E",
+      name: "Eliminate Manual Work",
+      tagline: "Rules carry the routine",
+      problem: "Skilled people spend hours on copy-paste, follow-up reminders, status updates and invoice entry.",
+      solution: "Workflow automation for the repetitive steps: routing, follow-ups, quote and approval flows, e-signature, invoicing, reminders and alerts, built with workflow rules, Make, Zapier or custom functions.",
+      aiRole: "Plain automation comes first here: fixed rules are cheaper, testable and do the same thing every time.",
+      metric: "Routine work runs without anyone touching it"
     },
     {
       step: "04",
-      name: "Onboard & Retain",
-      tagline: "Customers know what happens next",
-      problem: "After the sale, customers get silence, so they call to ask for updates, and nobody asks for a review or the next booking.",
-      solution: "Automatic onboarding messages, reminders and status updates, post-service feedback requests, and repeat-business prompts.",
-      aiRole: "Drafts personalised updates and sorts incoming replies into routine and needs-a-person.",
-      metric: "Automatic follow-up after every sale"
+      letter: "A",
+      name: "Add AI With Guardrails",
+      tagline: "AI where the input is messy, people where it matters",
+      problem: "Teams try AI tools on their own, with no connection to company data and no rules about what AI is allowed to do.",
+      solution: "AI goes where information arrives as free text or documents: reading and sorting inquiries, extracting details, drafting replies and summaries, and answering routine questions from approved information. Every AI step has a defined scope, a log, and a human approval point for money, promises and policy.",
+      aiRole: "Claude and OpenAI models, tool calling, and agents connected through MCP, with human review built in.",
+      metric: "AI inside real workflows, with a person in control"
     },
     {
       step: "05",
-      name: "Operations Engine",
-      tagline: "The back office runs on live data",
-      problem: "Management waits for someone to compile a spreadsheet, vendor documents expire unnoticed, and each process lives in one person's head.",
-      solution: "Management dashboards on live data, expiry alerts for vendor and staff documents, role-based access, and written SOPs for each module.",
-      aiRole: "Runs scheduled checks and reports, and explains changes in the numbers; the numbers themselves come from the system.",
-      metric: "Live management dashboards instead of spreadsheets"
+      letter: "R",
+      name: "Run, Review & Refine",
+      tagline: "Owned by the team, improved over time",
+      problem: "Systems decay after go-live when nobody understands them, nothing is documented and nobody looks at the numbers.",
+      solution: "Live dashboards for leadership, written SOPs for every module, team training, and a regular review of what is working, what is not, and what to automate next.",
+      aiRole: "Scheduled AI reports explain changes in the numbers; the numbers themselves always come from the system.",
+      metric: "A system the team trusts and keeps improving"
     }
   ]
 };
@@ -118,7 +123,7 @@ export const corePillars = [
     id: "revenue-ops",
     title: "Quote-to-Cash & Revenue Operations",
     subtitle: "Quotes · Approvals · E-signature · Invoicing · Payments",
-    description: "I connect the steps between a request and a paid invoice: quote builders fed from the CRM record, approval steps, Zoho Sign contracts that update the deal when signed, Zoho Books invoices created automatically, and payment gateway webhooks that confirm payment without anyone checking by hand.",
+    description: "I stop revenue leakage between a request and a paid invoice by connecting every step: quote builders fed from the CRM record, approval steps, Zoho Sign contracts that update the deal when signed, Zoho Books invoices created automatically, and payment gateway webhooks that confirm payment without anyone checking by hand.",
     skills: ["Quote-to-Cash", "Zoho Sign & Zoho Books", "Approval Workflows", "Payment Webhooks", "Pipeline Design"]
   },
   {
@@ -134,7 +139,7 @@ export const caseStudyCategories = [
   { id: "all", label: "All Projects" },
   { id: "enterprise-crm", label: "CRM & Business Systems" },
   { id: "healthcare", label: "Healthcare & Growth" },
-  { id: "platforms", label: "My Own Platforms" }
+  { id: "platforms", label: "Digital Platforms" }
 ];
 
 export const caseStudies = [
@@ -335,8 +340,8 @@ export const caseStudies = [
   {
     id: "ccc-directory",
     category: "platforms",
-    title: "Regional Business Directory & Listing Intake",
-    client: "CCC Business Directory (regional business directory)",
+    title: "Business Directory Platform & Listing Intake",
+    client: "CCC Business Directory (Connect Circle Community, client project)",
     tagline: "A searchable directory of regional businesses with online listing submission and admin verification.",
     badge: "Directory Platform",
     problem: "Regional businesses had no central, searchable directory, and listings were collected on paper.",
@@ -379,7 +384,8 @@ export const ventureSpotlights = [
     achievements: [
       "Delivered Zoho One implementations for Klock Aviation and Mapenzi Connect.",
       "Built clinic intake and reminder systems for VivaLife Pediatric Clinic and the Unicorn Dental Clinic website and booking flow.",
-      "Audited Zoho CRM and redesigned the investor journey for Sydia Realty."
+      "Audited Zoho CRM and redesigned the investor journey for Sydia Realty.",
+      "Built the CCC Business Directory platform for Connect Circle Community."
     ],
     link: "https://aherisystems.com"
   },
@@ -407,19 +413,8 @@ export const ventureSpotlights = [
       "Traced inflated click data to bots, purged 6,471 bad rows and added filters at the source."
     ],
     link: "https://wowglamdecor.com"
-  },
-  {
-    name: "CCC Business Directory",
-    role: "Builder",
-    timeline: "2024 - Present",
-    tagline: "Regional business directory",
-    description: "A searchable directory of regional businesses with online listing submission.",
-    achievements: [
-      "Built categorised business profiles and search by sector.",
-      "Built online listing intake with admin verification before publishing."
-    ],
-    link: "https://cccbusinessdirectory.co.ke"
   }
+
 ];
 
 export const experienceTimeline = [
@@ -489,18 +484,49 @@ export const certifications = [
 // Not rendered on the live site (ThoughtLeadership is not mounted in App.jsx).
 export const thoughtLeadership = [];
 
-// Empty until the two real LinkedIn testimonials are pasted in (exact text, name, role).
-export const testimonials = [];
+// Verbatim LinkedIn recommendations (screenshots: docs/brand/testimonial-*.png). Never edit the wording.
+export const testimonials = [
+  {
+    author: "Evans Mawira",
+    role: "Business Development & Strategic Partnerships, Klock Aviation Group",
+    relation: "Client · LinkedIn recommendation, August 14, 2026",
+    quote: [
+      "I had the pleasure of working with Rita on a comprehensive transformation of our organization\u2019s operating systems across multiple business lines.",
+      "Rita went far beyond simply implementing technology. She took the time to understand how our organization operated, how our different business lines connected, and where we could improve our processes, workflows, lead generation, marketing, and revenue generation. She then helped us build and connect systems that brought these areas together into a more structured and efficient operation.",
+      "What particularly stood out was Rita\u2019s ability to combine technical expertise with strong business and strategic thinking. She consistently looked at the bigger picture \u2014 not just how to automate a process, but how the systems, people, processes, and customer journey could work together to save time, reduce inefficiencies, improve lead management, and ultimately support revenue growth.",
+      "She also provided valuable strategic input around our marketing and lead-generation efforts, helping us think more effectively about how to structure our digital operations and turn technology into a genuine business growth engine.",
+      "Rita is highly knowledgeable, proactive, solutions-oriented, and genuinely invested in creating systems that make businesses work better. I would highly recommend Rita and Aheri Systems to any organization looking to streamline operations, leverage automation, and build scalable systems that support growth."
+    ]
+  },
+  {
+    author: "Eva Matindi",
+    role: "Connect Circle Community · CCC Business Directory · Mature Singles · Mapenzi Connect",
+    relation: "Client · LinkedIn recommendation, February 14, 2026",
+    quote: [
+      "Rita has been instrumental in helping me organise my business operations through Zoho CRM. She clearly explained how the different Zoho apps work together and guided me on how to structure them in a way that makes practical sense for my business.",
+      "Through her support, I am now able to capture leads, track conversations, automate communication, and monitor payments within one organised system. She is patient, knowledgeable, and always available to answer questions, which makes the learning process smooth and empowering.",
+      "I highly recommend Rita to any business owner looking to streamline operations and use Zoho effectively."
+    ]
+  }
+];
 
 // Mission, vision and goal. Drafted from Rita's brand docs and direction; confirm wording with Rita.
 export const brandStory = {
   eyebrow: "About Me",
-  headline: "I help organizations turn AI from an experiment into the way work gets done.",
+  headline: "I turn recurring business challenges into connected, AI-ready systems.",
   story: [
-    "My foundation is in banking operations at Commercial Bank of Africa, where accuracy and audit trails were non-negotiable. From there I moved into digital marketing and CRM automation, and for the last few years I have built business systems and digital platforms with AI as a daily working tool: Zoho One implementations for clients, and my own platforms built with Claude Code on Cloudflare and Supabase.",
-    "Most organizations have tried AI tools. Far fewer have AI inside their actual systems, connected to their own data, with clear rules about when it acts and when a person decides. That gap between trying AI and running on it is where I work."
+    "My foundation is in banking operations at Commercial Bank of Africa, where accuracy and audit trails were non-negotiable. From there I moved into digital marketing and CRM automation, and for the last few years I have built business systems and digital platforms with AI as a daily working tool: Zoho One implementations for clients, and my own platforms built with Claude Code on Cloudflare and Supabase. I am an AI-native builder and strategist: I design with AI, build with AI, and help teams run their work with it.",
+    "I am particularly interested in turning recurring business challenges into solutions that are structured, repeatable and easier to implement, not simply adding more software to the stack. I believe technology creates the most value when it solves a real business problem, fits the way people work and produces measurable outcomes."
   ],
-  mission: "To make AI and automation practical for every organization I work with: built into real systems, connected to real data, and trusted by the people who use them every day.",
+  focusIntro: "Through my work, I explore how to:",
+  focus: [
+    "Connect marketing, sales, CRM and operational workflows.",
+    "Identify and reduce revenue leakage across the customer lifecycle.",
+    "Apply AI and automation to recurring business processes.",
+    "Design customer journeys that support conversion, onboarding and retention.",
+    "Turn repeatable business problems into practical, documented systems."
+  ],
+  mission: "To help businesses move beyond disconnected tools and manual processes toward connected systems that improve how they attract customers, manage relationships, deliver services and operate.",
   vision: "Organizations of every size, starting with those across Africa, running on AI-ready systems and digital platforms, so people spend their time on judgment, relationships and growth while systems carry the routine work.",
   approach: "I work with leadership teams and with the people who own operations, sales and finance, either embedded in the team or on a defined project. I start with how your business really runs, then build the system around it.",
   principles: [

@@ -25,7 +25,7 @@ export default function MissionSection() {
             />
             <div className="mt-4">
               <div className="font-bold text-slate-900">Rita Ndubi</div>
-              <div className="text-sm text-slate-500">Business Systems, AI Automation & RevOps Specialist</div>
+              <div className="text-sm text-slate-500">Business Systems & AI Automation Strategist</div>
               <div className="text-xs font-mono text-slate-400 mt-1">Nairobi, Kenya</div>
             </div>
           </div>
@@ -41,6 +41,17 @@ export default function MissionSection() {
                 {p}
               </p>
             ))}
+            <div className="mt-6 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+              <div className="text-sm font-semibold text-slate-900 mb-3">{brandStory.focusIntro}</div>
+              <ol className="space-y-2">
+                {brandStory.focus.map((f, i) => (
+                  <li key={f} className="flex gap-3 text-sm text-slate-700 leading-relaxed">
+                    <span className="font-mono text-brand-700 font-bold">0{i + 1}</span>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
         </div>
 

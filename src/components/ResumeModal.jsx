@@ -88,10 +88,10 @@ export default function ResumeModal({ isOpen, onClose }) {
           {/* Signature Operating Model */}
           <div className="p-4 rounded-2xl bg-brand-50/70 border border-brand-200/80">
             <h2 className="text-xs font-mono uppercase tracking-wider text-brand-900 font-bold mb-1.5">
-              Signature Methodology: The Revenue-to-Operations (RevOps) Engine
+              Signature Method: The CLEAR Method
             </h2>
             <div className="text-xs text-slate-700 leading-relaxed mb-3">
-              Five stages, used on every project: <strong>01 Attract & Capture</strong> (every inquiry logged with an owner), <strong>02 Follow Up & Nurture</strong> (no lead goes cold), <strong>03 Convert & Contract</strong> (quote, Zoho Sign contract and invoice from one record), <strong>04 Onboard & Retain</strong> (updates and follow-up after the sale), <strong>05 Operations Engine</strong> (live dashboards, compliance alerts and SOPs).
+              Five steps, used on every project: <strong>C</strong>hart the whole business (every function and relationship), <strong>L</strong>ink the systems (data entered once), <strong>E</strong>liminate manual work (rules carry the routine), <strong>A</strong>dd AI with guardrails (people approve what matters), <strong>R</strong>un, review and refine (dashboards, SOPs, team ownership).
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px] font-mono text-brand-950 font-medium">
               <div className="p-2 rounded-lg bg-white/80 border border-brand-100">
@@ -108,7 +108,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               </div>
               <div className="p-2 rounded-lg bg-white/80 border border-brand-100">
                 <span className="text-slate-400 block text-[9px]">PROCESS</span>
-                5-Stage Framework
+                The CLEAR Method
               </div>
             </div>
           </div>

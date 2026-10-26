@@ -15,11 +15,11 @@ Email: ${personalInfo.email}
 PROFESSIONAL SUMMARY
 ${personalInfo.bio}
 
-CORE OPERATING FRAMEWORK: The Revenue-to-Operations Engine
+SIGNATURE METHOD: The CLEAR Method
 - What I do: turn manual sales and back-office work into connected, automated workflows
 - Who I help: service businesses with complex quotes, busy inboxes and too many spreadsheets
 - How: CRM pipelines, quote-to-invoice automation, integrations, and AI where the input is messy
-- Process: 01 Attract & Capture, 02 Follow Up & Nurture, 03 Convert & Contract, 04 Onboard & Retain, 05 Operations Engine
+- Method: Chart the whole business, Link the systems, Eliminate manual work, Add AI with guardrails, Run, review and refine
 
 EXPERIENCE
 ${experienceTimeline.map(exp => `

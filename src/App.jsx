@@ -5,6 +5,7 @@ import MissionSection from './components/MissionSection';
 import CorePillars from './components/CorePillars';
 import FrameworkSection from './components/FrameworkSection';
 import CaseStudies from './components/CaseStudies';
+import Testimonials from './components/Testimonials';
 import TechStack from './components/TechStack';
 import VentureSpotlight from './components/VentureSpotlight';
 import InteractiveResume from './components/InteractiveResume';
@@ -32,6 +33,7 @@ export default function App() {
         <CorePillars />
         <FrameworkSection />
         <CaseStudies />
+        <Testimonials />
         <TechStack />
         <VentureSpotlight />
         <InteractiveResume

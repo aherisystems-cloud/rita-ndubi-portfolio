@@ -11,15 +11,18 @@ Personal brand portfolio and RevOps showcase for **Rita Ndubi** (Business System
 - **Source of Data**: `src/data/portfolioData.js`
 
 ## Core Brand & Invariants
-- **Core Title**: Business Systems, AI Automation & RevOps Specialist
-- **Signature Framework**: The Revenue-to-Operations (RevOps) Engine:
-  - 01 · Attract & Capture
-  - 02 · Follow Up & Nurture
-  - 03 · Convert & Contract
-  - 04 · Onboard & Retain
-  - 05 · Operations Engine
+- **Core Title** (chosen by Rita 2026-10-26): Business Systems & AI Automation Strategist | CRM, Customer Journey & RevOps. Job-application CVs may use the target role's title (e.g. "Specialist") for ATS matching.
+- **Testimonials**: only the verbatim LinkedIn recommendations in `portfolioData.js` (screenshots in `docs/brand/`). Never edit their wording or invent new ones.
+- **Numbers**: never invent metrics. Rita confirmed past project numbers were not tracked; use qualitative before/after.
+- **Signature Method** (chosen by Rita 2026-10-26, replaces "Revenue-to-Operations Engine"): The CLEAR Method:
+  - C · Chart the whole business
+  - L · Link the systems
+  - E · Eliminate manual work
+  - A · Add AI with guardrails
+  - R · Run, review & refine
+  - Case-study workflowSteps still use the 5 customer journey stages (Attract & Capture ... Operations Engine); that is the journey, not the method.
 - **Enterprise Discretion Policy (Option 1)**:
-  - Approved client names (*Klock Aviation*, *Sydia Realty*, *VivaLife Clinic*, *Mapenzi Connect*, *Unicorn Dental*, *DiaspoCare LLC*) may be displayed for authority.
+  - Approved client names (*Klock Aviation*, *Sydia Realty*, *VivaLife Clinic*, *Mapenzi Connect*, *Unicorn Dental*, *DiaspoCare LLC*, *CCC Business Directory / Connect Circle Community* (client project, not Rita's own venture)) may be displayed for authority.
   - **NEVER** expose proprietary internal numbers, private customer lists, confidential commission percentages, or internal handover sheets.
 - **AI Tone**: Authentic, professional, and practical. Avoid AI fluff or excessive jargon. Highlight business outcomes, before/after metrics, and human-in-the-loop operational design.
 

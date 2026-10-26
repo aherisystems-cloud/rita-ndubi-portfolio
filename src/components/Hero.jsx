@@ -14,7 +14,7 @@ export default function Hero({ onOpenResume }) {
         {/* Subtle pill badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100/80 border border-slate-200 text-slate-700 text-xs font-medium mb-8 backdrop-blur-md shadow-2xs">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
-          <span className="font-semibold text-slate-800">Business Systems · AI Automation · AI Adoption</span>
+          <span className="font-semibold text-slate-800">AI-Native Builder & Strategist</span>
           <span className="text-slate-300">·</span>
           <span className="text-slate-600">Nairobi · Working with teams worldwide</span>
         </div>
@@ -26,7 +26,7 @@ export default function Hero({ onOpenResume }) {
 
         {/* Narrative Description */}
         <p className="text-base sm:text-lg md:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-          I help organizations move AI from experiment to everyday operations. I design the business systems, connect the tools, build the automations and digital platforms, and put AI agents to work where they add real value, with people in control of the decisions.
+          I work at the intersection of business processes, AI, automation, revenue operations and customer experience, helping organizations move beyond disconnected tools and manual processes to connected systems that stop revenue leakage and improve how they attract customers, manage relationships, deliver services and operate.
         </p>
 
         {/* CTAs */}
@@ -102,7 +102,7 @@ export default function Hero({ onOpenResume }) {
               <span className="text-slate-600 hidden sm:inline">Klock Aviation, inquiry to invoice on Zoho One</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-slate-500 text-[11px] font-mono hidden md:inline">5-stage framework</span>
+              <span className="text-slate-500 text-[11px] font-mono hidden md:inline">Built with the CLEAR Method</span>
               <div className="text-brand-700 bg-brand-50 px-2 py-0.5 rounded text-[11px] font-semibold border border-brand-100">
                 Zoho CRM · Sign · Books · Catalyst
               </div>
