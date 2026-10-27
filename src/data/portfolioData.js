@@ -322,7 +322,7 @@ export const caseStudies = [
     tagline: "A 367-product catalog in a SQL database, published daily to a Hugo site, with scheduled social posts through the Zoho Social API.",
     badge: "Own Platform",
     problem: "Running a large product catalog across a website and social channels by hand means stale prices, broken images and posts that silently fail.",
-    solution: "The catalog lives in Cloudflare D1 and is updated with SQL batch scripts. A daily GitHub Actions build publishes the Hugo site to Cloudflare Pages, Cloudflare Workers handle click tracking and image delivery, and Node.js scripts schedule social posts through the Zoho Social API with every response logged. A 31-rule health check must pass with zero errors before each release.",
+    solution: "The catalog lives in Cloudflare D1 and is updated with SQL batch scripts. A daily GitHub Actions build publishes the Hugo site to Cloudflare Pages, Cloudflare Workers handle click tracking and image delivery, and Node.js scripts schedule social posts through the Zoho Social API with every response logged. A 56-check health check must pass with zero errors before each release.",
     metrics: [
       { label: "Catalog", before: "Manual edits", after: "367 products in a SQL database" },
       { label: "Publishing", before: "Manual", after: "Daily automated build" },
@@ -409,7 +409,7 @@ export const ventureSpotlights = [
     tagline: "Home decor e-commerce publisher",
     description: "A 367-product catalog in Cloudflare D1, published daily as a Hugo site through GitHub Actions, with social posts scheduled through the Zoho Social API.",
     achievements: [
-      "31-rule health check must pass with zero errors before every release.",
+      "56-check health check must pass with zero errors before every release.",
       "Traced inflated click data to bots, purged 6,471 bad rows and added filters at the source."
     ],
     link: "https://wowglamdecor.com"

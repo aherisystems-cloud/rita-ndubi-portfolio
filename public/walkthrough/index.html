@@ -216,7 +216,7 @@ const PROJECTS = {
     nodes: [
       { id: 'source', x: 20, y: 40, t: 'Product Research', s: 'Retailer feeds', tag: 'SOURCE' },
       { id: 'catalog', x: 260, y: 40, t: 'Catalog Database', s: '367 products · D1', tag: 'DATA' },
-      { id: 'health', x: 500, y: 40, t: 'Health Check', s: '31 rules, zero errors', tag: 'QUALITY' },
+      { id: 'health', x: 500, y: 40, t: 'Health Check', s: '56 checks, zero errors', tag: 'QUALITY' },
       { id: 'build', x: 740, y: 40, t: 'Daily Build', s: 'GitHub Actions', tag: 'AUTOMATION' },
       { id: 'site', x: 980, y: 40, t: 'Hugo Website', s: 'Cloudflare Pages', tag: 'PUBLISH' },
       { id: 'shopper', x: 20, y: 230, t: 'Shopper Searches', s: 'Google & Pinterest', tag: 'SHOPPER' },
@@ -234,7 +234,7 @@ const PROJECTS = {
     steps: [
       { l: 'Overview', n: '*', t: 'The offer to shoppers', p: ['Shoppers get curated home decor, room ideas and honest buying guides, with every product linked to a trusted retailer.', 'Behind it: one catalog that publishes to the website, Pinterest and email automatically.'], c: ['Hugo','Cloudflare','D1 SQL'] },
       { l: 'Catalog', n: ['source','catalog'], e: [['source','catalog']], t: 'One catalog, one source of truth', p: ['Products are researched from retailer feeds and stored in a Cloudflare D1 SQL database, currently 367 products.', 'Edits go into the database as SQL batches, never only into a local file, so nothing is wiped on the next sync.'], c: ['Cloudflare D1','SQL batches'] },
-      { l: 'Quality', n: ['catalog','health'], e: [['catalog','health']], t: 'Nothing ships until it passes', p: ['A 31-rule health check looks for missing images, broken links, invalid fields and banned wording.', 'A release only goes out with zero errors.'], c: ['Health check','Node.js'] },
+      { l: 'Quality', n: ['catalog','health'], e: [['catalog','health']], t: 'Nothing ships until it passes', p: ['A 56-check health check looks for missing images, broken links, invalid fields and banned wording.', 'A release only goes out with zero errors.'], c: ['Health check','Node.js'] },
       { l: 'E · Automate', n: ['health','build','site'], e: [['health','build'],['build','site']], t: 'The site rebuilds itself daily', p: ['A daily GitHub Actions job rebuilds the Hugo site from the catalog and deploys it to Cloudflare Pages.', 'No servers to maintain, and new products go live without anyone pressing publish.'], c: ['GitHub Actions','Hugo','Cloudflare Pages'] },
       { l: 'Shopper', n: ['shopper','guides','site'], e: [['shopper','guides'],['site','guides']], t: 'A shopper arrives', p: ['Shoppers come from Google and Pinterest looking for ideas for a specific room or problem.', 'Buying guides and category hubs help them choose before they ever see a product.'], c: ['SEO','Pinterest'] },
       { l: 'Product', n: ['guides','product'], e: [['guides','product']], t: 'Fast, clear product pages', p: ['Product pages show real supplier photography, delivered quickly through Cloudflare Workers and R2 storage.', 'Specs come from the retailer data, and invented claims are removed.'], c: ['Workers','R2'] },
