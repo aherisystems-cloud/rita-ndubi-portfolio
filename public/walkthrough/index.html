@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>System Walkthroughs | Rita Ndubi</title>
+<meta name="description" content="Animated walkthroughs of systems built by Rita Ndubi: Klock Aviation on Zoho One, Biashara Pros and WowGlamDecor." />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" href="/rn-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --brand: #F16232; --brand-dark: #B53A16; --brand-soft: #FEF4EE; --brand-line: #FAC7AA;
+    --ink: #0f172a; --muted: #64748b; --line: #e2e8f0; --panel: #f8fafc; --bg: #ffffff;
+    --dim: 0.22;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line); }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand img { width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--line); }
+  .brand b { display: block; font-size: 15px; }
+  .brand span { display: block; font-size: 11px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .tabs { display: flex; gap: 6px; background: #f1f5f9; padding: 4px; border-radius: 999px; border: 1px solid var(--line); }
+  .tab { border: 0; background: transparent; padding: 8px 16px; border-radius: 999px; font: 600 13px Inter, sans-serif; color: #475569; cursor: pointer; }
+  .tab[aria-selected="true"] { background: var(--ink); color: #fff; }
+  main { max-width: 1320px; margin: 0 auto; padding: 22px 24px 28px; }
+  .intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 14px; }
+  .eyebrow { font: 600 11px 'JetBrains Mono', monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--brand-dark); }
+  h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(24px, 3vw, 36px); margin: 4px 0 6px; letter-spacing: -.02em; line-height: 1.1; }
+  .lede { color: var(--muted); margin: 0; font-size: 15px; max-width: 760px; line-height: 1.5; }
+  .stage { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 18px; align-items: stretch; }
+  .canvas { border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(#fff, #fbfcfd); padding: 10px; position: relative; overflow: hidden; }
+  svg { width: 100%; height: auto; display: block; }
+  .node rect.box { fill: #fff; stroke: #cbd5e1; stroke-width: 1.4; transition: all .45s ease; }
+  .node text { transition: opacity .45s ease; }
+  .node .t { font: 600 14px Inter, sans-serif; fill: var(--ink); }
+  .node .s { font: 500 11px 'JetBrains Mono', monospace; fill: var(--muted); }
+  .node .tag { font: 600 9.5px 'JetBrains Mono', monospace; fill: var(--brand-dark); letter-spacing: .08em; }
+  .node { transition: opacity .45s ease; }
+  .node.dim { opacity: var(--dim); }
+  .node.on rect.box { stroke: var(--brand); stroke-width: 2.4; fill: var(--brand-soft); filter: drop-shadow(0 6px 14px rgba(241,98,50,.18)); }
+  .node.hub rect.box { fill: #0f172a; stroke: #0f172a; }
+  .node.hub .t { fill: #fff; } .node.hub .s { fill: #fdba74; }
+  .node.hub.on rect.box { fill: #0f172a; stroke: var(--brand); }
+  .edge { fill: none; stroke: #cbd5e1; stroke-width: 1.6; transition: all .45s ease; }
+  .edge.dim { opacity: .25; }
+  .edge.on { stroke: var(--brand); stroke-width: 2.6; stroke-dasharray: 7 7; animation: flow 1s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -14; } }
+  .dot { fill: var(--brand); filter: drop-shadow(0 0 6px rgba(241,98,50,.8)); }
+  .lane { font: 600 10.5px 'JetBrains Mono', monospace; fill: #94a3b8; letter-spacing: .12em; }
+  aside { border: 1px solid var(--line); border-radius: 22px; padding: 20px; display: flex; flex-direction: column; background: #fff; }
+  .counter { display: flex; align-items: center; justify-content: space-between; font: 600 11px 'JetBrains Mono', monospace; color: var(--muted); }
+  .letter { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-dark); border: 1px solid var(--brand-line); }
+  aside h2 { font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.15; margin: 14px 0 10px; letter-spacing: -.015em; }
+  aside p { margin: 0 0 12px; color: #334155; font-size: 14.5px; line-height: 1.6; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 14px; }
+  .chip { font: 500 11px 'JetBrains Mono', monospace; padding: 4px 9px; border-radius: 8px; background: #f1f5f9; border: 1px solid var(--line); color: #334155; }
+  .controls { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+  .btn { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 10px 14px; font: 600 13px Inter, sans-serif; cursor: pointer; color: var(--ink); }
+  .btn.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .btn:disabled { opacity: .4; cursor: default; }
+  .dots { display: flex; gap: 5px; flex-wrap: wrap; flex: 1; justify-content: center; }
+  .dots button { width: 9px; height: 9px; border-radius: 50%; border: 0; padding: 0; background: #cbd5e1; cursor: pointer; }
+  .dots button.cur { background: var(--brand); transform: scale(1.3); }
+  .hint { margin-top: 10px; font: 500 11px 'JetBrains Mono', monospace; color: #94a3b8; text-align: center; }
+  .offer { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .offer div { border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; background: var(--panel); }
+  .offer b { display: block; font-size: 13.5px; margin-bottom: 4px; }
+  .offer span { font-size: 13px; color: #475569; line-height: 1.5; }
+  .offer-title { margin-top: 22px; font: 600 11px 'JetBrains Mono', monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  @media (max-width: 980px) { .stage { grid-template-columns: 1fr; } header { flex-wrap: wrap; } .intro { flex-direction: column; align-items: flex-start; } }
+  @media (prefers-reduced-motion: reduce) { .edge.on { animation: none; } .dot { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="/">
+    <img src="/rn-logo.png" alt="" />
+    <div><b>Rita Ndubi</b><span>System walkthroughs</span></div>
+  </a>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+</header>
+
+<main>
+  <div class="intro">
+    <div>
+      <div class="eyebrow" id="eyebrow"></div>
+      <h1 id="title"></h1>
+      <p class="lede" id="lede"></p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="canvas"><svg id="svg" role="img" aria-label="Animated system workflow"></svg></div>
+    <aside aria-live="polite">
+      <div class="counter"><span id="count"></span><span class="letter" id="letter"></span></div>
+      <h2 id="stepTitle"></h2>
+      <div id="stepText"></div>
+      <div class="chips" id="chips"></div>
+      <div class="controls">
+        <button class="btn" id="prev" aria-label="Previous step">&larr;</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn primary" id="next" aria-label="Next step">Next &rarr;</button>
+      </div>
+      <div class="hint">Arrow keys to move · P to auto-play</div>
+    </aside>
+  </div>
+
+  <div class="offer-title" id="offerTitle"></div>
+  <div class="offer" id="offer"></div>
+</main>
+
+<script>
+// Each project: nodes on a 1220-wide canvas, edges [from, to], and narrated steps.
+// Steps list the nodes and edges to light up. Facts only; nothing here claims numbers that were not tracked.
+const PROJECTS = {
+  klock: {
+    tab: 'Klock Aviation',
+    eyebrow: 'Client system · Full Zoho One implementation',
+    title: 'Klock Aviation: one operating system for an aviation group',
+    lede: 'Charter, aviation services and an Asset Management & Solutions division that manages aircraft for their owners. Four groups (customers, vendors, partners, aircraft owners), five functions, one connected record.',
+    height: 590,
+    lanes: [{ y: 24, t: 'CUSTOMER JOURNEY' }, { y: 214, t: 'DELIVERY, FINANCE & RETENTION' }, { y: 434, t: 'VENDORS, PARTNERS & ASSETS' }],
+    nodes: [
+      { id: 'mkt', x: 20, y: 40, t: 'Lead Gen & Campaigns', s: 'Zoho Campaigns', tag: 'MARKETING' },
+      { id: 'crm', x: 260, y: 40, t: 'Inquiry Captured', s: 'Zoho CRM · per division', tag: 'MARKETING' },
+      { id: 'route', x: 500, y: 40, t: 'Routing & Priority', s: 'Owner assigned', tag: 'SALES' },
+      { id: 'quote', x: 740, y: 40, t: 'Quote from Record', s: 'No re-typing', tag: 'SALES' },
+      { id: 'sign', x: 980, y: 40, t: 'Approval & E-sign', s: 'Zoho Sign', tag: 'SALES' },
+      { id: 'reeng', x: 20, y: 230, t: 'Re-engagement', s: 'Past & dormant clients', tag: 'MARKETING' },
+      { id: 'updates', x: 260, y: 230, t: 'Client Updates', s: 'Through the job', tag: 'OPERATIONS' },
+      { id: 'ops', x: 500, y: 230, t: 'Service Delivery', s: 'Trips & services', tag: 'OPERATIONS' },
+      { id: 'books', x: 740, y: 230, t: 'Invoice Raised', s: 'Zoho Books', tag: 'FINANCE' },
+      { id: 'dash', x: 980, y: 230, t: 'Management Dashboard', s: 'Zoho Catalyst', tag: 'LEADERSHIP' },
+      { id: 'hub', x: 20, y: 345, w: 1180, h: 62, t: 'Zoho One: one connected record across every division', s: 'Entered once, used by marketing, sales, operations, finance and leadership', hub: true },
+      { id: 'vendors', x: 20, y: 450, t: 'Vendors', s: 'Onboarding & documents', tag: 'RELATIONSHIP' },
+      { id: 'partners', x: 320, y: 450, t: 'Partners', s: 'Referrals & follow-up', tag: 'RELATIONSHIP' },
+      { id: 'owners', x: 620, y: 450, t: 'Aircraft Owners', s: 'Asset Management', tag: 'RELATIONSHIP' },
+      { id: 'alerts', x: 920, y: 450, w: 280, t: 'Compliance Alerts', s: 'Before documents expire', tag: 'OPERATIONS' }
+    ],
+    edges: [['mkt','crm'],['crm','route'],['route','quote'],['quote','sign'],['sign','books'],['books','ops'],['ops','updates'],['updates','reeng'],['reeng','crm'],['vendors','ops'],['vendors','alerts'],['partners','crm'],['owners','ops'],['alerts','dash'],['books','dash']],
+    steps: [
+      { l: 'Overview', n: '*', t: 'One platform, every relationship', p: ['Before: every business line and every group (customers, vendors, partners, aircraft owners) ran its own process across email, WhatsApp, spreadsheets and separate tools.', 'After: Zoho One became the operating system. Each function and each relationship has its own defined process, and information entered once flows everywhere it is needed.'], c: ['Zoho One'] },
+      { l: 'C · Chart', n: ['mkt','route','ops','books','dash','vendors','partners','owners'], t: 'Chart the whole business first', p: ['I started by mapping how work really moved: five functions (marketing, sales, operations, finance, leadership) across four groups of people the company deals with.', 'Each pairing got its own process, so nothing depends on one person remembering what happens next.'], c: ['Process mapping','Stakeholder map'] },
+      { l: 'Marketing', n: ['mkt','crm'], e: [['mkt','crm']], t: 'Lead generation and campaigns', p: ['A lead generation and outreach system brings in prospective clients, with campaigns segmented by division.', 'Every inquiry, from any channel, lands in the right division’s CRM pipeline, tagged with where it came from.'], c: ['Zoho Campaigns','Zoho CRM','Web forms'] },
+      { l: 'Sales', n: ['crm','route','quote'], e: [['crm','route'],['route','quote']], t: 'Routing, priority and the quote', p: ['Rules assign every inquiry to an owner and flag priority clients, so nothing sits unanswered.', 'The quote is built from the data already on the CRM record. Nobody re-types client or trip details.'], c: ['Zoho CRM','Assignment rules','Quote templates'] },
+      { l: 'Contract', n: ['quote','sign'], e: [['quote','sign']], t: 'Approval, then e-signature', p: ['Each quote passes an internal approval step before it goes out.', 'The client signs in Zoho Sign, and the signature moves the deal forward automatically.'], c: ['Approval workflow','Zoho Sign'] },
+      { l: 'Finance', n: ['sign','books'], e: [['sign','books']], t: 'The invoice writes itself', p: ['The signed deal raises the invoice in Zoho Books from the same record.', 'Sales and accounting now work from the same figures instead of two versions of the truth.'], c: ['Zoho Books','Deal to invoice'] },
+      { l: 'Operations', n: ['books','ops','updates'], e: [['books','ops'],['ops','updates']], t: 'Delivery and client updates', p: ['Confirmed jobs move into booking and service delivery workflows, with documents tracked for every trip and service.', 'Clients get updates through the job, so they are not calling to ask for status.'], c: ['Workflow rules','Client notifications'] },
+      { l: 'Retention', n: ['updates','reeng','crm'], e: [['updates','reeng'],['reeng','crm']], t: 'Re-engagement brings clients back', p: ['Past and dormant clients receive re-engagement campaigns.', 'When they respond, they re-enter the pipeline with their full history already on the record.'], c: ['Zoho Campaigns','Segments'] },
+      { l: 'Vendors', n: ['vendors','ops','alerts'], e: [['vendors','ops'],['vendors','alerts']], t: 'Vendors and compliance', p: ['Vendors have their own onboarding and document collection process.', 'Alerts go out before any licence, certificate or insurance expires, so nobody finds out late.'], c: ['Zoho Creator','Expiry alerts'] },
+      { l: 'Partners', n: ['partners','crm'], e: [['partners','crm']], t: 'Partners and referrals', p: ['Partner records, referral tracking and structured follow-up.', 'Every partnership has an owner and a next step, and referrals arrive in the CRM like any other inquiry.'], c: ['Zoho CRM','Referral tracking'] },
+      { l: 'Owners', n: ['owners','ops'], e: [['owners','ops']], t: 'Aircraft owners, Asset Management', p: ['For the Asset Management & Solutions division: owner and aircraft records with their own onboarding, service and communication process.', 'Service work for each aircraft runs through the same operations engine.'], c: ['Zoho CRM','Zoho Creator'] },
+      { l: 'R · Run', n: ['books','alerts','dash'], e: [['books','dash'],['alerts','dash']], t: 'Leadership sees it live', p: ['A management dashboard on Zoho Catalyst shows pipeline, operations and finance across all divisions.', 'Written SOPs for each module mean the team owns the system after go-live.'], c: ['Zoho Catalyst','SOPs'] },
+      { l: 'Result', n: '*', e: 'all', t: 'What changed', p: ['Customers, vendors, partners and aircraft owners in one system. Quote, contract and invoice from one record. A live view across every division instead of manual exports.', 'In the client’s words: Rita "looked at the bigger picture... how the systems, people, processes, and customer journey could work together." (Evans Mawira, Klock Aviation Group)'], c: ['Zoho One'] }
+    ],
+    offerTitle: 'Scope delivered',
+    offer: [['Marketing','Lead gen outreach, segmented campaigns, re-engagement'],['Sales','Division pipelines, routing, quotes, approval, Zoho Sign'],['Operations','Delivery workflows, client updates, document tracking'],['Finance','Invoices in Zoho Books from signed deals'],['Vendors & Partners','Onboarding, expiry alerts, referrals, follow-up'],['Leadership','Zoho Catalyst dashboard across divisions']]
+  },
+
+  biashara: {
+    tab: 'Biashara Pros',
+    eyebrow: 'My platform · Business discovery for Kenya',
+    title: 'Biashara Pros: find trusted businesses, get real quotes',
+    lede: 'A Kenyan business discovery platform for buyers, institutions and business owners. Built with Claude Code on Astro, Cloudflare Pages Functions and a D1 SQL database, with AI routines doing the repetitive work.',
+    height: 590,
+    lanes: [{ y: 24, t: 'BUYERS: GET TRUSTED QUOTES' }, { y: 214, t: 'BUSINESS OWNERS: GET FOUND' }, { y: 434, t: 'GROWTH & SUPPORT' }],
+    nodes: [
+      { id: 'buyer', x: 20, y: 40, t: 'Buyer Request', s: 'Questions per industry', tag: 'BUYER' },
+      { id: 'approve', x: 260, y: 40, t: 'Quick Review', s: 'One-tap approval', tag: 'QUALITY' },
+      { id: 'send', x: 500, y: 40, t: 'Sent to Businesses', s: 'Verified, then claimed', tag: 'MATCHING' },
+      { id: 'quotes', x: 740, y: 40, t: 'Businesses Quote', s: 'Prices, pitch, options', tag: 'BUSINESS' },
+      { id: 'compare', x: 980, y: 40, t: 'Side-by-Side Compare', s: 'At the deadline', tag: 'BUYER' },
+      { id: 'owner', x: 20, y: 230, t: 'Owner Lists or Claims', s: 'Free to list', tag: 'OWNER' },
+      { id: 'validate', x: 260, y: 230, t: 'Validation', s: 'Required fields, spam filter', tag: 'QUALITY' },
+      { id: 'profile', x: 500, y: 230, t: 'AI-Written Profile', s: 'From own website, with OK', tag: 'AI' },
+      { id: 'verify', x: 740, y: 230, t: 'Verified Label', s: '12 months, reminders', tag: 'TRUST' },
+      { id: 'dir', x: 980, y: 230, t: 'Directory Listing', s: 'Found by buyers', tag: 'DISCOVERY' },
+      { id: 'hub', x: 20, y: 345, w: 1180, h: 62, t: 'Cloudflare D1: one SQL database behind every flow', s: 'Requests, quotes, listings, orders and follow-ups in one place', hub: true },
+      { id: 'tools', x: 20, y: 450, t: 'Free Business Tools', s: 'PAYE, VAT, loans, invoices', tag: 'TRAFFIC' },
+      { id: 'zabuni', x: 260, y: 450, t: 'Zabuni Tender Kit', s: 'AI reads the bid document', tag: 'AI' },
+      { id: 'pay', x: 500, y: 450, t: 'Checkout & Webhook', s: 'Payment gateway', tag: 'PAYMENTS' },
+      { id: 'outreach', x: 740, y: 450, t: 'AI Outreach Routine', s: 'Daily target', tag: 'AI' },
+      { id: 'crm', x: 980, y: 450, t: 'Zoho CRM', s: 'Emails & call tasks', tag: 'CRM' }
+    ],
+    edges: [['buyer','approve'],['approve','send'],['send','quotes'],['quotes','compare'],['owner','validate'],['validate','profile'],['profile','verify'],['verify','dir'],['dir','send'],['tools','owner'],['zabuni','pay'],['outreach','crm'],['crm','owner']],
+    steps: [
+      { l: 'Overview', n: '*', t: 'Two sides, one platform', p: ['Buyers (people, businesses, institutions) come to find trusted product suppliers, service providers and professionals.', 'Business owners come to get found and to get support: tenders, funding, guides and tools. One SQL database runs both sides.'], c: ['Astro','Cloudflare','D1 SQL'] },
+      { l: 'Buyers', n: ['buyer','approve'], e: [['buyer','approve']], t: 'A buyer asks for quotes', p: ['The buyer fills a short request with questions tailored to the industry: must-haves, nice-to-haves, urgency and how many quotes they want.', 'Each request gets a quick one-tap review, and returning buyers skip the queue.'], c: ['Request templates','Admin review'] },
+      { l: 'Matching', n: ['approve','send','quotes'], e: [['approve','send'],['send','quotes']], t: 'Only trusted businesses receive it', p: ['Requests go to verified businesses first, then claimed ones. Unclaimed listings never receive requests.', 'Each business replies through its own secure link with prices, its pitch, alternatives, photos and its own quote document.'], c: ['Secure quote links','Business rules'] },
+      { l: 'Compare', n: ['quotes','compare'], e: [['quotes','compare']], t: 'One clear comparison', p: ['At the deadline the buyer gets one side-by-side comparison and marks each quote with a reason.', 'Every business is told its result, and never sees anyone else’s prices.'], c: ['Comparison view','Outcome emails'] },
+      { l: 'Owners', n: ['owner','validate'], e: [['owner','validate']], t: 'Owners list or claim for free', p: ['Business owners add or claim their listing for free.', 'Validation and spam filtering run before anything is saved, and listings missing the required fields are not published.'], c: ['Pages Functions','Validation'] },
+      { l: 'A · AI', n: ['validate','profile'], e: [['validate','profile']], t: 'AI writes the profile', p: ['An AI routine reads the business’s own website and writes a rich profile, only with the owner’s OK for claimed listings.', 'The owner gets a professional profile without writing a word.'], c: ['Claude','Human approval'] },
+      { l: 'Trust', n: ['profile','verify','dir'], e: [['profile','verify'],['verify','dir']], t: 'Verified, then found', p: ['Verification checks show what was checked and when it is valid until. Owners are reminded before it expires.', 'The finished profile appears in the directory, where buyers find it, and verified businesses get first access to quote requests.'], c: ['Verification','Reminders'] },
+      { l: 'Loop', n: ['dir','send'], e: [['dir','send']], t: 'Discovery feeds the quote engine', p: ['Every verified listing becomes a possible recipient for new buyer requests.', 'The more businesses claim and verify, the better the matches buyers receive.'], c: ['Matching'] },
+      { l: 'Tenders', n: ['zabuni','pay'], e: [['zabuni','pay']], t: 'Zabuni Tender Kit', p: ['AI reads the tender’s bid document and turns it into a clear kit of requirements and deadlines, released stage by stage: Find, Decide, Prepare, Watch.', 'Checkout runs through a payment gateway, and a webhook confirms each payment and releases the kit with no manual checking. Bid preparation itself is referred to partners.'], c: ['Claude','Payment gateway','Webhooks','Email reminders'] },
+      { l: 'Outreach', n: ['outreach','crm','owner'], e: [['outreach','crm'],['crm','owner']], t: 'AI outreach through Zoho CRM', p: ['A daily AI routine finds businesses, logs them in Zoho CRM, sends a first and second email, and creates call tasks for phone-only businesses.', 'It reports what was sent against the daily target, so a person can see exactly what it did.'], c: ['Claude','MCP','Zoho CRM'] },
+      { l: 'Traffic', n: ['tools','owner'], e: [['tools','owner']], t: 'Free tools bring owners in', p: ['PAYE, VAT, loan and employee cost calculators, an invoice generator and a compliance calendar answer questions owners search for every day.', 'They are the front door to listing and claiming.'], c: ['Astro','Calculators'] },
+      { l: 'Result', n: '*', e: 'all', t: 'An AI-native platform, run by one person', p: ['Requests, quotes, listings, payments and outreach all run on one database, with AI doing the reading, writing and repetitive outreach.', 'People still decide: requests are reviewed, profiles need the owner’s OK, and bid work goes to partners.'], c: ['Claude Code','Cloudflare','D1','Zoho CRM'] }
+    ],
+    offerTitle: 'What Biashara Pros offers',
+    offer: [['For buyers','Find trusted businesses and get side-by-side quotes'],['For business owners','Free listing, AI-written profile, Verified label, quote requests'],['Zabuni Tender Kit','AI reads the bid document; stage-by-stage requirements and reminders'],['Free tools','PAYE, VAT, loan and employee cost calculators, invoices, compliance calendar'],['Support','Funding, events, guides and founder stories'],['Built with','Astro, Cloudflare Pages Functions, D1 SQL, Zoho CRM, Claude']]
+  },
+
+  wgd: {
+    tab: 'WowGlamDecor',
+    eyebrow: 'My platform · Home decor e-commerce publishing',
+    title: 'WowGlamDecor: a decor catalog that publishes itself',
+    lede: 'A curated home decor publisher: buying guides, room ideas and hand-picked products linked to trusted retailers. One SQL catalog feeds the website, social channels and email, with quality checks before anything ships.',
+    height: 590,
+    lanes: [{ y: 24, t: 'CATALOG & PUBLISHING PIPELINE' }, { y: 214, t: 'SHOPPER JOURNEY' }, { y: 434, t: 'DISTRIBUTION & BUILD' }],
+    nodes: [
+      { id: 'source', x: 20, y: 40, t: 'Product Research', s: 'Retailer feeds', tag: 'SOURCE' },
+      { id: 'catalog', x: 260, y: 40, t: 'Catalog Database', s: '367 products · D1', tag: 'DATA' },
+      { id: 'health', x: 500, y: 40, t: 'Health Check', s: '31 rules, zero errors', tag: 'QUALITY' },
+      { id: 'build', x: 740, y: 40, t: 'Daily Build', s: 'GitHub Actions', tag: 'AUTOMATION' },
+      { id: 'site', x: 980, y: 40, t: 'Hugo Website', s: 'Cloudflare Pages', tag: 'PUBLISH' },
+      { id: 'shopper', x: 20, y: 230, t: 'Shopper Searches', s: 'Google & Pinterest', tag: 'SHOPPER' },
+      { id: 'guides', x: 260, y: 230, t: 'Guides & Hubs', s: 'Room ideas, buying help', tag: 'CONTENT' },
+      { id: 'product', x: 500, y: 230, t: 'Product Page', s: 'Images via Workers + R2', tag: 'CONTENT' },
+      { id: 'clicks', x: 740, y: 230, t: 'Click Tracking', s: 'Bot filtering', tag: 'DATA' },
+      { id: 'retailer', x: 980, y: 230, t: 'Retailer Checkout', s: 'Trusted stores', tag: 'SHOPPER' },
+      { id: 'hub', x: 20, y: 345, w: 1180, h: 62, t: 'One catalog, many channels', s: 'Website, Pinterest, newsletter and analytics all read from the same source of truth', hub: true },
+      { id: 'social', x: 20, y: 450, t: 'Social Scheduling', s: 'Zoho Social API', tag: 'DISTRIBUTION' },
+      { id: 'email', x: 320, y: 450, t: 'Email Newsletter', s: 'Scheduled sends', tag: 'DISTRIBUTION' },
+      { id: 'ai', x: 620, y: 450, t: 'Claude Code', s: 'Builds & maintains', tag: 'AI' },
+      { id: 'reports', x: 920, y: 450, w: 280, t: 'Weekly Reports', s: 'GA4 & Search Console APIs', tag: 'AI' }
+    ],
+    edges: [['source','catalog'],['catalog','health'],['health','build'],['build','site'],['site','guides'],['shopper','guides'],['guides','product'],['product','clicks'],['clicks','retailer'],['catalog','social'],['catalog','email'],['social','shopper'],['ai','catalog'],['ai','health'],['clicks','reports']],
+    steps: [
+      { l: 'Overview', n: '*', t: 'The offer to shoppers', p: ['Shoppers get curated home decor, room ideas and honest buying guides, with every product linked to a trusted retailer.', 'Behind it: one catalog that publishes to the website, Pinterest and email automatically.'], c: ['Hugo','Cloudflare','D1 SQL'] },
+      { l: 'Catalog', n: ['source','catalog'], e: [['source','catalog']], t: 'One catalog, one source of truth', p: ['Products are researched from retailer feeds and stored in a Cloudflare D1 SQL database, currently 367 products.', 'Edits go into the database as SQL batches, never only into a local file, so nothing is wiped on the next sync.'], c: ['Cloudflare D1','SQL batches'] },
+      { l: 'Quality', n: ['catalog','health'], e: [['catalog','health']], t: 'Nothing ships until it passes', p: ['A 31-rule health check looks for missing images, broken links, invalid fields and banned wording.', 'A release only goes out with zero errors.'], c: ['Health check','Node.js'] },
+      { l: 'E · Automate', n: ['health','build','site'], e: [['health','build'],['build','site']], t: 'The site rebuilds itself daily', p: ['A daily GitHub Actions job rebuilds the Hugo site from the catalog and deploys it to Cloudflare Pages.', 'No servers to maintain, and new products go live without anyone pressing publish.'], c: ['GitHub Actions','Hugo','Cloudflare Pages'] },
+      { l: 'Shopper', n: ['shopper','guides','site'], e: [['shopper','guides'],['site','guides']], t: 'A shopper arrives', p: ['Shoppers come from Google and Pinterest looking for ideas for a specific room or problem.', 'Buying guides and category hubs help them choose before they ever see a product.'], c: ['SEO','Pinterest'] },
+      { l: 'Product', n: ['guides','product'], e: [['guides','product']], t: 'Fast, clear product pages', p: ['Product pages show real supplier photography, delivered quickly through Cloudflare Workers and R2 storage.', 'Specs come from the retailer data, and invented claims are removed.'], c: ['Workers','R2'] },
+      { l: 'Checkout', n: ['product','clicks','retailer'], e: [['product','clicks'],['clicks','retailer']], t: 'Clean click data, then the retailer', p: ['Every click to a retailer is tracked by a Cloudflare Worker.', 'When the numbers looked inflated, I traced it to bots, purged 6,471 bad rows and added bot, referrer and rate filters at the source.'], c: ['Cloudflare Worker','Bot filtering'] },
+      { l: 'Distribute', n: ['catalog','social','email','shopper'], e: [['catalog','social'],['catalog','email'],['social','shopper']], t: 'The catalog feeds every channel', p: ['Node.js scripts schedule Pinterest and other posts through the Zoho Social API, logging every API response so failures show up.', 'Scheduled email newsletters go to subscribers from the same catalog.'], c: ['Zoho Social API','Email newsletter'] },
+      { l: 'A · AI', n: ['ai','catalog','health'], e: [['ai','catalog'],['ai','health']], t: 'Built and maintained with AI', p: ['The whole platform is built and maintained with Claude Code: scripts, SQL batches, checks and fixes.', 'I set the rules and review the work. AI does the building, and copy passes a review gate before publishing.'], c: ['Claude Code','Review gates'] },
+      { l: 'R · Review', n: ['clicks','reports'], e: [['clicks','reports']], t: 'Weekly reports, automatically', p: ['A routine pulls GA4 and Search Console data through their APIs and writes a weekly report with the changes that matter.', 'AI explains the numbers; the numbers come from the APIs.'], c: ['GA4 API','Search Console API'] },
+      { l: 'Result', n: '*', e: 'all', t: 'A store that runs on systems', p: ['One catalog powers the website, social and email. Quality checks guard every release, and the site rebuilds itself every day.', 'The same pattern works for any business with a product or service catalog.'], c: ['Hugo','D1','Workers','Claude Code'] }
+    ],
+    offerTitle: 'What WowGlamDecor offers',
+    offer: [['For shoppers','Curated home decor with links to trusted retailers'],['Inspiration','Room ideas, category hubs and buying guides'],['Channels','Website, Pinterest and email newsletter'],['Built with','Hugo, Cloudflare Pages, Workers, R2, D1 SQL, GitHub Actions'],['AI','Built and maintained with Claude Code; weekly AI reports']]
+  }
+};
+
+const NS = 'http://www.w3.org/2000/svg';
+const W = 200, H = 86;
+const $ = (id) => document.getElementById(id);
+let cur = 'klock', step = 0, timer = null, rafs = [];
+
+function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function box(n) { return { x: n.x, y: n.y, w: n.w || W, h: n.h || H }; }
+
+// Anchor on the side facing the other node: horizontal neighbours use left/right, others top/bottom.
+function pathBetween(a, b) {
+  const A = box(a), B = box(b);
+  const ac = { x: A.x + A.w / 2, y: A.y + A.h / 2 }, bc = { x: B.x + B.w / 2, y: B.y + B.h / 2 };
+  if (Math.abs(ac.y - bc.y) < 20) {
+    const right = bc.x > ac.x;
+    const sx = right ? A.x + A.w : A.x, ex = right ? B.x : B.x + B.w;
+    return `M${sx},${ac.y} L${ex},${bc.y}`;
+  }
+  const down = bc.y > ac.y;
+  const sy = down ? A.y + A.h : A.y, ey = down ? B.y : B.y + B.h;
+  const my = (sy + ey) / 2;
+  return `M${ac.x},${sy} C${ac.x},${my} ${bc.x},${my} ${bc.x},${ey}`;
+}
+
+function render() {
+  const P = PROJECTS[cur];
+  const svg = $('svg');
+  svg.innerHTML = '';
+  svg.setAttribute('viewBox', `0 0 1220 ${P.height}`);
+  const defs = el('defs', {}, svg);
+  const m = el('marker', { id: 'arrow', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+  el('path', { d: 'M0,0 L10,5 L0,10 z', fill: '#cbd5e1' }, m);
+  const mOn = el('marker', { id: 'arrowOn', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+  el('path', { d: 'M0,0 L10,5 L0,10 z', fill: '#F16232' }, mOn);
+
+  P.lanes.forEach((l) => { const t = el('text', { x: 22, y: l.y, class: 'lane' }, svg); t.textContent = l.t; });
+
+  const byId = Object.fromEntries(P.nodes.map((n) => [n.id, n]));
+  const edgeLayer = el('g', {}, svg);
+  P.edges.forEach(([f, t]) => {
+    el('path', { d: pathBetween(byId[f], byId[t]), class: 'edge', 'data-k': f + '>' + t, 'marker-end': 'url(#arrow)' }, edgeLayer);
+  });
+  el('g', { id: 'dots' }, svg);
+
+  P.nodes.forEach((n) => {
+    const b = box(n);
+    const g = el('g', { class: 'node' + (n.hub ? ' hub' : ''), 'data-id': n.id }, svg);
+    el('rect', { class: 'box', x: b.x, y: b.y, width: b.w, height: b.h, rx: 16 }, g);
+    const cx = b.x + 16;
+    if (n.tag) el('text', { class: 'tag', x: cx, y: b.y + 22 }, g).textContent = n.tag;
+    el('text', { class: 't', x: cx, y: b.y + (n.hub ? 27 : 46) }, g).textContent = n.t;
+    el('text', { class: 's', x: cx, y: b.y + (n.hub ? 47 : 66) }, g).textContent = n.s;
+  });
+
+  $('eyebrow').textContent = P.eyebrow;
+  $('title').textContent = P.title;
+  $('lede').textContent = P.lede;
+  $('offerTitle').textContent = P.offerTitle;
+  $('offer').innerHTML = P.offer.map(([b, s]) => `<div><b>${b}</b><span>${s}</span></div>`).join('');
+  $('dots').innerHTML = P.steps.map((s, i) => `<button aria-label="Step ${i + 1}: ${s.t}" data-i="${i}"></button>`).join('');
+  [...$('dots').children].forEach((b) => b.onclick = () => go(+b.dataset.i));
+  document.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', t.dataset.k === cur));
+  show();
+}
+
+function animateDots(paths) {
+  rafs.forEach(cancelAnimationFrame); rafs = [];
+  const layer = $('dots'); layer.innerHTML = '';
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  paths.forEach((p, i) => {
+    const len = p.getTotalLength();
+    const c = el('circle', { r: 5, class: 'dot' }, layer);
+    const start = performance.now() + i * 250;
+    const tick = (now) => {
+      const t = ((now - start) / 1600) % 1;
+      const pt = p.getPointAtLength(Math.max(0, t) * len);
+      c.setAttribute('cx', pt.x); c.setAttribute('cy', pt.y);
+      rafs.push(requestAnimationFrame(tick));
+    };
+    rafs.push(requestAnimationFrame(tick));
+  });
+}
+
+function show() {
+  const P = PROJECTS[cur], S = P.steps[step];
+  const all = S.n === '*';
+  const onNodes = new Set(all ? P.nodes.map((n) => n.id) : S.n);
+  const onEdges = new Set(S.e === 'all' ? P.edges.map(([f, t]) => f + '>' + t) : (S.e || []).map(([f, t]) => f + '>' + t));
+  document.querySelectorAll('.node').forEach((g) => {
+    const on = onNodes.has(g.dataset.id);
+    g.classList.toggle('on', on && !all);
+    g.classList.toggle('dim', !on);
+  });
+  const active = [];
+  document.querySelectorAll('.edge').forEach((p) => {
+    const on = onEdges.has(p.dataset.k);
+    p.classList.toggle('on', on);
+    p.classList.toggle('dim', !on && !all);
+    p.setAttribute('marker-end', on ? 'url(#arrowOn)' : 'url(#arrow)');
+    if (on) active.push(p);
+  });
+  animateDots(S.e === 'all' ? [] : active);
+
+  $('count').textContent = `Step ${step + 1} of ${P.steps.length}`;
+  $('letter').textContent = S.l;
+  $('stepTitle').textContent = S.t;
+  $('stepText').innerHTML = S.p.map((x) => `<p>${x}</p>`).join('');
+  $('chips').innerHTML = (S.c || []).map((c) => `<span class="chip">${c}</span>`).join('');
+  $('prev').disabled = step === 0;
+  $('next').textContent = step === P.steps.length - 1 ? 'Restart ↺' : 'Next →';
+  [...$('dots').children].forEach((b, i) => b.classList.toggle('cur', i === step));
+}
+
+function go(i) { const n = PROJECTS[cur].steps.length; step = (i + n) % n; show(); }
+function switchTo(k) { cur = k; step = 0; stopPlay(); history.replaceState(null, '', '#' + k); render(); }
+function stopPlay() { clearInterval(timer); timer = null; }
+function togglePlay() { if (timer) return stopPlay(); timer = setInterval(() => go(step + 1), 6500); }
+
+$('tabs').innerHTML = Object.entries(PROJECTS).map(([k, p]) => `<button class="tab" role="tab" data-k="${k}">${p.tab}</button>`).join('');
+document.querySelectorAll('.tab').forEach((t) => t.onclick = () => switchTo(t.dataset.k));
+$('prev').onclick = () => { stopPlay(); go(step - 1); };
+$('next').onclick = () => { stopPlay(); go(step + 1); };
+addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); stopPlay(); go(step + 1); }
+  else if (e.key === 'ArrowLeft') { stopPlay(); go(step - 1); }
+  else if (e.key.toLowerCase() === 'p') togglePlay();
+  else if (['1', '2', '3'].includes(e.key)) switchTo(Object.keys(PROJECTS)[+e.key - 1]);
+});
+const fromHash = location.hash.slice(1);
+cur = PROJECTS[fromHash] ? fromHash : 'klock';
+render();
+</script>
+</body>
+</html>
