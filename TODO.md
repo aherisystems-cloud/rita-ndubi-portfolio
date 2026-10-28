@@ -29,12 +29,13 @@
 
 ## 📹 Application Video & Materials
 
-- [ ] **Record 3-Minute Loom Video Walkthrough**:
-  - *Minute 1*: Face on camera — intro, location (Nairobi, global async readiness), and why systems architecture matters.
-  - *Minute 2*: Screen-share `www.ritandubi.com` — demonstrate the Klock Aviation operating engine and the Retail AI Sales Agent flow.
-  - *Minute 3*: Highlight Finance & Banking degree + 9 years building systems — zero hand-holding required.
-- [ ] **Export ATS PDF Resume**: Use the print/save feature in the website's interactive resume modal to export a clean PDF.
-- [ ] **Submit via Ashby**: Upload custom resume, link to `www.ritandubi.com`, and include the Loom link in the application notes.
+> 2026-10-28: the notes above this line are older; current materials and scripts live in `docs/applications/`.
+
+- [x] 3 tailored CVs (docx + PDF) in `docs/applications/cv/`, with CLEAR, the GitHub link and 56 checks.
+- [x] Form answers for all 3 roles, plus the GitHub answer in `docs/applications/README.md`.
+- [ ] Rita: pick one email, confirm the Klock details and the Zoho Books invoice step, confirm Looker Studio.
+- [ ] Record the screening video (script section 1) and the walkthrough Loom (script section 3).
+- [ ] Submit via Ashby: Business Systems first, then Part-time, then Workflow.
 
 ---
 
@@ -45,5 +46,8 @@
 - [x] Create dedicated Framework Section with 4 core brand questions and interactive 5-stage stepper.
 - [x] Expand portfolio to all 10 verified client projects with category filter tabs.
 - [x] Implement Option 1 enterprise discretion (official client names with safe capability framing).
-- [ ] Deploy latest production build to Cloudflare Pages via Wrangler CLI (`npx wrangler pages deploy dist`).
-- [ ] Verify custom domain DNS records for `ritandubi.com` on Cloudflare.
+- [x] Deploy to Cloudflare Pages (`ritandubi.pages.dev`), latest 2026-10-27, commit `dfd8e0d`.
+- [x] Personal brand reposition, CLEAR Method, verbatim testimonials, walkthrough page.
+- [x] Public `automation-samples` GitHub repo, linked on all 3 CVs.
+- [ ] Buy `ritandubi.com` and point it at Cloudflare Pages.
+- [ ] SECURITY (Rita): rotate the GitHub token stored in `C:\Dev\wgd-hugo` git remote URL.

@@ -2,6 +2,28 @@
 
 All notable changes to the Rita Ndubi personal website, portfolio, and brand assets are documented in this file.
 
+## [2026-10-28] - Personal Brand Reposition, Walkthrough, Code Samples
+
+### Added
+- `MissionSection.jsx` (photo, story, focus list, mission/vision/approach), `Testimonials.jsx` with verbatim LinkedIn quotes.
+- CLEAR Method (Chart, Link, Eliminate, Add AI, Run) in `FrameworkSection`, data in `operatingFramework`.
+- `public/walkthrough/index.html`: animated system walkthrough (Klock, Biashara Pros, WowGlamDecor) for Loom demos.
+- Public repo `aherisystems-cloud/automation-samples`: 10 production code samples with READMEs and self-checks.
+
+### Changed
+- Title: Business Systems & AI Automation Strategist | CRM, Customer Journey & RevOps.
+- Brand palette to RN logo orange (`brand-*`), Fraunces display font, new favicon and meta.
+- All copy rewritten as personal brand; phrases "AI-native builder and strategist" and "stop revenue leakage" woven in.
+- Klock case study widened to full scope; CCC marked as a client project; "payment gateway" replaces Paystack.
+- WowGlamDecor health check corrected from 31 rules to 56 checks (site and walkthrough).
+
+### Removed
+- All invented metrics (replaced with qualitative before/after), Retail AI case (unconfirmed), ATS copy button, dead Calendly link.
+
+### Decisions
+- Rejected: "Revenue-to-Operations Engine" name (Rita disliked it), job-seeking goal on site, naming Paystack only.
+- Application materials stay in git-ignored `docs/applications/` because the repo is public.
+
 ## [2026-10-19] - Framework Integration & 10-Project Portfolio Expansion
 
 ### Added

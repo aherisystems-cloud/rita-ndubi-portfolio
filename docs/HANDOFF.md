@@ -1,10 +1,10 @@
 # Session Handoff
 
-**Timestamp**: 2026-10-19T12:10:00+03:00  
-**Project**: Rita Ndubi — Personal Brand, Portfolio & Operating Engine  
-**Live Dev Server**: `http://localhost:3000` (Background Daemon)  
-**GitHub Repository**: [https://github.com/aherisystems-cloud/rita-ndubi-portfolio](https://github.com/aherisystems-cloud/rita-ndubi-portfolio)  
-**Branch**: `main` (Tracking `origin/main`)
+**Timestamp**: 2026-10-28T09:00:00+03:00
+**Project**: Rita Ndubi, Personal Brand & Portfolio
+**Live site**: https://ritandubi.pages.dev (walkthrough: https://ritandubi.pages.dev/walkthrough/)
+**Code samples**: https://github.com/aherisystems-cloud/automation-samples (public, local copy at `C:\Dev\automation-samples`)
+**Repo**: https://github.com/aherisystems-cloud/rita-ndubi-portfolio, branch `main`, last commit `dfd8e0d`
 
 ---
 
@@ -12,55 +12,48 @@
 
 ```markdown
 /new-session
-I am ready to continue. We completed the full portfolio expansion to 10 client projects and added my signature Revenue-to-Operations Engine framework to the homepage and resume. Now my top priority is preparing my application materials and strategy for the 3 Scale Army remote roles (Business Automation & AI Specialist, Business Systems Automation Specialist, and AI Automation & Integration Engineer), including the 3-minute Loom video script and tailoring my CV for Ashby.
+Scale Army applications are ready to submit. Site, walkthrough, 3 CVs, form answers and the public
+automation-samples repo all match (CLEAR Method, AI-native builder, revenue leakage, 56-check gate).
+Today: help me record the screening video and the Loom (docs/applications/video-script.md), then
+submit Business Systems first. Before that I still need to pick one email and confirm the Klock details.
 ```
 
 ---
 
-## What Was Completed This Session
+## Done this session (2026-10-26 to 2026-10-28)
 
-1. **Personal Brand Framework ("The Revenue-to-Operations Engine")**:
-   - Designed and deployed Rita Ndubi's signature framework based on `aherisystems.com`.
-   - Anchored on the 4 core brand questions:
-     - **What do you do?**: Transform broken sales funnels & manual back-office tasks into autonomous, leak-proof Revenue & Operations Engines.
-     - **Who do you help?**: Service businesses, high-ticket operators (aviation, real estate, clinics), and retail/e-commerce brands investing in paid ads or inbound inquiries.
-     - **How do you help them?**: Deploying practical Agentic AI workflows, custom client portals, and unified CRM pipelines that take autonomous action.
-     - **What is your process?**: The 5-stage lifecycle from Attract & Capture to the Operations Engine.
-   - Built [`FrameworkSection.jsx`](file:///c:/Dev/Rita%20Ndubi/src/components/FrameworkSection.jsx) with an interactive 5-stage stepper (Attract & Capture → Follow Up & Nurture → Convert & Contract → Onboard & Retain → Operations Engine) with real metrics, bottlenecks, and AI roles.
+1. **Site repositioned as a personal brand** (not a CV, not B2B):
+   - Brand orange from the RN logo, Fraunces headings.
+   - Real photo, a Mission section, and the CLEAR Method replacing "Revenue-to-Operations Engine".
+   - Verbatim LinkedIn testimonials from Evans Mawira and Eva Matindi.
+   - Klock case study rewritten to its full scope. "Payment gateway" replaces "Paystack". The Retail AI case was removed.
+   - All invented metrics replaced with qualitative before/after.
+   - Deployed to `ritandubi.pages.dev`. Commits `1526199` and `0fd8614`.
+2. **Animated walkthrough page** `/walkthrough/` for Loom recordings: Klock, Biashara Pros, WowGlamDecor. Commit `a87eb30`.
+3. **Applications** (`docs/applications/`, git-ignored, local only):
+   - 3 tailored CVs (docx and PDF, 2 pages each). Each has CLEAR, the AI-native and revenue leakage wording, the portfolio link and the GitHub link.
+   - Form answers for all 3 roles.
+   - Video script with screening, Zoho demo and walkthrough sections.
+   - Pay asks and the GitHub answer are in the README.
+4. **Public `automation-samples` repo**:
+   - 10 samples of real production code: payment webhook, Claude tender analysis, scheduled sync worker, form intake to Zoho CRM, supplier quote engine, bot-filtered click tracking, 56-check release gate, Zoho Social scheduler, ops monitoring, 34 migrations.
+   - IDs moved to environment variables, secrets scanned, and `npm run check` passes.
+5. **The health check is 56 checks**, not 31. Fixed on the site, the walkthrough, the CVs, the answers and the script. Commit `dfd8e0d`.
 
-2. **Full Portfolio Expansion to All 10 Projects**:
-   - Expanded [`portfolioData.js`](file:///c:/Dev/Rita%20Ndubi/src/data/portfolioData.js) from 4 to all 10 verified client projects and platforms:
-     1. **Klock Aviation**: Multi-Division Enterprise Ecosystem & Executive Command Center
-     2. **Retail AI Sales Agent**: Conversational AI Sales Agent & Order Recovery Engine
-     3. **VivaLife Pediatric Clinic**: Patient Digital Intake, WhatsApp API Reminders & CRM
-     4. **Mapenzi Connect**: Full Zoho One Architecture, Community Funnels & Webinar Engine
-     5. **Sydia Realty**: Zoho CRM Strategy Audit & Investor Journey Optimization
-     6. **Unicorn Dental Clinic**: Digital Patient Acquisition, Chatbot & Appointment System
-     7. **DiaspoCare LLC**: Healthcare FinTech Paid Media & Automated GoHighLevel Funnels
-     8. **BiasharaPros**: Automated MSME Compliance Navigator, Financial Calculators & Directory
-     9. **WowGlamDecor.com**: AI-Engineered Cloud E-Commerce & Publishing Platform
-     10. **CCC Business Directory**: Structured Enterprise Directory & Business Intake Engine
-   - Standardized every project to the 5-stage framework.
-   - Upgraded [`CaseStudies.jsx`](file:///c:/Dev/Rita%20Ndubi/src/components/CaseStudies.jsx) with category filter tabs (`All`, `AI & Agentic Workflows`, `Enterprise CRM & RevOps`, `Healthcare & Clinics`, `Web Platforms & Cloud`).
+## Needs Rita
 
-3. **Homepage & Navigation Enhancements**:
-   - Added a **Quick Positioning Matrix Strip** (`Who I Help` · `What I Do` · `How I Help`) to [`Hero.jsx`](file:///c:/Dev/Rita%20Ndubi/src/components/Hero.jsx).
-   - Added direct CTAs to jump to the **Framework** and view **10 Client Projects**.
-   - Added `Framework` to navigation in [`Navbar.jsx`](file:///c:/Dev/Rita%20Ndubi/src/components/Navbar.jsx).
-   - Mounted `FrameworkSection` in [`App.jsx`](file:///c:/Dev/Rita%20Ndubi/src/App.jsx).
+- [ ] **SECURITY: rotate the GitHub token** that is stored in plain text in `C:\Dev\wgd-hugo`'s git remote URL. Revoke it in GitHub (Settings > Developer settings > Personal access tokens), then sign in to git again.
+- [ ] Pick one email: `ritakawira@gmail.com` (site and CVs) or `kawira00@gmail.com` (old CV).
+- [ ] Confirm the Klock details I inferred: deposit and final invoices, the aircraft owner process, partner referral tracking. Also the Zoho Books invoice step going live (marked CONFIRM in the answers).
+- [ ] Confirm Looker Studio before naming it (Workflow role answer).
+- [ ] Record the screening video and the Loom. Submit Business Systems first, then the other two.
 
-4. **Resume & CV Modal Synchronization**:
-   - Updated the plain-text ATS copy in [`InteractiveResume.jsx`](file:///c:/Dev/Rita%20Ndubi/src/components/InteractiveResume.jsx) to include the **Core Operating Framework**.
-   - Updated [`ResumeModal.jsx`](file:///c:/Dev/Rita%20Ndubi/src/components/ResumeModal.jsx) with a dedicated **Signature Methodology** card and experience bullet points for all client projects.
+## What's left (priority order)
 
-5. **Build & Git Verification**:
-   - Verified production build compiles cleanly (`vite build`, 1,949 modules transformed in 22s).
-   - Committed all changes to git branch `master` (`44500c4`).
+1. Submit the 3 Scale Army applications.
+2. Buy the `ritandubi.com` domain and point it at Cloudflare Pages.
+3. Optional: a Zoho One Loom demo (quote to sign to invoice) in your own org (`video-script.md` section 2).
 
----
+## Standing rules
 
-## Needs Rita (Human Action Items)
-
-- [ ] **Review Homepage Live**: Visit `http://localhost:3000` to review the new Framework section, the 10-project filter tabs, and the updated resume modal.
-- [ ] **Select Target Role**: Decide whether to submit applications to all 3 Scale Army jobs simultaneously or prioritize Job 1/Job 3.
-- [ ] **Prepare Loom Walkthrough**: Plan the 3-minute video recording walking through your live portfolio site.
+See `CLAUDE.md`: core title, CLEAR Method, verbatim testimonials, no invented metrics, client discretion. Account rules: no em dashes, no AI-marker words, and ask before every deploy or push.
